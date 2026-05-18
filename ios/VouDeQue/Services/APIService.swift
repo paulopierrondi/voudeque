@@ -74,7 +74,7 @@ final class APIService {
         let response = try JSONDecoder().decode(LookResponseDTO.self, from: data)
         return Look(
             id: UUID(uuidString: response.id) ?? UUID(),
-            imageURL: URL(string: response.image_url),
+            imageURL: response.image_url,
             description: response.description,
             items: response.items.map { LookItem(name: $0.name, category: $0.category, color: $0.color, reason: $0.reason) },
             occasion: response.occasion,
@@ -92,7 +92,7 @@ final class APIService {
         return responses.map { dto in
             Look(
                 id: UUID(uuidString: dto.id) ?? UUID(),
-                imageURL: URL(string: dto.image_url),
+                imageURL: dto.image_url,
                 description: dto.description,
                 items: dto.items.map { LookItem(name: $0.name, category: $0.category, color: $0.color, reason: $0.reason) },
                 occasion: dto.occasion,
@@ -119,12 +119,13 @@ final class APIService {
         let (data, _) = try await request(path: "/api/v1/challenges/daily", method: "GET")
         let dto = try JSONDecoder().decode(ChallengeResponseDTO.self, from: data)
         return Challenge(
-            id: dto.id,
+            id: UUID(uuidString: dto.id) ?? UUID(),
             title: dto.title,
             description: dto.description,
             theme: dto.theme,
             endsAt: ISO8601DateFormatter().date(from: dto.ends_at) ?? Date(),
-            participants: dto.participants
+            participants: dto.participants,
+            topLooks: []
         )
     }
     

@@ -1,0 +1,65 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "fc1ce8fa7644b41ab68d329d878fd180a4f1e39cb816bf34dfb3b73c02dea16e"
+    }
+  ],
+  "containerPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "hostTargetedPlatform" : null,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator26.5",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "i386",
+        "x86_64"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Products",
+      "derivedDataPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/build",
+      "indexDataStoreFolderPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "SDKROOT" : "iphonesimulator26.5",
+          "SIMULATOR_DEVICE" : "iPhone 17"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

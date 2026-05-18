@@ -1,0 +1,129 @@
+{
+  "" : {
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary.dia",
+    "emit-module-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary-emit-module.dia",
+    "pch" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary.swiftdeps"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/ContentView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Models/LookModels.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookModels~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Services/APIService.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/APIService~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Utils/Extensions.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/Extensions~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ChallengesView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ChallengesView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/FeedView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/FeedView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/GenerateLookView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/GenerateLookView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/HomeView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/LookCardView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookCardView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/LookResultView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/LookResultView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ProfileView.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/ProfileView~partial.swiftmodule"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/VouDeQueApp.swift" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.dia",
+    "index-unit-output-path" : "/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.o",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.swiftdeps",
+    "swiftmodule" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/VouDeQue.build/Debug-iphonesimulator/VouDeQue.build/Objects-normal/arm64/VouDeQueApp~partial.swiftmodule"
+  }
+}
