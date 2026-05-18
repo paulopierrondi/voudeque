@@ -1,15 +1,15 @@
 import os
 import json
-from typing import List
+from typing import List, Optional
 import google.generativeai as genai
 from app.core.config import settings
 
 genai.configure(api_key=settings.GEMINI_API_KEY)
 
-model_text = genai.GenerativeModel("gemini-2.0-flash")
-model_vision = genai.GenerativeModel("gemini-2.0-flash-exp")
+model_text = genai.GenerativeModel("gemini-3-flash-preview")
+model_vision = genai.GenerativeModel("gemini-2.5-flash-image")
 
-async def generate_look(user_photo_b64: str | None, occasion: str, style_notes: str | None) -> dict:
+async def generate_look(user_photo_b64: Optional[str], occasion: str, style_notes: Optional[str]) -> dict:
     """Gera um look completo usando Gemini Flash."""
     
     prompt = f"""Voce e um estilista de moda profissional brasileiro. Crie um look completo para a ocasiao: {occasion}.
