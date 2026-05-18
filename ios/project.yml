@@ -36,3 +36,10 @@ targets:
           - pt-BR
         UILaunchScreen: {}
         ITSAppUsesNonExemptEncryption: false
+  VouDeQueUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: VouDeQueUITests
+    dependencies:
+      - target: VouDeQue

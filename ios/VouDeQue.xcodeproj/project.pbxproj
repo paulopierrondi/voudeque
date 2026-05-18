@@ -22,15 +22,27 @@
 		85A2D8C08D9090581D880CAB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8466975EA0B6D2946457BA7 /* OnboardingView.swift */; };
 		A6AA420F01CF89486B113832 /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5E3F819A96CE255D4255 /* ChallengesView.swift */; };
 		B05C8234C8D6E0FE429A9680 /* ShimmerLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878AD8BAB3279468F1836FD /* ShimmerLoadingView.swift */; };
+		B0A00AA5DB8D10B7EC97A2A9 /* VouDeQueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C64A2732B7181FEC28E358 /* VouDeQueUITests.swift */; };
 		B4F7BE9E1C46B69398DEA68A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9ECF83AF53B3541745593D /* Assets.xcassets */; };
 		BDE511F497A786EC52593D15 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1060788B842D34550D291 /* ProfileView.swift */; };
 		DA39971E70C4C1A34502CE04 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2D74B788B58DD053428A2 /* Extensions.swift */; };
 		E524798C4B900FAE2EACE138 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB9D9D1F08EFEF4EC4B8F4 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A216C38368E389E79949FDE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83DBC83FA543C73D80052A84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 959CB67EF89124CB466EDB58;
+			remoteInfo = VouDeQue;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1DA20885221B288E65946A5F /* VouDeQueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouDeQueApp.swift; sourceTree = "<group>"; };
 		1E160098ED6A797D4B415CED /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		24C64A2732B7181FEC28E358 /* VouDeQueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouDeQueUITests.swift; sourceTree = "<group>"; };
 		28C2D74B788B58DD053428A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2A5B94A8CD89B904E5F07622 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		2C5C2CDCCDBE86EB9966D730 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
@@ -41,6 +53,7 @@
 		67E5329818A4BC9F044DA937 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6A09211DDB10670C789C5C31 /* GenerateLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLookView.swift; sourceTree = "<group>"; };
 		6F080DA2F0A1E326E635748E /* LookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookCardView.swift; sourceTree = "<group>"; };
+		78C346BC94276F22E8C3D665 /* VouDeQueUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VouDeQueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		869229D7A54A2C9FA10C90CD /* VouDeQue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VouDeQue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7A5E3F819A96CE255D4255 /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
 		B6F728E170B467A9006A15D0 /* LookModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookModels.swift; sourceTree = "<group>"; };
@@ -100,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3E239FE6C2AA13A7F4937464 /* VouDeQue */,
+				7DBE3260CAEA193451FAD528 /* VouDeQueUITests */,
 				796DB89E11E3B9EB713DCF69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,8 +122,17 @@
 			isa = PBXGroup;
 			children = (
 				869229D7A54A2C9FA10C90CD /* VouDeQue.app */,
+				78C346BC94276F22E8C3D665 /* VouDeQueUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7DBE3260CAEA193451FAD528 /* VouDeQueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24C64A2732B7181FEC28E358 /* VouDeQueUITests.swift */,
+			);
+			path = VouDeQueUITests;
 			sourceTree = "<group>";
 		};
 		C0E4E4C125ECE8E2C2AAD329 /* Models */ = {
@@ -131,6 +154,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5952B7D262013270913BFBF4 /* VouDeQueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE631AA7AEFE1C974F9EE70 /* Build configuration list for PBXNativeTarget "VouDeQueUITests" */;
+			buildPhases = (
+				ED693767F6DD303B49C7A943 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D19CF7974A11DEE6758622 /* PBXTargetDependency */,
+			);
+			name = VouDeQueUITests;
+			packageProductDependencies = (
+			);
+			productName = VouDeQueUITests;
+			productReference = 78C346BC94276F22E8C3D665 /* VouDeQueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		959CB67EF89124CB466EDB58 /* VouDeQue */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AEEFFF76C211A9D7F0F234B /* Build configuration list for PBXNativeTarget "VouDeQue" */;
@@ -158,6 +199,11 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					5952B7D262013270913BFBF4 = {
+						DevelopmentTeam = 8ULNGWJZ6B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 959CB67EF89124CB466EDB58;
+					};
 					959CB67EF89124CB466EDB58 = {
 						DevelopmentTeam = 8ULNGWJZ6B;
 						ProvisioningStyle = Automatic;
@@ -179,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				959CB67EF89124CB466EDB58 /* VouDeQue */,
+				5952B7D262013270913BFBF4 /* VouDeQueUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +242,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ED693767F6DD303B49C7A943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A00AA5DB8D10B7EC97A2A9 /* VouDeQueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F32FAB4ED8293131091EB727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,7 +277,30 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B4D19CF7974A11DEE6758622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 959CB67EF89124CB466EDB58 /* VouDeQue */;
+			targetProxy = A216C38368E389E79949FDE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1A47F0C57843D77B2C190833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VouDeQue;
+			};
+			name = Release;
+		};
 		3A8564FFE352F00473FCC61C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,6 +456,21 @@
 			};
 			name = Debug;
 		};
+		D77B5824751A805589933641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VouDeQue;
+			};
+			name = Debug;
+		};
 		E82A5FA589AEB9D1215F5AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,6 +518,15 @@
 			buildConfigurations = (
 				AA6479190F06DF1EAB7D2A2B /* Debug */,
 				3A8564FFE352F00473FCC61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FAE631AA7AEFE1C974F9EE70 /* Build configuration list for PBXNativeTarget "VouDeQueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D77B5824751A805589933641 /* Debug */,
+				1A47F0C57843D77B2C190833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
