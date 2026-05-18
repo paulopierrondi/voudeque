@@ -96,6 +96,10 @@ struct ProfileView: View {
                 }
                 .padding(.horizontal, 20)
 
+                // Account Deletion
+                DeleteAccountSection()
+                    .padding(.horizontal, 20)
+
                 Spacer(minLength: 30)
             }
             .padding(.top, 16)
@@ -197,6 +201,81 @@ struct ProfileMenuItem: View {
             .padding(.vertical, 16)
             .background(Color.vdqSurface)
             .cornerRadius(16)
+        }
+    }
+}
+
+struct DeleteAccountSection: View {
+    @State private var showConfirmation = false
+    @State private var isDeleting = false
+    @State private var errorMessage: String?
+    @State private var showError = false
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Conta")
+                .font(.system(size: 18, weight: .bold))
+                .foregroundColor(.white)
+
+            Button(action: { showConfirmation = true }) {
+                HStack(spacing: 14) {
+                    Image(systemName: "trash.fill")
+                        .font(.system(size: 20))
+                        .foregroundColor(.red)
+                        .frame(width: 32)
+
+                    Text("Excluir Conta")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundColor(.red)
+
+                    Spacer()
+
+                    if isDeleting {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle(tint: .red))
+                    } else {
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundColor(.gray)
+                    }
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 16)
+                .background(Color.vdqSurface)
+                .cornerRadius(16)
+            }
+            .disabled(isDeleting)
+        }
+        .alert("Excluir Conta", isPresented: $showConfirmation) {
+            Button("Cancelar", role: .cancel) {}
+            Button("Excluir", role: .destructive) {
+                performDelete()
+            }
+        } message: {
+            Text("Esta ação é irreversível. Todos os seus dados serão permanentemente removidos.")
+        }
+        .alert("Erro", isPresented: $showError) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(errorMessage ?? "Não foi possível excluir a conta.")
+        }
+    }
+
+    private func performDelete() {
+        isDeleting = true
+        Task {
+            do {
+                try await APIService.shared.deleteAccount()
+                await MainActor.run {
+                    isDeleting = false
+                }
+            } catch {
+                await MainActor.run {
+                    isDeleting = false
+                    errorMessage = error.localizedDescription
+                    showError = true
+                }
+            }
         }
     }
 }
