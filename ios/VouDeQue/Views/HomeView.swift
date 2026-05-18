@@ -9,27 +9,21 @@ struct HomeView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                // Welcome Header
+            VStack(spacing: 24) {
+                // Editorial Hero Header
                 HStack {
-                    VStack(alignment: .leading, spacing: 4) {
+                    VStack(alignment: .leading, spacing: 6) {
                         Text("VouDeQue")
-                            .font(.system(size: 28, weight: .bold))
-                            .foregroundStyle(
-                                LinearGradient(
-                                    colors: [Color.vdqPurple, Color.vdqPink],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
+                            .font(.runwayDisplay(size: 34, weight: .medium))
+                            .foregroundStyle(Color.goldGradient)
                         Text("Seu estilista de IA")
-                            .font(.system(size: 15))
-                            .foregroundColor(.gray)
+                            .font(.runwayBody(size: 15))
+                            .foregroundColor(.fashionChampagne.opacity(0.6))
                     }
                     Spacer()
-                    Image(systemName: "sparkles")
+                    Image(systemName: "sparkle")
                         .font(.system(size: 24))
-                        .foregroundStyle(Color.vdqPurple)
+                        .foregroundStyle(Color.fashionGold)
                 }
                 .padding(.horizontal, 20)
 
@@ -45,50 +39,46 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 14) {
                     HStack {
                         Label("Desafio do Dia", systemImage: "flame.fill")
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundColor(.white)
+                            .font(.runwayTitle(size: 16))
+                            .foregroundColor(.fashionChampagne)
                         Spacer()
                         HStack(spacing: 4) {
                             Image(systemName: "person.2.fill")
-                                .font(.system(size: 12))
+                                .font(.runwayCaption())
                             Text("\(dailyChallenge.participants)")
-                                .font(.system(size: 13, weight: .semibold))
+                                .font(.runwayCaption())
                         }
-                        .foregroundColor(.orange)
+                        .foregroundColor(.fashionGold)
                     }
 
                     Text(dailyChallenge.title)
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundColor(.white)
+                        .font(.runwayTitle(size: 20))
+                        .foregroundColor(.fashionChampagne)
 
                     Text(dailyChallenge.description)
-                        .font(.system(size: 14))
-                        .foregroundColor(.white.opacity(0.7))
+                        .font(.runwayBody(size: 14))
+                        .foregroundColor(.fashionChampagne.opacity(0.7))
                         .lineLimit(2)
+                        .lineSpacing(3)
 
                     HStack {
                         HStack(spacing: 4) {
                             Image(systemName: "clock")
-                                .font(.system(size: 13))
+                                .font(.runwayCaption())
                             Text(timeRemaining)
-                                .font(.system(size: 13, weight: .semibold))
+                                .font(.runwayCaption())
                                 .monospacedDigit()
                         }
-                        .foregroundColor(.pink)
+                        .foregroundColor(.fashionRose)
 
                         Spacer()
 
                         Text("Tema: \(dailyChallenge.theme)")
-                            .font(.system(size: 12, weight: .medium))
-                            .foregroundColor(.purple)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 6)
-                            .background(Color.purple.opacity(0.15))
-                            .cornerRadius(10)
+                            .runwayTag()
                     }
                 }
                 .padding(20)
-                .vdqCardStyle()
+                .runwayCard()
                 .padding(.horizontal, 20)
                 .onReceive(timer) { _ in
                     timeRemaining = Date().timeRemainingString(to: dailyChallenge.endsAt)
@@ -104,34 +94,29 @@ struct HomeView: View {
                             .font(.system(size: 22))
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Gerar Novo Look")
-                                .font(.system(size: 17, weight: .bold))
+                                .font(.runwayTitle(size: 17))
                             Text("Foto + IA = estilo perfeito")
-                                .font(.system(size: 13))
+                                .font(.runwayBody(size: 13))
                                 .opacity(0.85)
                         }
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.system(size: 16, weight: .semibold))
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.fashionChampagne)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 18)
-                    .background(
-                        LinearGradient(
-                            colors: [Color.vdqPurple, Color.vdqPink],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .cornerRadius(20)
+                    .background(Color.goldGradient)
+                    .cornerRadius(14)
                 }
+                .pressAnimation()
                 .padding(.horizontal, 20)
 
                 // Recent Activity
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Atividade Recente")
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundColor(.white)
+                        .font(.runwayTitle(size: 18))
+                        .foregroundColor(.fashionChampagne)
                         .padding(.horizontal, 20)
 
                     LookCardView(look: .sample)
@@ -142,7 +127,7 @@ struct HomeView: View {
             }
             .padding(.top, 16)
         }
-        .background(Color.vdqBackground.ignoresSafeArea())
+        .background(Color.runwayBlack.ignoresSafeArea())
     }
 }
 
@@ -155,17 +140,17 @@ struct StatCard: View {
         VStack(spacing: 8) {
             Image(systemName: icon)
                 .font(.system(size: 22))
-                .foregroundStyle(Color.vdqPurple)
+                .foregroundStyle(Color.fashionGold)
             Text(value)
-                .font(.system(size: 20, weight: .bold))
-                .foregroundColor(.white)
+                .font(.runwayTitle(size: 20))
+                .foregroundColor(.fashionChampagne)
             Text(title)
-                .font(.system(size: 12))
-                .foregroundColor(.gray)
+                .font(.runwayCaption())
+                .foregroundColor(.fashionChampagne.opacity(0.5))
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 16)
-        .vdqCardStyle()
+        .runwayCard()
     }
 }
 

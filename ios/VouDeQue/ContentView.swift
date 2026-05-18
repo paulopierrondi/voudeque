@@ -50,15 +50,15 @@ struct ContentView: View {
             }
             .tag(4)
         }
-        .tint(Color.vdqPurple)
+        .tint(Color.fashionGold)
         .onAppear {
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = UIColor(Color(hex: "14141B"))
+            appearance.backgroundColor = UIColor(Color.runwayCharcoal)
             appearance.stackedLayoutAppearance.normal.iconColor = UIColor.gray
             appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.gray]
-            appearance.stackedLayoutAppearance.selected.iconColor = UIColor(Color.vdqPurple)
-            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor(Color.vdqPurple)]
+            appearance.stackedLayoutAppearance.selected.iconColor = UIColor(Color.fashionGold)
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor(Color.fashionGold)]
             UITabBar.appearance().standardAppearance = appearance
             UITabBar.appearance().scrollEdgeAppearance = appearance
         }

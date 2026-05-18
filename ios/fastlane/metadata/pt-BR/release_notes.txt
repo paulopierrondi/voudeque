@@ -1,0 +1,1 @@
+Primeira versão do VouDeQue! Geração de looks por IA, feed da comunidade e desafios diários.

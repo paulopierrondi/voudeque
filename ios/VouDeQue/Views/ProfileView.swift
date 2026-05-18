@@ -9,10 +9,12 @@ struct ProfileView: View {
                 // Header with Settings
                 HStack {
                     Spacer()
-                    Button(action: {}) {
+                    Button(action: {
+                        HapticFeedback.light()
+                    }) {
                         Image(systemName: "gearshape.fill")
                             .font(.system(size: 22))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.fashionChampagne.opacity(0.5))
                     }
                 }
                 .padding(.horizontal, 20)
@@ -21,29 +23,27 @@ struct ProfileView: View {
                 VStack(spacing: 14) {
                     ZStack {
                         Circle()
-                            .fill(
-                                LinearGradient(
-                                    colors: [Color.vdqPurple.opacity(0.3), Color.vdqPink.opacity(0.2)],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
+                            .fill(Color.fashionGold.opacity(0.1))
                             .frame(width: 100, height: 100)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.fashionGold.opacity(0.2), lineWidth: 1)
+                            )
 
                         Image(systemName: "person.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 44, height: 44)
-                            .foregroundColor(.white)
+                            .foregroundColor(.fashionChampagne)
                     }
 
                     Text("Maria Silva")
-                        .font(.system(size: 24, weight: .bold))
-                        .foregroundColor(.white)
+                        .font(.runwayDisplay(size: 24))
+                        .foregroundColor(.fashionChampagne)
 
                     Text("@mariasilva")
-                        .font(.system(size: 15))
-                        .foregroundColor(.gray)
+                        .font(.runwayBody(size: 15))
+                        .foregroundColor(.fashionChampagne.opacity(0.5))
                 }
 
                 // Stats Grid
@@ -51,20 +51,17 @@ struct ProfileView: View {
                     ProfileStatCard(
                         value: "\(stats.looksGenerated)",
                         label: "Looks",
-                        icon: "sparkles.rectangle.stack",
-                        gradient: [Color.vdqPurple, Color.vdqPink]
+                        icon: "sparkles.rectangle.stack"
                     )
                     ProfileStatCard(
                         value: "\(stats.votesReceived)",
                         label: "Votos",
-                        icon: "heart.fill",
-                        gradient: [Color.pink, Color.red]
+                        icon: "heart.fill"
                     )
                     ProfileStatCard(
                         value: "#\(stats.currentRank)",
                         label: "Ranking",
-                        icon: "trophy.fill",
-                        gradient: [Color.orange, Color.yellow]
+                        icon: "trophy.fill"
                     )
                 }
                 .padding(.horizontal, 20)
@@ -72,8 +69,8 @@ struct ProfileView: View {
                 // Recent Looks Section
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Looks Recentes")
-                        .font(.system(size: 18, weight: .bold))
-                        .foregroundColor(.white)
+                        .font(.runwayTitle(size: 18))
+                        .foregroundColor(.fashionChampagne)
                         .padding(.horizontal, 20)
 
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -88,11 +85,11 @@ struct ProfileView: View {
 
                 // Menu Items
                 VStack(spacing: 2) {
-                    ProfileMenuItem(icon: "bookmark.fill", title: "Looks Salvos", color: .purple)
-                    ProfileMenuItem(icon: "flame.fill", title: "Meus Desafios", color: .orange)
-                    ProfileMenuItem(icon: "arrow.up.heart.fill", title: "Looks Enviados", color: .pink)
-                    ProfileMenuItem(icon: "bell.fill", title: "Notificações", color: .blue)
-                    ProfileMenuItem(icon: "questionmark.circle.fill", title: "Ajuda", color: .green)
+                    ProfileMenuItem(icon: "bookmark.fill", title: "Looks Salvos")
+                    ProfileMenuItem(icon: "flame.fill", title: "Meus Desafios")
+                    ProfileMenuItem(icon: "arrow.up.heart.fill", title: "Looks Enviados")
+                    ProfileMenuItem(icon: "bell.fill", title: "Notificações")
+                    ProfileMenuItem(icon: "questionmark.circle.fill", title: "Ajuda")
                 }
                 .padding(.horizontal, 20)
 
@@ -104,7 +101,7 @@ struct ProfileView: View {
             }
             .padding(.top, 16)
         }
-        .background(Color.vdqBackground.ignoresSafeArea())
+        .background(Color.runwayBlack.ignoresSafeArea())
     }
 }
 
@@ -112,29 +109,22 @@ struct ProfileStatCard: View {
     let value: String
     let label: String
     let icon: String
-    let gradient: [Color]
 
     var body: some View {
         VStack(spacing: 10) {
             Image(systemName: icon)
                 .font(.system(size: 22))
-                .foregroundStyle(
-                    LinearGradient(
-                        colors: gradient,
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )
+                .foregroundStyle(Color.fashionGold)
             Text(value)
-                .font(.system(size: 22, weight: .bold))
-                .foregroundColor(.white)
+                .font(.runwayTitle(size: 22))
+                .foregroundColor(.fashionChampagne)
             Text(label)
-                .font(.system(size: 12))
-                .foregroundColor(.gray)
+                .font(.runwayCaption())
+                .foregroundColor(.fashionChampagne.opacity(0.5))
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 18)
-        .vdqCardStyle()
+        .runwayCard()
     }
 }
 
@@ -143,32 +133,33 @@ struct RecentLookCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            RoundedRectangle(cornerRadius: 14)
-                .fill(
-                    LinearGradient(
-                        colors: [Color.vdqSurfaceLight, Color.vdqPurple.opacity(0.12)],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                .frame(width: 140, height: 160)
-                .overlay(
+            ZStack {
+                Color.darkGradient
+                    .frame(width: 140, height: 160)
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+
+                if let imageURL = look.imageURL, let url = URL(string: imageURL) {
+                    AsyncImageView(url: url)
+                        .frame(width: 140, height: 160)
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                } else {
                     Image(systemName: "sparkles")
                         .font(.system(size: 28))
-                        .foregroundStyle(Color.vdqPurple.opacity(0.4))
-                )
+                        .foregroundStyle(Color.fashionGold.opacity(0.3))
+                }
+            }
 
             Text(look.occasion)
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundColor(.white)
+                .font(.runwayBody(size: 13, weight: .semibold))
+                .foregroundColor(.fashionChampagne)
 
             HStack(spacing: 4) {
                 Image(systemName: "heart.fill")
                     .font(.system(size: 11))
-                    .foregroundColor(.pink)
+                    .foregroundColor(.fashionRose)
                 Text("\(look.votes)")
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(.gray)
+                    .font(.runwayCaption())
+                    .foregroundColor(.fashionChampagne.opacity(0.5))
             }
         }
     }
@@ -177,30 +168,35 @@ struct RecentLookCard: View {
 struct ProfileMenuItem: View {
     let icon: String
     let title: String
-    let color: Color
 
     var body: some View {
-        Button(action: {}) {
+        Button(action: {
+            HapticFeedback.light()
+        }) {
             HStack(spacing: 14) {
                 Image(systemName: icon)
                     .font(.system(size: 20))
-                    .foregroundColor(color)
+                    .foregroundColor(.fashionGold)
                     .frame(width: 32)
 
                 Text(title)
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundColor(.white)
+                    .font(.runwayBody(size: 16, weight: .medium))
+                    .foregroundColor(.fashionChampagne)
 
                 Spacer()
 
                 Image(systemName: "chevron.right")
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(.gray)
+                    .foregroundColor(.fashionChampagne.opacity(0.3))
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 16)
-            .background(Color.vdqSurface)
-            .cornerRadius(16)
+            .background(Color.runwayCharcoal)
+            .cornerRadius(14)
+            .overlay(
+                RoundedRectangle(cornerRadius: 14)
+                    .stroke(Color.fashionGold.opacity(0.1), lineWidth: 1)
+            )
         }
     }
 }
@@ -214,35 +210,39 @@ struct DeleteAccountSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Conta")
-                .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
+                .font(.runwayTitle(size: 18))
+                .foregroundColor(.fashionChampagne)
 
             Button(action: { showConfirmation = true }) {
                 HStack(spacing: 14) {
                     Image(systemName: "trash.fill")
                         .font(.system(size: 20))
-                        .foregroundColor(.red)
+                        .foregroundColor(.fashionRose)
                         .frame(width: 32)
 
                     Text("Excluir Conta")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundColor(.red)
+                        .font(.runwayBody(size: 16, weight: .medium))
+                        .foregroundColor(.fashionRose)
 
                     Spacer()
 
                     if isDeleting {
                         ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: .red))
+                            .progressViewStyle(CircularProgressViewStyle(tint: .fashionRose))
                     } else {
                         Image(systemName: "chevron.right")
                             .font(.system(size: 14, weight: .semibold))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.fashionChampagne.opacity(0.3))
                     }
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 16)
-                .background(Color.vdqSurface)
-                .cornerRadius(16)
+                .background(Color.runwayCharcoal)
+                .cornerRadius(14)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .stroke(Color.fashionRose.opacity(0.2), lineWidth: 1)
+                )
             }
             .disabled(isDeleting)
         }

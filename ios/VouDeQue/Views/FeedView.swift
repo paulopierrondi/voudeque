@@ -3,6 +3,8 @@ import SwiftUI
 struct FeedView: View {
     @State private var looks: [Look] = []
     @State private var isLoading = true
+    @State private var hasError = false
+    @State private var errorMessage = ""
 
     var body: some View {
         ScrollView {
@@ -11,26 +13,37 @@ struct FeedView: View {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Comunidade")
-                            .font(.system(size: 28, weight: .bold))
-                            .foregroundColor(.white)
+                            .font(.runwayDisplay(size: 28))
+                            .foregroundColor(.fashionChampagne)
                         Text("Descubra looks e vote nos favoritos")
-                            .font(.system(size: 15))
-                            .foregroundColor(.gray)
+                            .font(.runwayBody(size: 15))
+                            .foregroundColor(.fashionChampagne.opacity(0.6))
                     }
                     Spacer()
                 }
                 .padding(.horizontal, 20)
 
                 if isLoading {
-                    VStack(spacing: 16) {
-                        ProgressView()
-                            .tint(Color.vdqPurple)
-                            .scaleEffect(1.2)
-                        Text("Carregando looks...")
-                            .font(.system(size: 15))
-                            .foregroundColor(.gray)
+                    ShimmerLoadingView()
+                        .frame(maxWidth: .infinity, minHeight: 300)
+                } else if hasError {
+                    ErrorStateView(message: errorMessage) {
+                        Task {
+                            await loadFeed()
+                        }
                     }
-                    .frame(maxWidth: .infinity, minHeight: 300)
+                    .frame(minHeight: 400)
+                } else if looks.isEmpty {
+                    EmptyStateView(
+                        icon: "heart.slash",
+                        title: "Nenhum look ainda",
+                        message: "Seja o primeiro a criar e compartilhar um look com a comunidade.",
+                        actionTitle: "Criar Look",
+                        action: {
+                            // Tab switch would require binding, keeping simple
+                        }
+                    )
+                    .frame(minHeight: 400)
                 } else {
                     LazyVStack(spacing: 20) {
                         ForEach(looks) { look in
@@ -44,7 +57,7 @@ struct FeedView: View {
             }
             .padding(.top, 16)
         }
-        .background(Color.vdqBackground.ignoresSafeArea())
+        .background(Color.runwayBlack.ignoresSafeArea())
         .refreshable {
             await loadFeed()
         }
@@ -55,9 +68,12 @@ struct FeedView: View {
 
     private func loadFeed() async {
         isLoading = true
+        hasError = false
         do {
             looks = try await APIService.shared.fetchFeed()
         } catch {
+            hasError = true
+            errorMessage = error.localizedDescription
             print("Error loading feed: \(error)")
         }
         isLoading = false
