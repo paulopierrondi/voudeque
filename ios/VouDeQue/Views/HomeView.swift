@@ -4,6 +4,7 @@ struct HomeView: View {
     @State private var stats = UserStats.sample
     @State private var dailyChallenge = Challenge.sample
     @State private var isLoading = false
+    @State private var loadError = false
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var timeRemaining = ""
 
@@ -128,6 +129,18 @@ struct HomeView: View {
             .padding(.top, 16)
         }
         .background(Color.runwayBlack.ignoresSafeArea())
+        .task {
+            await loadDailyChallenge()
+        }
+    }
+    
+    private func loadDailyChallenge() async {
+        do {
+            dailyChallenge = try await APIService.shared.fetchDailyChallenge()
+            loadError = false
+        } catch {
+            loadError = true
+        }
     }
 }
 
