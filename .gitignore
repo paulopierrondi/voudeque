@@ -1,0 +1,28 @@
+# Environment
+.env
+.venv
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# iOS
+ios/VouDeQue/*.xcuserdata
+ios/VouDeQue/*.xcworkspace/xcuserdata
+ios/VouDeQue/DerivedData/
+ios/VouDeQue/build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
