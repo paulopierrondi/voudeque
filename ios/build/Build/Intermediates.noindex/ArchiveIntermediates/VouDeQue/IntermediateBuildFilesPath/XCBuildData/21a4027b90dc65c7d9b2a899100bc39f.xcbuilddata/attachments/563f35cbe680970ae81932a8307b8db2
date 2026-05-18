@@ -1,0 +1,106 @@
+{
+  "" : {
+    "const-values" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary.swiftconstvalues",
+    "dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary.d",
+    "diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary.dia",
+    "emit-module-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary-emit-module.dia",
+    "pch" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQue-primary.swiftdeps"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/ContentView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Models/LookModels.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookModels.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookModels.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookModels.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Services/APIService.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/APIService.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/APIService.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/APIService.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Utils/Extensions.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/Extensions.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/Extensions.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/Extensions.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/AsyncImageView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/AsyncImageView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/AsyncImageView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/AsyncImageView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ChallengesView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ChallengesView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ChallengesView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ChallengesView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/EmptyStateView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/EmptyStateView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/EmptyStateView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/EmptyStateView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ErrorStateView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ErrorStateView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ErrorStateView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ErrorStateView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/FeedView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/FeedView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/FeedView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/FeedView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/GenerateLookView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/GenerateLookView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/GenerateLookView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/GenerateLookView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/HomeView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/HomeView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/LookCardView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookCardView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookCardView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookCardView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/LookResultView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookResultView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookResultView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/LookResultView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/OnboardingView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/OnboardingView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ProfileView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ProfileView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ShareSheet.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ShareSheet.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ShareSheet.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ShareSheet.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/Views/ShimmerLoadingView.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ShimmerLoadingView.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ShimmerLoadingView.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/ShimmerLoadingView.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/VouDeQue/VouDeQueApp.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/VouDeQueApp.o"
+  },
+  "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/paulopierrondi/Downloads/voudeque/ios/build/Build/Intermediates.noindex/ArchiveIntermediates/VouDeQue/IntermediateBuildFilesPath/VouDeQue.build/Release-iphoneos/VouDeQue.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
