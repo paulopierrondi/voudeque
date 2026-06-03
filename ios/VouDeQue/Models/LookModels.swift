@@ -1,7 +1,7 @@
 import Foundation
 
 struct LookItem: Identifiable, Codable, Equatable {
-    let id = UUID()
+    var id: UUID = UUID()
     let name: String
     let category: String
     let color: String

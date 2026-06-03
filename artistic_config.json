@@ -1,0 +1,74 @@
+{
+  "out_dir": "/Users/paulopierrondi/Projects/voudeque/ios/screenshots/artistic",
+  "src_dir": "/Users/paulopierrondi/Projects/voudeque/ios/screenshots",
+  "sizes": {"iphone67": [1290, 2796]},
+  "bg_fallback": "#0D0A2E",
+  "screens": [
+    {
+      "file": "01_onboarding",
+      "src": "01_onboarding.png",
+      "tag": "✦  VIAGENS COM IA  ✦",
+      "headline": "Descubra para onde ir",
+      "subtitle": "Roteiros inteligentes • Orçamento • Seu estilo",
+      "brand": "VouDeQuê",
+      "bg_colors": ["#160630","#2A0845","#0D0A2E","#0D0A2E"],
+      "glows": [{"x":0.18,"y":0.22,"r":0.5,"color":"#8C30C8","a":90},{"x":0.85,"y":0.15,"r":0.45,"color":"#FF2896","a":80},{"x":0.5,"y":0.55,"r":0.55,"color":"#640AB4","a":60}],
+      "tag_color": "#FF6B9D"
+    },
+    {
+      "file": "02_generate",
+      "src": "02_generate.png",
+      "tag": "✦  GERAR ROTEIRO  ✦",
+      "headline": "Planeje em minutos",
+      "subtitle": "Destino • Dias • Interesses • Orçamento",
+      "brand": "VouDeQuê",
+      "bg_colors": ["#0A0A1E","#0F1535","#0A0A1E","#0A0820"],
+      "glows": [{"x":0.15,"y":0.4,"r":0.4,"color":"#FF5050","a":70},{"x":0.85,"y":0.35,"r":0.4,"color":"#B450FF","a":65},{"x":0.5,"y":0.7,"r":0.5,"color":"#F59E0B","a":55}],
+      "tag_color": "#F59E0B"
+    },
+    {
+      "file": "03_result",
+      "src": "03_result.png",
+      "tag": "✦  ROTEIRO PRONTO  ✦",
+      "headline": "Seu plano de viagem perfeito",
+      "subtitle": "Dia a dia • Mapas • Restaurantes • Dicas locais",
+      "brand": "VouDeQuê",
+      "bg_colors": ["#0D0621","#1A0A3A","#0D0621","#080515"],
+      "glows": [{"x":0.5,"y":0.3,"r":0.6,"color":"#8232FF","a":80},{"x":0.1,"y":0.6,"r":0.4,"color":"#FF3278","a":60},{"x":0.9,"y":0.7,"r":0.4,"color":"#50B4FF","a":50}],
+      "tag_color": "#C084FC"
+    },
+    {
+      "file": "04_feed",
+      "src": "04_feed.png",
+      "tag": "✦  INSPIRAÇÃO  ✦",
+      "headline": "Descubra destinos incríveis",
+      "subtitle": "Feed de viagens • Fotos • Dicas da comunidade",
+      "brand": "VouDeQuê",
+      "bg_colors": ["#1A0520","#320A3A","#1A0520","#0F0315"],
+      "glows": [{"x":0.5,"y":0.5,"r":0.7,"color":"#FF1E8C","a":100},{"x":0.15,"y":0.35,"r":0.45,"color":"#C832FF","a":70},{"x":0.85,"y":0.65,"r":0.4,"color":"#FF6428","a":70}],
+      "tag_color": "#FF6B9D"
+    },
+    {
+      "file": "05_challenge",
+      "src": "05_challenge.png",
+      "tag": "✦  DESAFIOS  ✦",
+      "headline": "Viaje e conquiste",
+      "subtitle": "Missões • Badges • Ranking de viajantes",
+      "brand": "VouDeQuê",
+      "bg_colors": ["#080520","#100828","#1A0C34","#0C0820"],
+      "glows": [{"x":0.5,"y":0.25,"r":0.6,"color":"#C8A028","a":90},{"x":0.1,"y":0.5,"r":0.4,"color":"#641EFF","a":60},{"x":0.9,"y":0.6,"r":0.4,"color":"#FF781E","a":60}],
+      "tag_color": "#F59E0B"
+    },
+    {
+      "file": "06_profile",
+      "src": "06_profile.png",
+      "tag": "✦  PERFIL  ✦",
+      "headline": "Seu passaporte digital",
+      "subtitle": "Viagens • Conquistas • Lista de desejos",
+      "brand": "VouDeQuê",
+      "bg_colors": ["#0A1E1A","#0A2E2E","#061A1A","#061A1A"],
+      "glows": [{"x":0.2,"y":0.25,"r":0.5,"color":"#34D399","a":90},{"x":0.8,"y":0.2,"r":0.45,"color":"#10B981","a":80},{"x":0.5,"y":0.5,"r":0.55,"color":"#059669","a":60}],
+      "tag_color": "#34D399"
+    }
+  ]
+}

@@ -13,24 +13,24 @@ struct EmptyStateView: View {
 
             ZStack {
                 Circle()
-                    .fill(Color.fashionGold.opacity(0.08))
-                    .frame(width: 100, height: 100)
+                    .fill(Color.vdqLinen)
+                    .frame(width: 88, height: 88)
 
                 Image(systemName: icon)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 40, height: 40)
-                    .foregroundStyle(Color.goldGradient)
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.vdqAsh)
             }
 
             Text(title)
-                .font(.runwayTitle(size: 20))
-                .foregroundColor(.fashionChampagne)
+                .font(.vdqSerif(20, italic: true))
+                .foregroundColor(.vdqInk)
                 .multilineTextAlignment(.center)
 
             Text(message)
-                .font(.runwayBody(size: 15))
-                .foregroundColor(.fashionChampagne.opacity(0.6))
+                .font(.vdqSans(15))
+                .foregroundColor(.vdqAsh)
                 .multilineTextAlignment(.center)
                 .lineSpacing(3)
                 .padding(.horizontal, 32)
@@ -41,8 +41,11 @@ struct EmptyStateView: View {
                     action()
                 }) {
                     Text(actionTitle)
-                        .font(.runwayTitle(size: 16, weight: .bold))
-                        .runwayButton()
+                        .font(.vdqSerif(16, italic: true))
+                        .foregroundColor(.vdqBone)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 16)
+                        .background(Color.vdqInk)
                 }
                 .pressAnimation()
                 .padding(.horizontal, 32)
@@ -52,7 +55,7 @@ struct EmptyStateView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.runwayBlack.ignoresSafeArea())
+        .background(Color.vdqBone.ignoresSafeArea())
     }
 }
 

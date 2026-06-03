@@ -1,31 +1,17 @@
 import SwiftUI
 
-// MARK: - Color Palette
+// MARK: - Color Palette (Edição Cereja 2026)
 
 extension Color {
-    // Backgrounds
-    static let runwayBlack = Color(hex: "0A0A0F")
-    static let runwayCharcoal = Color(hex: "14141B")
-    static let runwayGraphite = Color(hex: "1E1E28")
-    static let runwayWarm = Color(hex: "1A1512")
-
-    // Accents — Fashion Gold & Rosê
-    static let fashionGold = Color(hex: "D4AF37")
-    static let fashionGoldSoft = Color(hex: "E8D08A")
-    static let fashionRose = Color(hex: "E8B4B8")
-    static let fashionChampagne = Color(hex: "F5F0E8")
-
-    // Gradients
-    static let goldGradient = LinearGradient(
-        colors: [fashionGold, fashionRose],
-        startPoint: .leading,
-        endPoint: .trailing
-    )
-    static let darkGradient = LinearGradient(
-        colors: [runwayCharcoal, runwayWarm],
-        startPoint: .top,
-        endPoint: .bottom
-    )
+    static let vdqAccent  = Color(hex: "#D1392E")
+    static let vdqBone    = Color(hex: "#F8F4EC")
+    static let vdqPaper   = Color(hex: "#F1ECDF")
+    static let vdqLinen   = Color(hex: "#E9E2D1")
+    static let vdqInk     = Color(hex: "#1A1714")
+    static let vdqInk2    = Color(hex: "#2B2622")
+    static let vdqAsh     = Color(hex: "#6B655B")
+    static let vdqAsh2    = Color(hex: "#A39C8F")
+    static let vdqRule    = Color.vdqInk.opacity(0.16)
 
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -55,74 +41,28 @@ extension Color {
 // MARK: - Typography
 
 extension Font {
-    static func runwayDisplay(size: CGFloat = 34, weight: Font.Weight = .medium) -> Font {
-        .system(size: size, weight: weight, design: .serif)
+    static func vdqMasthead(_ size: CGFloat) -> Font {
+        Font.custom("BodoniModa-VariableFont_opsz,wght", size: size)
     }
 
-    static func runwayTitle(size: CGFloat = 22, weight: Font.Weight = .semibold) -> Font {
-        .system(size: size, weight: weight, design: .default)
+    static func vdqDisplay(_ size: CGFloat, italic: Bool = false) -> Font {
+        Font.custom(italic ? "BodoniModa-Italic-VariableFont_opsz,wght" : "BodoniModa-VariableFont_opsz,wght", size: size)
     }
 
-    static func runwayBody(size: CGFloat = 16, weight: Font.Weight = .regular) -> Font {
-        .system(size: size, weight: weight, design: .default)
+    static func vdqSerif(_ size: CGFloat, italic: Bool = false) -> Font {
+        Font.custom(italic ? "InstrumentSerif-Italic" : "InstrumentSerif-Regular", size: size)
     }
 
-    static func runwayCaption(size: CGFloat = 12, weight: Font.Weight = .medium) -> Font {
-        .system(size: size, weight: weight, design: .default)
+    static func vdqSans(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
+        Font.custom("Geist-VariableFont_wght", size: size).weight(weight)
+    }
+
+    static func vdqMono(_ size: CGFloat) -> Font {
+        Font.custom("GeistMono-VariableFont_wght", size: size)
     }
 }
 
 // MARK: - View Modifiers
-
-struct RunwayCardModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .background(Color.runwayCharcoal)
-            .cornerRadius(16)
-            .overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.fashionGold.opacity(0.15), lineWidth: 1)
-            )
-            .shadow(color: .black.opacity(0.25), radius: 8, x: 0, y: 4)
-    }
-}
-
-struct RunwayButtonModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .foregroundColor(.fashionChampagne)
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 16)
-            .background(Color.goldGradient)
-            .cornerRadius(14)
-    }
-}
-
-struct RunwayTagModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .font(.runwayCaption())
-            .foregroundColor(.fashionGold)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 6)
-            .background(Color.fashionGold.opacity(0.12))
-            .cornerRadius(8)
-    }
-}
-
-struct RunwayTextFieldModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .padding(.horizontal, 14)
-            .padding(.vertical, 12)
-            .background(Color.runwayGraphite)
-            .cornerRadius(12)
-            .overlay(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.fashionGold.opacity(0.2), lineWidth: 1)
-            )
-    }
-}
 
 struct PressAnimationModifier: ViewModifier {
     @State private var isPressed = false
@@ -139,25 +79,42 @@ struct PressAnimationModifier: ViewModifier {
     }
 }
 
+struct VdqEyebrowModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.vdqMono(11))
+            .kerning(2.4)
+            .textCase(.uppercase)
+            .foregroundColor(.vdqAsh)
+    }
+}
+
+struct VdqHairlineModifier: ViewModifier {
+    let edge: Edge
+
+    func body(content: Content) -> some View {
+        content
+            .overlay(
+                Rectangle()
+                    .fill(Color.vdqRule)
+                    .frame(height: 1 / UIScreen.main.scale)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: edge == .top ? .top : .bottom),
+                alignment: edge == .top ? .top : .bottom
+            )
+    }
+}
+
 extension View {
-    func runwayCard() -> some View {
-        modifier(RunwayCardModifier())
-    }
-
-    func runwayButton() -> some View {
-        modifier(RunwayButtonModifier())
-    }
-
-    func runwayTag() -> some View {
-        modifier(RunwayTagModifier())
-    }
-
-    func runwayTextField() -> some View {
-        modifier(RunwayTextFieldModifier())
-    }
-
     func pressAnimation() -> some View {
         modifier(PressAnimationModifier())
+    }
+
+    func vdqEyebrow() -> some View {
+        modifier(VdqEyebrowModifier())
+    }
+
+    func vdqHairline(edge: Edge = .bottom) -> some View {
+        modifier(VdqHairlineModifier(edge: edge))
     }
 }
 
@@ -200,6 +157,7 @@ extension View {
 
 // MARK: - Haptics
 
+@MainActor
 enum HapticFeedback {
     static func light() {
         let generator = UIImpactFeedbackGenerator(style: .light)
@@ -240,23 +198,6 @@ extension Date {
     }
 }
 
-// MARK: - Legacy Compatibility Aliases
-
-extension Color {
-    static let vdqBackground = runwayBlack
-    static let vdqSurface = runwayCharcoal
-    static let vdqSurfaceLight = runwayGraphite
-    static let vdqPurple = fashionGold
-    static let vdqPink = fashionRose
-    static let vdqAccent = goldGradient
-}
-
-extension View {
-    func vdqCardStyle() -> some View {
-        runwayCard()
-    }
-}
-
 // MARK: - Color Name Mapping
 
 func colorForName(_ name: String) -> Color {
@@ -271,8 +212,8 @@ func colorForName(_ name: String) -> Color {
     case "roxo", "lilás": return .purple
     case "laranja": return .orange
     case "cinza": return .gray
-    case "bege", "marrom", "camelo": return Color(hex: "C4A484")
-    case "prata", "dourado": return Color(hex: "C0C0C0")
+    case "bege", "marrom", "camelo": return Color(hex: "#C4A484")
+    case "prata", "dourado": return Color(hex: "#C0C0C0")
     default: return .gray
     }
 }

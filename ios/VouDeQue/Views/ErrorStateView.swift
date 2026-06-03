@@ -10,24 +10,24 @@ struct ErrorStateView: View {
 
             ZStack {
                 Circle()
-                    .fill(Color.fashionRose.opacity(0.1))
-                    .frame(width: 100, height: 100)
+                    .fill(Color.vdqLinen)
+                    .frame(width: 88, height: 88)
 
                 Image(systemName: "exclamationmark.triangle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 40, height: 40)
-                    .foregroundColor(.fashionRose)
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.vdqAccent)
             }
 
             Text("Algo deu errado")
-                .font(.runwayTitle(size: 20))
-                .foregroundColor(.fashionChampagne)
+                .font(.vdqSerif(20, italic: true))
+                .foregroundColor(.vdqInk)
                 .multilineTextAlignment(.center)
 
             Text(message)
-                .font(.runwayBody(size: 15))
-                .foregroundColor(.fashionChampagne.opacity(0.6))
+                .font(.vdqSans(15))
+                .foregroundColor(.vdqAsh)
                 .multilineTextAlignment(.center)
                 .lineSpacing(3)
                 .padding(.horizontal, 32)
@@ -38,11 +38,14 @@ struct ErrorStateView: View {
             }) {
                 HStack(spacing: 8) {
                     Image(systemName: "arrow.clockwise")
-                        .font(.system(size: 16, weight: .semibold))
+                        .font(.system(size: 14, weight: .semibold))
                     Text("Tentar novamente")
-                        .font(.runwayTitle(size: 16, weight: .bold))
+                        .font(.vdqSerif(15, italic: true))
                 }
-                .runwayButton()
+                .foregroundColor(.vdqBone)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 16)
+                .background(Color.vdqInk)
             }
             .pressAnimation()
             .padding(.horizontal, 32)
@@ -51,12 +54,12 @@ struct ErrorStateView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.runwayBlack.ignoresSafeArea())
+        .background(Color.vdqBone.ignoresSafeArea())
     }
 }
 
 #Preview {
-    ErrorStateView(message: "Não foi possível carregar os looks. Verifique sua conexão.") {
+    ErrorStateView(message: "Nao foi possivel carregar os looks. Verifique sua conexao.") {
         print("Retry tapped")
     }
 }

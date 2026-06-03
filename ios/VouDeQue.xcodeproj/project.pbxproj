@@ -13,13 +13,19 @@
 		1C85753CDC39FBBA66E99E59 /* GenerateLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09211DDB10670C789C5C31 /* GenerateLookView.swift */; };
 		1D5966F22A49754BEA119037 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E5329818A4BC9F044DA937 /* HomeView.swift */; };
 		2153EFDE09BC175B9DE0BDAE /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B635509E450008E33230A8 /* ErrorStateView.swift */; };
+		238AA170975F7BF22FD30EE2 /* BodoniModa-Italic-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0284B289996314AE29D212EE /* BodoniModa-Italic-VariableFont_opsz,wght.ttf */; };
 		2996C172C587D853D0DEA5B5 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E160098ED6A797D4B415CED /* FeedView.swift */; };
 		3858A69901A74973A973455E /* VouDeQueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA20885221B288E65946A5F /* VouDeQueApp.swift */; };
+		44FA866EDA87488B1863D8A7 /* Geist-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06431365BA67CE3920EE86B8 /* Geist-VariableFont_wght.ttf */; };
 		579E04479D7DC7E4B6E7F893 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C2CDCCDBE86EB9966D730 /* ShareSheet.swift */; };
 		592EB19BEAFA45C7320D28DF /* LookModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F728E170B467A9006A15D0 /* LookModels.swift */; };
 		5A7B08940861EE8647170D6D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956B12C10F3D5D0B3E16445 /* AsyncImageView.swift */; };
+		5ADF7AA1E05BA160D05E4DB5 /* InstrumentSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60D1A7968D9A48CBFE7C29D3 /* InstrumentSerif-Italic.ttf */; };
 		63BC1647968416491303D4D8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B94A8CD89B904E5F07622 /* EmptyStateView.swift */; };
+		6E80054413493C4703ECB782 /* InstrumentSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EA72BB9EF9B60432C36667B /* InstrumentSerif-Regular.ttf */; };
+		75E4C164D3B908DD908D028E /* BodoniModa-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0405DE14CA7B009E6898A12 /* BodoniModa-VariableFont_opsz,wght.ttf */; };
 		85A2D8C08D9090581D880CAB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8466975EA0B6D2946457BA7 /* OnboardingView.swift */; };
+		89C7FB9565C93062891F0DD8 /* GeistMono-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68243F0CC6CE7939EFBCABF7 /* GeistMono-VariableFont_wght.ttf */; };
 		A6AA420F01CF89486B113832 /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5E3F819A96CE255D4255 /* ChallengesView.swift */; };
 		B05C8234C8D6E0FE429A9680 /* ShimmerLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878AD8BAB3279468F1836FD /* ShimmerLoadingView.swift */; };
 		B0A00AA5DB8D10B7EC97A2A9 /* VouDeQueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C64A2732B7181FEC28E358 /* VouDeQueUITests.swift */; };
@@ -40,8 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0284B289996314AE29D212EE /* BodoniModa-Italic-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BodoniModa-Italic-VariableFont_opsz,wght.ttf"; path = "Fonts/BodoniModa-Italic-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		06431365BA67CE3920EE86B8 /* Geist-VariableFont_wght.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Geist-VariableFont_wght.ttf"; path = "Fonts/Geist-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		1DA20885221B288E65946A5F /* VouDeQueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouDeQueApp.swift; sourceTree = "<group>"; };
 		1E160098ED6A797D4B415CED /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		1EA72BB9EF9B60432C36667B /* InstrumentSerif-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "InstrumentSerif-Regular.ttf"; path = "Fonts/InstrumentSerif-Regular.ttf"; sourceTree = "<group>"; };
 		24C64A2732B7181FEC28E358 /* VouDeQueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouDeQueUITests.swift; sourceTree = "<group>"; };
 		28C2D74B788B58DD053428A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2A5B94A8CD89B904E5F07622 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
@@ -50,12 +59,15 @@
 		3FFB9D2B5BB1B5E1E793A702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		50B635509E450008E33230A8 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
 		52F1060788B842D34550D291 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		60D1A7968D9A48CBFE7C29D3 /* InstrumentSerif-Italic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "InstrumentSerif-Italic.ttf"; path = "Fonts/InstrumentSerif-Italic.ttf"; sourceTree = "<group>"; };
 		67E5329818A4BC9F044DA937 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		68243F0CC6CE7939EFBCABF7 /* GeistMono-VariableFont_wght.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "GeistMono-VariableFont_wght.ttf"; path = "Fonts/GeistMono-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		6A09211DDB10670C789C5C31 /* GenerateLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLookView.swift; sourceTree = "<group>"; };
 		6F080DA2F0A1E326E635748E /* LookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookCardView.swift; sourceTree = "<group>"; };
 		78C346BC94276F22E8C3D665 /* VouDeQueUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VouDeQueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		869229D7A54A2C9FA10C90CD /* VouDeQue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VouDeQue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7A5E3F819A96CE255D4255 /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
+		B0405DE14CA7B009E6898A12 /* BodoniModa-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BodoniModa-VariableFont_opsz,wght.ttf"; path = "Fonts/BodoniModa-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
 		B6F728E170B467A9006A15D0 /* LookModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookModels.swift; sourceTree = "<group>"; };
 		B878AD8BAB3279468F1836FD /* ShimmerLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerLoadingView.swift; sourceTree = "<group>"; };
 		C8466975EA0B6D2946457BA7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -97,6 +109,7 @@
 				E9C347D4F9AFF7CBC1968930 /* Services */,
 				43777E91EABEE0A59BA2E1C5 /* Utils */,
 				0692ABC64CD48A3C2502EC19 /* Views */,
+				58CFF7771BA162FC4484B124 /* Fonts */,
 			);
 			path = VouDeQue;
 			sourceTree = "<group>";
@@ -107,6 +120,19 @@
 				28C2D74B788B58DD053428A2 /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		58CFF7771BA162FC4484B124 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B0405DE14CA7B009E6898A12 /* BodoniModa-VariableFont_opsz,wght.ttf */,
+				0284B289996314AE29D212EE /* BodoniModa-Italic-VariableFont_opsz,wght.ttf */,
+				1EA72BB9EF9B60432C36667B /* InstrumentSerif-Regular.ttf */,
+				60D1A7968D9A48CBFE7C29D3 /* InstrumentSerif-Italic.ttf */,
+				06431365BA67CE3920EE86B8 /* Geist-VariableFont_wght.ttf */,
+				68243F0CC6CE7939EFBCABF7 /* GeistMono-VariableFont_wght.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		787623FA9ABF11EA58AEA0D0 = {
@@ -166,8 +192,6 @@
 				B4D19CF7974A11DEE6758622 /* PBXTargetDependency */,
 			);
 			name = VouDeQueUITests;
-			packageProductDependencies = (
-			);
 			productName = VouDeQueUITests;
 			productReference = 78C346BC94276F22E8C3D665 /* VouDeQueUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -184,8 +208,6 @@
 			dependencies = (
 			);
 			name = VouDeQue;
-			packageProductDependencies = (
-			);
 			productName = VouDeQue;
 			productReference = 869229D7A54A2C9FA10C90CD /* VouDeQue.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +258,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4F7BE9E1C46B69398DEA68A /* Assets.xcassets in Resources */,
+				75E4C164D3B908DD908D028E /* BodoniModa-VariableFont_opsz,wght.ttf in Resources */,
+				238AA170975F7BF22FD30EE2 /* BodoniModa-Italic-VariableFont_opsz,wght.ttf in Resources */,
+				6E80054413493C4703ECB782 /* InstrumentSerif-Regular.ttf in Resources */,
+				5ADF7AA1E05BA160D05E4DB5 /* InstrumentSerif-Italic.ttf in Resources */,
+				44FA866EDA87488B1863D8A7 /* Geist-VariableFont_wght.ttf in Resources */,
+				89C7FB9565C93062891F0DD8 /* GeistMono-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,7 +366,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8ULNGWJZ6B;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -355,14 +384,10 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permita acesso às fotos para criar looks com IA.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = (
-					arm64,
-				);
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = (
-					UIInterfaceOrientationPortrait,
-				);
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arm64;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulopierrondi.voudeque;
@@ -411,7 +436,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 8ULNGWJZ6B;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -435,14 +460,10 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permita acesso às fotos para criar looks com IA.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = (
-					arm64,
-				);
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = (
-					UIInterfaceOrientationPortrait,
-				);
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arm64;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -460,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

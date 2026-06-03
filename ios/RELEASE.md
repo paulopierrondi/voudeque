@@ -15,13 +15,13 @@
 
 ### Opção A: Script Shell (recomendado)
 ```bash
-cd /Users/paulopierrondi/Downloads/voudeque/ios
+cd /Users/paulopierrondi/Projects/voudeque/ios
 ./release.sh
 ```
 
 ### Opção B: Comandos Manuais
 ```bash
-cd /Users/paulopierrondi/Downloads/voudeque/ios
+cd /Users/paulopierrondi/Projects/voudeque/ios
 
 # 1. Archive
 xcodebuild -project VouDeQue.xcodeproj \

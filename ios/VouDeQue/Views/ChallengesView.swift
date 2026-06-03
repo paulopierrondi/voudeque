@@ -8,16 +8,16 @@ struct ChallengesView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 24) {
+            VStack(spacing: 28) {
                 // Header
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Desafios")
-                            .font(.runwayDisplay(size: 28))
-                            .foregroundColor(.fashionChampagne)
+                            .font(.vdqDisplay(28, italic: true))
+                            .foregroundColor(.vdqInk)
                         Text("Compita e evolua seu estilo")
-                            .font(.runwayBody(size: 15))
-                            .foregroundColor(.fashionChampagne.opacity(0.6))
+                            .font(.vdqSans(15))
+                            .foregroundColor(.vdqAsh)
                     }
                     Spacer()
                 }
@@ -25,68 +25,48 @@ struct ChallengesView: View {
 
                 // Current Challenge Card
                 VStack(alignment: .leading, spacing: 16) {
-                    // Badge
                     HStack {
-                        HStack(spacing: 6) {
-                            Image(systemName: "flame.fill")
-                                .font(.runwayCaption())
-                            Text("DESAFIO ATIVO")
-                                .font(.runwayCaption(weight: .bold))
-                        }
-                        .foregroundColor(.fashionGold)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(Color.fashionGold.opacity(0.12))
-                        .cornerRadius(8)
+                        Text("DESAFIO ATIVO")
+                            .font(.vdqMono(10))
+                            .foregroundColor(.vdqAccent)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 4)
+                            .overlay(
+                                Rectangle()
+                                    .stroke(Color.vdqAccent.opacity(0.3), lineWidth: 1)
+                            )
 
                         Spacer()
 
-                        HStack(spacing: 4) {
-                            Image(systemName: "person.2.fill")
-                                .font(.runwayCaption())
-                            Text("\(challenge.participants) participantes")
-                                .font(.runwayCaption())
-                        }
-                        .foregroundColor(.fashionChampagne.opacity(0.5))
+                        Text("\(challenge.participants) participantes")
+                            .font(.vdqMono(10))
+                            .foregroundColor(.vdqAsh)
                     }
 
                     Text(challenge.title)
-                        .font(.runwayTitle(size: 22))
-                        .foregroundColor(.fashionChampagne)
+                        .font(.vdqSerif(22, italic: true))
+                        .foregroundColor(.vdqInk)
 
                     Text(challenge.description)
-                        .font(.runwayBody(size: 15))
-                        .foregroundColor(.fashionChampagne.opacity(0.75))
+                        .font(.vdqSans(15))
+                        .foregroundColor(.vdqInk2)
                         .lineSpacing(3)
 
-                    // Theme
-                    HStack(spacing: 6) {
-                        Image(systemName: "tag.fill")
-                            .font(.runwayCaption())
-                            .foregroundColor(.fashionGold)
-                        Text("Tema: \(challenge.theme)")
-                            .font(.runwayBody(size: 14, weight: .medium))
-                            .foregroundColor(.fashionGold)
-                    }
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 8)
-                    .background(Color.fashionGold.opacity(0.1))
-                    .cornerRadius(10)
+                    Text("Tema: \(challenge.theme)")
+                        .font(.vdqSerif(14, italic: true))
+                        .foregroundColor(.vdqAccent)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 6)
+                        .overlay(
+                            Rectangle()
+                                .stroke(Color.vdqAccent.opacity(0.2), lineWidth: 1)
+                        )
 
-                    // Countdown
                     HStack(spacing: 10) {
-                        Image(systemName: "clock")
-                            .font(.system(size: 18))
-                            .foregroundColor(.fashionRose)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Tempo restante")
-                                .font(.runwayCaption())
-                                .foregroundColor(.fashionChampagne.opacity(0.5))
-                            Text(timeRemaining)
-                                .font(.system(size: 28, weight: .bold, design: .rounded))
-                                .foregroundColor(.fashionChampagne)
-                                .monospacedDigit()
-                        }
+                        Text(timeRemaining)
+                            .font(.vdqMono(14))
+                            .foregroundColor(.vdqInk)
+                            .monospacedDigit()
                     }
                     .padding(.top, 4)
 
@@ -94,18 +74,22 @@ struct ChallengesView: View {
                         HapticFeedback.medium()
                     }) {
                         HStack(spacing: 8) {
-                            Image(systemName: "camera.fill")
-                                .font(.system(size: 16, weight: .semibold))
                             Text("Participar do Desafio")
-                                .font(.runwayTitle(size: 16, weight: .bold))
+                                .font(.vdqSerif(16, italic: true))
                         }
-                        .runwayButton()
+                        .foregroundColor(.vdqBone)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 16)
+                        .background(Color.vdqInk)
                     }
                     .pressAnimation()
                     .padding(.top, 4)
                 }
                 .padding(20)
-                .runwayCard()
+                .overlay(
+                    Rectangle()
+                        .stroke(Color.vdqRule, lineWidth: 1)
+                )
                 .padding(.horizontal, 20)
                 .onReceive(timer) { _ in
                     timeRemaining = Date().timeRemainingString(to: challenge.endsAt)
@@ -117,9 +101,9 @@ struct ChallengesView: View {
                 // Top 3 Ranking
                 VStack(alignment: .leading, spacing: 16) {
                     HStack {
-                        Label("Top 3", systemImage: "trophy.fill")
-                            .font(.runwayTitle(size: 18))
-                            .foregroundColor(.fashionChampagne)
+                        Text("Top 3")
+                            .font(.vdqSerif(18, italic: true))
+                            .foregroundColor(.vdqInk)
                         Spacer()
                     }
                     .padding(.horizontal, 20)
@@ -145,7 +129,7 @@ struct ChallengesView: View {
             }
             .padding(.top, 16)
         }
-        .background(Color.runwayBlack.ignoresSafeArea())
+        .background(Color.vdqBone.ignoresSafeArea())
     }
 }
 
@@ -155,56 +139,45 @@ struct RankingRow: View {
 
     var rankColor: Color {
         switch rank {
-        case 1: return Color.fashionGold
-        case 2: return Color(hex: "C0C0C0")
-        case 3: return Color(hex: "CD7F32")
+        case 1: return Color.vdqInk
+        case 2: return Color.vdqAsh
+        case 3: return Color.vdqAsh2
         default: return .gray
         }
     }
 
     var body: some View {
         HStack(spacing: 14) {
-            ZStack {
-                Circle()
-                    .fill(rankColor.opacity(0.15))
-                    .frame(width: 36, height: 36)
-                Text("\(rank)")
-                    .font(.runwayBody(size: 15, weight: .bold))
-                    .foregroundColor(rankColor)
-            }
+            Text("\(rank)")
+                .font(.vdqMono(14))
+                .foregroundColor(rankColor)
+                .frame(width: 24, alignment: .leading)
 
-            Image(systemName: "person.circle.fill")
+            Image(systemName: "person.circle")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 40, height: 40)
-                .foregroundStyle(Color.fashionGold.opacity(0.7))
+                .frame(width: 36, height: 36)
+                .foregroundColor(.vdqAsh)
 
             VStack(alignment: .leading, spacing: 3) {
-                Text(look.userName ?? "Usuário")
-                    .font(.runwayBody(size: 15, weight: .semibold))
-                    .foregroundColor(.fashionChampagne)
+                Text(look.userName ?? "Usuario")
+                    .font(.vdqSans(15, weight: .medium))
+                    .foregroundColor(.vdqInk)
                 Text(look.occasion)
-                    .font(.runwayCaption())
-                    .foregroundColor(.fashionChampagne.opacity(0.5))
+                    .font(.vdqMono(10))
+                    .foregroundColor(.vdqAsh)
             }
 
             Spacer()
 
-            HStack(spacing: 4) {
-                Image(systemName: "heart.fill")
-                    .font(.runwayCaption())
-                    .foregroundColor(.fashionRose)
-                Text("\(look.votes)")
-                    .font(.runwayBody(size: 14, weight: .bold))
-                    .foregroundColor(.fashionChampagne)
-            }
+            Text("\(look.votes)")
+                .font(.vdqMono(12))
+                .foregroundColor(.vdqAsh)
         }
         .padding(14)
-        .background(Color.runwayCharcoal)
-        .cornerRadius(16)
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(Color.fashionGold.opacity(0.1), lineWidth: 1)
+            Rectangle()
+                .stroke(Color.vdqRule, lineWidth: 1)
         )
     }
 }

@@ -51,7 +51,7 @@ Na sidebar, clique em **App Information**:
 Após criar o app record, volte ao terminal e rode:
 
 ```bash
-cd /Users/paulopierrondi/Downloads/voudeque/ios
+cd /Users/paulopierrondi/Projects/voudeque/ios
 ./release.sh
 ```
 

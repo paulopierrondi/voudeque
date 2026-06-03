@@ -33,6 +33,7 @@ final class APIService {
     private let baseURL: URL
     private var token: String?
     private let session: URLSession
+    private let isUITesting: Bool
     
     private init() {
         let raw = Bundle.main.object(forInfoDictionaryKey: "API_BASE_URL") as? String
@@ -43,6 +44,7 @@ final class APIService {
         config.timeoutIntervalForRequest = 30
         config.waitsForConnectivity = true
         self.session = URLSession(configuration: config)
+        self.isUITesting = ProcessInfo.processInfo.arguments.contains("--uitest-reset")
     }
     
     // MARK: - Auth
@@ -68,6 +70,19 @@ final class APIService {
     // MARK: - Looks
     
     func generateLook(occasion: String, notes: String) async throws -> Look {
+        if isUITesting {
+            return Look(
+                id: UUID(),
+                imageURL: nil,
+                description: notes.isEmpty ? Look.sample.description : notes,
+                items: Look.sample.items,
+                occasion: occasion,
+                votes: 0,
+                createdAt: Date(),
+                userName: "Voce",
+                userAvatar: nil
+            )
+        }
         try await ensureAuthenticated()
         let body = ["occasion": occasion, "style_notes": notes]
         let (data, _) = try await request(path: "/api/v1/looks/generate", method: "POST", body: body)
@@ -86,6 +101,9 @@ final class APIService {
     }
     
     func fetchFeed() async throws -> [Look] {
+        if isUITesting {
+            return Look.sampleFeed
+        }
         try await ensureAuthenticated()
         let (data, _) = try await request(path: "/api/v1/looks/feed", method: "GET")
         let responses = try JSONDecoder().decode([LookResponseDTO].self, from: data)
@@ -105,6 +123,9 @@ final class APIService {
     }
     
     func voteLook(id: String) async throws -> Int {
+        if isUITesting {
+            return 1
+        }
         try await ensureAuthenticated()
         let body = ["look_id": id]
         let (data, _) = try await request(path: "/api/v1/looks/vote", method: "POST", body: body)
@@ -115,6 +136,9 @@ final class APIService {
     // MARK: - Challenges
     
     func fetchDailyChallenge() async throws -> Challenge {
+        if isUITesting {
+            return Challenge.sample
+        }
         try await ensureAuthenticated()
         let (data, _) = try await request(path: "/api/v1/challenges/daily", method: "GET")
         let dto = try JSONDecoder().decode(ChallengeResponseDTO.self, from: data)
@@ -132,6 +156,10 @@ final class APIService {
     // MARK: - Account Deletion
     
     func deleteAccount() async throws {
+        if isUITesting {
+            clearAuth()
+            return
+        }
         try await ensureAuthenticated()
         let (_, response) = try await request(path: "/api/v1/users/me", method: "DELETE")
         guard let http = response as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {

@@ -7,104 +7,114 @@ struct LookResultView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                // Generated Image / Placeholder
-                ZStack {
-                    Color.darkGradient
-                        .frame(height: 360)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 16)
-                                .stroke(Color.fashionGold.opacity(0.15), lineWidth: 1)
-                        )
+            VStack(spacing: 0) {
+                // Folio
+                HStack {
+                    Text("← Capa")
+                        .font(.vdqMono(11))
+                        .foregroundColor(.vdqAsh2)
+                    Spacer()
+                    Text("EDITORIAL · N.º 048")
+                        .font(.vdqMono(11))
+                        .foregroundColor(.vdqAsh2)
+                    Spacer()
+                    Text("↗")
+                        .font(.vdqMono(11))
+                        .foregroundColor(.vdqAsh2)
+                }
+                .padding(.horizontal, 20)
+                .padding(.top, 16)
+                .padding(.bottom, 20)
+
+                // Hero
+                ZStack(alignment: .bottomLeading) {
+                    Rectangle()
+                        .fill(Color.vdqInk)
+                        .aspectRatio(4/5, contentMode: .fit)
 
                     if let imageURL = look.imageURL, let url = URL(string: imageURL) {
                         AsyncImageView(url: url)
-                            .frame(height: 360)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .aspectRatio(4/5, contentMode: .fit)
                     } else {
-                        VStack(spacing: 16) {
-                            Image(systemName: "sparkles")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 56, height: 56)
-                                .foregroundStyle(Color.fashionGold.opacity(0.5))
-                            Text("Look Gerado")
-                                .font(.runwayTitle(size: 20))
-                                .foregroundColor(.fashionChampagne)
+                        VStack(spacing: 8) {
+                            Text("LOOK")
+                                .font(.vdqMono(11))
+                                .foregroundColor(.vdqAsh2)
                             Text(look.occasion)
-                                .font(.runwayCaption())
-                                .foregroundColor(.fashionChampagne.opacity(0.6))
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 6)
-                                .background(Color.fashionGold.opacity(0.1))
-                                .cornerRadius(8)
+                                .font(.vdqSerif(14, italic: true))
+                                .foregroundColor(.vdqAsh2)
                         }
+                    }
+
+                    // Headline overlay
+                    Text(look.description.prefix(look.description.firstIndex(of: ".")?.utf16Offset(in: look.description) ?? look.description.count) + ".")
+                        .font(.vdqDisplay(28, italic: true))
+                        .foregroundColor(.vdqBone)
+                        .lineLimit(3)
+                        .padding(20)
+                        .background(
+                            LinearGradient(
+                                colors: [.vdqInk.opacity(0.0), .vdqInk.opacity(0.85)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 28)
+
+                // Body with drop cap
+                VStack(alignment: .leading, spacing: 16) {
+                    let firstChar = String(look.description.prefix(1))
+                    let restText = String(look.description.dropFirst())
+
+                    HStack(alignment: .top, spacing: 4) {
+                        Text(firstChar)
+                            .font(.vdqDisplay(76))
+                            .foregroundColor(.vdqAccent)
+                            .frame(height: 56, alignment: .top)
+                            .padding(.top, -4)
+
+                        Text(restText)
+                            .font(.vdqSans(16))
+                            .foregroundColor(.vdqInk)
+                            .lineSpacing(6)
                     }
                 }
                 .padding(.horizontal, 20)
+                .padding(.bottom, 28)
 
-                // Description
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Descrição")
-                        .font(.runwayTitle(size: 16))
-                        .foregroundColor(.fashionChampagne)
-                    Text(look.description)
-                        .font(.runwayBody(size: 15))
-                        .foregroundColor(.fashionChampagne.opacity(0.85))
-                        .lineSpacing(4)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 20)
+                // Credits panel
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("CREDITS")
+                        .vdqEyebrow()
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 12)
 
-                // Items List
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Peças do Look")
-                        .font(.runwayTitle(size: 16))
-                        .foregroundColor(.fashionChampagne)
+                    Rectangle()
+                        .fill(Color.vdqRule)
+                        .frame(height: 1 / UIScreen.main.scale)
                         .padding(.horizontal, 20)
 
-                    VStack(spacing: 8) {
-                        ForEach(look.items) { item in
-                            HStack(spacing: 14) {
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(colorForName(item.color))
-                                    .frame(width: 40, height: 40)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
-                                            .stroke(Color.fashionGold.opacity(0.15), lineWidth: 1)
-                                    )
-
-                                VStack(alignment: .leading, spacing: 3) {
-                                    Text(item.name)
-                                        .font(.runwayBody(size: 15, weight: .semibold))
-                                        .foregroundColor(.fashionChampagne)
-                                    HStack(spacing: 6) {
-                                        Text(item.category)
-                                            .font(.runwayCaption())
-                                            .foregroundColor(.fashionChampagne.opacity(0.5))
-                                        Text("·")
-                                            .foregroundColor(.fashionChampagne.opacity(0.3))
-                                        Text(item.reason)
-                                            .font(.runwayCaption())
-                                            .foregroundColor(.fashionChampagne.opacity(0.5))
-                                            .lineLimit(1)
-                                    }
-                                }
-
-                                Spacer()
-                            }
-                            .padding(14)
-                            .background(Color.runwayCharcoal)
-                            .cornerRadius(16)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 16)
-                                    .stroke(Color.fashionGold.opacity(0.1), lineWidth: 1)
-                            )
+                    ForEach(look.items) { item in
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("\(item.category.uppercased()) — \(item.name), \(item.color)")
+                                .font(.vdqSans(14, weight: .medium))
+                                .foregroundColor(.vdqInk)
+                            Text(item.reason)
+                                .font(.vdqMono(11))
+                                .foregroundColor(.vdqAsh)
                         }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 12)
+
+                        Rectangle()
+                            .fill(Color.vdqRule)
+                            .frame(height: 1 / UIScreen.main.scale)
+                            .padding(.horizontal, 20)
                     }
-                    .padding(.horizontal, 20)
                 }
+                .padding(.bottom, 28)
 
                 // Action Buttons
                 HStack(spacing: 12) {
@@ -112,21 +122,15 @@ struct LookResultView: View {
                         HapticFeedback.light()
                         isSaved.toggle()
                     }) {
-                        HStack(spacing: 8) {
-                            Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
-                                .font(.system(size: 18, weight: .semibold))
-                            Text(isSaved ? "Salvo" : "Salvar")
-                                .font(.runwayBody(size: 16, weight: .semibold))
-                        }
-                        .foregroundColor(isSaved ? Color.fashionRose : .fashionChampagne)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 16)
-                        .background(Color.runwayCharcoal)
-                        .cornerRadius(14)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .stroke(Color.fashionGold.opacity(0.15), lineWidth: 1)
-                        )
+                        Text("Outro")
+                            .font(.vdqSerif(16, italic: true))
+                            .foregroundColor(.vdqInk)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .overlay(
+                                Rectangle()
+                                    .stroke(Color.vdqInk, lineWidth: 1)
+                            )
                     }
                     .pressAnimation()
 
@@ -134,27 +138,21 @@ struct LookResultView: View {
                         HapticFeedback.medium()
                         showShareSheet = true
                     }) {
-                        HStack(spacing: 8) {
-                            Image(systemName: "square.and.arrow.up")
-                                .font(.system(size: 18, weight: .semibold))
-                            Text("Compartilhar")
-                                .font(.runwayBody(size: 16, weight: .semibold))
-                        }
-                        .foregroundColor(.fashionChampagne)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 16)
-                        .background(Color.goldGradient)
-                        .cornerRadius(14)
+                        Text(isSaved ? "Salvo" : "Guardar no arquivo")
+                            .font(.vdqSerif(16, italic: true))
+                            .foregroundColor(.vdqBone)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .background(Color.vdqInk)
                     }
                     .pressAnimation()
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 30)
             }
-            .padding(.top, 16)
         }
-        .background(Color.runwayBlack.ignoresSafeArea())
-        .navigationTitle("Resultado")
+        .background(Color.vdqBone.ignoresSafeArea())
+        .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showShareSheet) {
             ShareSheet(items: [shareText])
@@ -162,12 +160,12 @@ struct LookResultView: View {
     }
 
     private var shareText: String {
-        var text = "✨ Look criado no VouDeQue\n\n"
+        var text = "Look criado no VouDeQue\n\n"
         text += "Ocasião: \(look.occasion)\n"
         text += "\(look.description)\n\n"
-        text += "Peças:\n"
+        text += "Pecas:\n"
         for item in look.items {
-            text += "• \(item.name) — \(item.color)\n"
+            text += "- \(item.name) — \(item.color)\n"
         }
         return text
     }

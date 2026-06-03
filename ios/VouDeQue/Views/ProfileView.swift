@@ -5,72 +5,95 @@ struct ProfileView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 24) {
-                // Header with Settings
+            VStack(spacing: 28) {
+                // Header
                 HStack {
                     Spacer()
                     Button(action: {
                         HapticFeedback.light()
                     }) {
-                        Image(systemName: "gearshape.fill")
-                            .font(.system(size: 22))
-                            .foregroundColor(.fashionChampagne.opacity(0.5))
+                        Image(systemName: "gearshape")
+                            .font(.system(size: 20))
+                            .foregroundColor(.vdqAsh)
                     }
                 }
                 .padding(.horizontal, 20)
 
                 // Avatar & Name
-                VStack(spacing: 14) {
+                VStack(spacing: 12) {
                     ZStack {
                         Circle()
-                            .fill(Color.fashionGold.opacity(0.1))
-                            .frame(width: 100, height: 100)
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.fashionGold.opacity(0.2), lineWidth: 1)
-                            )
+                            .fill(Color.vdqLinen)
+                            .frame(width: 88, height: 88)
 
                         Image(systemName: "person.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 44, height: 44)
-                            .foregroundColor(.fashionChampagne)
+                            .frame(width: 36, height: 36)
+                            .foregroundColor(.vdqAsh)
                     }
 
                     Text("Maria Silva")
-                        .font(.runwayDisplay(size: 24))
-                        .foregroundColor(.fashionChampagne)
+                        .font(.vdqDisplay(24))
+                        .foregroundColor(.vdqInk)
 
                     Text("@mariasilva")
-                        .font(.runwayBody(size: 15))
-                        .foregroundColor(.fashionChampagne.opacity(0.5))
+                        .font(.vdqMono(12))
+                        .foregroundColor(.vdqAsh)
                 }
 
-                // Stats Grid
-                HStack(spacing: 12) {
-                    ProfileStatCard(
-                        value: "\(stats.looksGenerated)",
-                        label: "Looks",
-                        icon: "sparkles.rectangle.stack"
-                    )
-                    ProfileStatCard(
-                        value: "\(stats.votesReceived)",
-                        label: "Votos",
-                        icon: "heart.fill"
-                    )
-                    ProfileStatCard(
-                        value: "#\(stats.currentRank)",
-                        label: "Ranking",
-                        icon: "trophy.fill"
-                    )
+                // Simplified Stats
+                HStack(spacing: 0) {
+                    VStack(spacing: 4) {
+                        Text("\(stats.looksGenerated)")
+                            .font(.vdqSans(20, weight: .semibold))
+                            .foregroundColor(.vdqInk)
+                        Text("Looks")
+                            .font(.vdqMono(10))
+                            .foregroundColor(.vdqAsh)
+                    }
+                    .frame(maxWidth: .infinity)
+
+                    Rectangle()
+                        .fill(Color.vdqRule)
+                        .frame(width: 1)
+
+                    VStack(spacing: 4) {
+                        Text("\(stats.votesReceived)")
+                            .font(.vdqSans(20, weight: .semibold))
+                            .foregroundColor(.vdqInk)
+                        Text("Votos")
+                            .font(.vdqMono(10))
+                            .foregroundColor(.vdqAsh)
+                    }
+                    .frame(maxWidth: .infinity)
+
+                    Rectangle()
+                        .fill(Color.vdqRule)
+                        .frame(width: 1)
+
+                    VStack(spacing: 4) {
+                        Text("#\(stats.currentRank)")
+                            .font(.vdqSans(20, weight: .semibold))
+                            .foregroundColor(.vdqInk)
+                        Text("Ranking")
+                            .font(.vdqMono(10))
+                            .foregroundColor(.vdqAsh)
+                    }
+                    .frame(maxWidth: .infinity)
                 }
+                .padding(.vertical, 16)
+                .overlay(
+                    Rectangle()
+                        .stroke(Color.vdqRule, lineWidth: 1)
+                )
                 .padding(.horizontal, 20)
 
                 // Recent Looks Section
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Looks Recentes")
-                        .font(.runwayTitle(size: 18))
-                        .foregroundColor(.fashionChampagne)
+                        .font(.vdqSerif(18, italic: true))
+                        .foregroundColor(.vdqInk)
                         .padding(.horizontal, 20)
 
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -84,13 +107,18 @@ struct ProfileView: View {
                 }
 
                 // Menu Items
-                VStack(spacing: 2) {
-                    ProfileMenuItem(icon: "bookmark.fill", title: "Looks Salvos")
-                    ProfileMenuItem(icon: "flame.fill", title: "Meus Desafios")
-                    ProfileMenuItem(icon: "arrow.up.heart.fill", title: "Looks Enviados")
-                    ProfileMenuItem(icon: "bell.fill", title: "Notificações")
-                    ProfileMenuItem(icon: "questionmark.circle.fill", title: "Ajuda")
+                VStack(spacing: 0) {
+                    ProfileMenuItem(icon: "bookmark", title: "Looks Salvos")
+                    ProfileMenuItem(icon: "flame", title: "Meus Desafios")
+                    ProfileMenuItem(icon: "arrow.up.heart", title: "Looks Enviados")
+                    ProfileMenuItem(icon: "bell", title: "Notificacoes")
+                    ProfileMenuItem(icon: "questionmark.circle", title: "Ajuda")
                 }
+                .padding(.horizontal, 20)
+                .overlay(
+                    Rectangle()
+                        .stroke(Color.vdqRule, lineWidth: 1)
+                )
                 .padding(.horizontal, 20)
 
                 // Account Deletion
@@ -101,67 +129,7 @@ struct ProfileView: View {
             }
             .padding(.top, 16)
         }
-        .background(Color.runwayBlack.ignoresSafeArea())
-    }
-}
-
-struct ProfileStatCard: View {
-    let value: String
-    let label: String
-    let icon: String
-
-    var body: some View {
-        VStack(spacing: 10) {
-            Image(systemName: icon)
-                .font(.system(size: 22))
-                .foregroundStyle(Color.fashionGold)
-            Text(value)
-                .font(.runwayTitle(size: 22))
-                .foregroundColor(.fashionChampagne)
-            Text(label)
-                .font(.runwayCaption())
-                .foregroundColor(.fashionChampagne.opacity(0.5))
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 18)
-        .runwayCard()
-    }
-}
-
-struct RecentLookCard: View {
-    let look: Look
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            ZStack {
-                Color.darkGradient
-                    .frame(width: 140, height: 160)
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
-
-                if let imageURL = look.imageURL, let url = URL(string: imageURL) {
-                    AsyncImageView(url: url)
-                        .frame(width: 140, height: 160)
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
-                } else {
-                    Image(systemName: "sparkles")
-                        .font(.system(size: 28))
-                        .foregroundStyle(Color.fashionGold.opacity(0.3))
-                }
-            }
-
-            Text(look.occasion)
-                .font(.runwayBody(size: 13, weight: .semibold))
-                .foregroundColor(.fashionChampagne)
-
-            HStack(spacing: 4) {
-                Image(systemName: "heart.fill")
-                    .font(.system(size: 11))
-                    .foregroundColor(.fashionRose)
-                Text("\(look.votes)")
-                    .font(.runwayCaption())
-                    .foregroundColor(.fashionChampagne.opacity(0.5))
-            }
-        }
+        .background(Color.vdqBone.ignoresSafeArea())
     }
 }
 
@@ -175,33 +143,62 @@ struct ProfileMenuItem: View {
         }) {
             HStack(spacing: 14) {
                 Image(systemName: icon)
-                    .font(.system(size: 20))
-                    .foregroundColor(.fashionGold)
-                    .frame(width: 32)
+                    .font(.system(size: 18))
+                    .foregroundColor(.vdqAsh)
+                    .frame(width: 28)
 
                 Text(title)
-                    .font(.runwayBody(size: 16, weight: .medium))
-                    .foregroundColor(.fashionChampagne)
+                    .font(.vdqSans(15, weight: .medium))
+                    .foregroundColor(.vdqInk2)
 
                 Spacer()
 
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(.fashionChampagne.opacity(0.3))
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(.vdqAsh2)
             }
             .padding(.horizontal, 16)
-            .padding(.vertical, 16)
-            .background(Color.runwayCharcoal)
-            .cornerRadius(14)
-            .overlay(
-                RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.fashionGold.opacity(0.1), lineWidth: 1)
-            )
+            .padding(.vertical, 14)
+            .vdqHairline(edge: .bottom)
+        }
+    }
+}
+
+struct RecentLookCard: View {
+    let look: Look
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            ZStack {
+                Rectangle()
+                    .fill(Color.vdqLinen)
+                    .frame(width: 140, height: 160)
+
+                if let imageURL = look.imageURL, let url = URL(string: imageURL) {
+                    AsyncImageView(url: url)
+                        .frame(width: 140, height: 160)
+                } else {
+                    Text("LOOK")
+                        .font(.vdqMono(10))
+                        .foregroundColor(.vdqAsh2)
+                }
+            }
+
+            Text(look.occasion)
+                .font(.vdqSans(13, weight: .medium))
+                .foregroundColor(.vdqInk)
+
+            HStack(spacing: 4) {
+                Text("\(look.votes)")
+                    .font(.vdqMono(10))
+                    .foregroundColor(.vdqAsh)
+            }
         }
     }
 }
 
 struct DeleteAccountSection: View {
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @State private var showConfirmation = false
     @State private var isDeleting = false
     @State private var errorMessage: String?
@@ -210,38 +207,36 @@ struct DeleteAccountSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Conta")
-                .font(.runwayTitle(size: 18))
-                .foregroundColor(.fashionChampagne)
+                .font(.vdqSerif(18, italic: true))
+                .foregroundColor(.vdqInk)
 
             Button(action: { showConfirmation = true }) {
                 HStack(spacing: 14) {
-                    Image(systemName: "trash.fill")
-                        .font(.system(size: 20))
-                        .foregroundColor(.fashionRose)
-                        .frame(width: 32)
+                    Image(systemName: "trash")
+                        .font(.system(size: 18))
+                        .foregroundColor(.vdqAccent)
+                        .frame(width: 28)
 
                     Text("Excluir Conta")
-                        .font(.runwayBody(size: 16, weight: .medium))
-                        .foregroundColor(.fashionRose)
+                        .font(.vdqSans(15, weight: .medium))
+                        .foregroundColor(.vdqAccent)
 
                     Spacer()
 
                     if isDeleting {
                         ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: .fashionRose))
+                            .progressViewStyle(CircularProgressViewStyle(tint: .vdqAccent))
                     } else {
                         Image(systemName: "chevron.right")
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundColor(.fashionChampagne.opacity(0.3))
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundColor(.vdqAsh2)
                     }
                 }
                 .padding(.horizontal, 16)
-                .padding(.vertical, 16)
-                .background(Color.runwayCharcoal)
-                .cornerRadius(14)
+                .padding(.vertical, 14)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.fashionRose.opacity(0.2), lineWidth: 1)
+                    Rectangle()
+                        .stroke(Color.vdqAccent.opacity(0.3), lineWidth: 1)
                 )
             }
             .disabled(isDeleting)
@@ -252,12 +247,12 @@ struct DeleteAccountSection: View {
                 performDelete()
             }
         } message: {
-            Text("Esta ação é irreversível. Todos os seus dados serão permanentemente removidos.")
+            Text("Esta acao e irreversivel. Todos os seus dados serao permanentemente removidos.")
         }
         .alert("Erro", isPresented: $showError) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text(errorMessage ?? "Não foi possível excluir a conta.")
+            Text(errorMessage ?? "Nao foi possivel excluir a conta.")
         }
     }
 
@@ -266,10 +261,10 @@ struct DeleteAccountSection: View {
         Task {
             do {
                 try await APIService.shared.deleteAccount()
-                await APIService.shared.clearAuth()
+                APIService.shared.clearAuth()
                 await MainActor.run {
                     isDeleting = false
-                    UserDefaults.standard.removeObject(forKey: "hasSeenOnboarding")
+                    hasSeenOnboarding = false
                 }
             } catch {
                 await MainActor.run {

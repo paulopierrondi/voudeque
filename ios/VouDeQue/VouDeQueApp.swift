@@ -10,19 +10,19 @@ struct VouDeQueApp: App {
         }
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(Color.runwayBlack)
+        appearance.backgroundColor = UIColor(Color.vdqBone)
         appearance.titleTextAttributes = [
-            .foregroundColor: UIColor(Color.fashionChampagne),
+            .foregroundColor: UIColor(Color.vdqInk),
             .font: UIFont.systemFont(ofSize: 17, weight: .semibold)
         ]
         appearance.largeTitleTextAttributes = [
-            .foregroundColor: UIColor(Color.fashionChampagne),
+            .foregroundColor: UIColor(Color.vdqInk),
             .font: UIFont.systemFont(ofSize: 34, weight: .medium)
         ]
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        UINavigationBar.appearance().tintColor = UIColor(Color.fashionGold)
+        UINavigationBar.appearance().tintColor = UIColor(Color.vdqInk)
     }
 
     var body: some Scene {

@@ -16,9 +16,33 @@
 		<data>
 		feqljLWnu6aqRUjpeYNEjeNaI4w=
 		</data>
+		<key>BodoniModa-Italic-VariableFont_opsz,wght.ttf</key>
+		<data>
+		+sxC3TCu2/MIK00FxsG7fv4sj+0=
+		</data>
+		<key>BodoniModa-VariableFont_opsz,wght.ttf</key>
+		<data>
+		3Nj6JQZ3UiVz7bngBcR8MRVmy8w=
+		</data>
+		<key>Geist-VariableFont_wght.ttf</key>
+		<data>
+		mlMVCeTnaOkQLRH119KT4/BNnGQ=
+		</data>
+		<key>GeistMono-VariableFont_wght.ttf</key>
+		<data>
+		1y7J1ykwX8JPOOG6aRdOk7cAzWk=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		t3gbpw4X3hyZTsMantFhHY859aA=
+		TSWfwOpP2Mqhl+FyJ5hwdsFKvuM=
+		</data>
+		<key>InstrumentSerif-Italic.ttf</key>
+		<data>
+		z+tGkrjAQ0iqY4YdB5YCSvN7hdw=
+		</data>
+		<key>InstrumentSerif-Regular.ttf</key>
+		<data>
+		dg3OLkMvs3EVedTeHPUxnsryjH8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -50,6 +74,48 @@
 			<key>hash2</key>
 			<data>
 			crIT9uBzqeAjmdHAVe/1HRfWDCRIlaL6+MDhAn0+8MU=
+			</data>
+		</dict>
+		<key>BodoniModa-Italic-VariableFont_opsz,wght.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3/8WGfj2hxxjcviFW2chH5pztOk9RayoaM2PRqSGIt4=
+			</data>
+		</dict>
+		<key>BodoniModa-VariableFont_opsz,wght.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VQ9eNO4Kgo15QbH+m8WLNOUmDT8zphUy5tCgEU55pc8=
+			</data>
+		</dict>
+		<key>Geist-VariableFont_wght.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kydntm0NmMKqcwcqTkyaSlov3kJfDMP+HtlhDhCyFRk=
+			</data>
+		</dict>
+		<key>GeistMono-VariableFont_wght.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hl/AQgtcz5TxwB28wAbEZgSvXitMzWvHeFoE18qI47k=
+			</data>
+		</dict>
+		<key>InstrumentSerif-Italic.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CJObi99TSv7CSuDvXgP5SJQM2aj+COf+y60EDmIyc4U=
+			</data>
+		</dict>
+		<key>InstrumentSerif-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SY79Rh9t38t6ERv5pWVwnSCF1IIB1QHq2WDZPoT/u4g=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

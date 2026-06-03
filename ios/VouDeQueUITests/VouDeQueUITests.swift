@@ -19,8 +19,8 @@ final class VouDeQueUITests: XCTestCase {
     // MARK: - Onboarding Flow
     
     func testOnboardingFlow() throws {
-        // Verify onboarding is present
-        XCTAssertTrue(app.staticTexts["Bem-vinda ao"].waitForExistence(timeout: 5))
+        // Verify onboarding masthead is present
+        XCTAssertTrue(app.staticTexts["VOUDEQUE"].waitForExistence(timeout: 5))
         
         // Tap through onboarding pages
         let continueButton = app.buttons["Continuar"]
@@ -32,12 +32,12 @@ final class VouDeQueUITests: XCTestCase {
         continueButton.tap()
         
         // Third page — start button
-        let startButton = app.buttons["Começar"]
+        let startButton = app.buttons["Comecar"]
         XCTAssertTrue(startButton.waitForExistence(timeout: 2))
         startButton.tap()
         
-        // Verify we reached main tabs
-        XCTAssertTrue(app.tabBars.firstMatch.waitForExistence(timeout: 5))
+        // Verify main UI loaded by checking for a tab button
+        XCTAssertTrue(app.buttons["Capa"].waitForExistence(timeout: 5))
     }
     
     // MARK: - Tab Navigation
@@ -45,26 +45,25 @@ final class VouDeQueUITests: XCTestCase {
     func testTabNavigation() throws {
         completeOnboardingIfNeeded()
         
-        let tabBar = app.tabBars.firstMatch
-        XCTAssertTrue(tabBar.waitForExistence(timeout: 5))
+        // Verify tab buttons exist
+        XCTAssertTrue(app.buttons["Capa"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["Briefing"].exists)
+        XCTAssertTrue(app.buttons["Em pauta"].exists)
+        XCTAssertTrue(app.buttons["Arquivo"].exists)
         
-        // Início tab (default)
-        XCTAssertTrue(app.staticTexts["VouDeQue"].waitForExistence(timeout: 3))
+        // Capa tab (default) — check for masthead
+        XCTAssertTrue(app.staticTexts["VOUDEQUE"].waitForExistence(timeout: 3))
         
-        // Gerar tab
-        tapTab(named: "Gerar")
-        XCTAssertTrue(app.staticTexts["Gerar Look"].waitForExistence(timeout: 3))
+        // Briefing tab
+        tapTab(named: "Briefing")
+        XCTAssertTrue(app.staticTexts["O briefing de hoje."].waitForExistence(timeout: 3))
         
-        // Desafios tab
-        tapTab(named: "Desafios")
-        XCTAssertTrue(app.staticTexts["Desafios"].waitForExistence(timeout: 3))
+        // Em pauta tab
+        tapTab(named: "Em pauta")
+        XCTAssertTrue(app.staticTexts["O que veste o Brasil esta semana."].waitForExistence(timeout: 3))
         
-        // Feed tab
-        tapTab(named: "Feed")
-        XCTAssertTrue(app.staticTexts["Comunidade"].waitForExistence(timeout: 3))
-        
-        // Perfil tab
-        tapTab(named: "Perfil")
+        // Arquivo tab
+        tapTab(named: "Arquivo")
         XCTAssertTrue(app.staticTexts["Maria Silva"].waitForExistence(timeout: 3))
     }
     
@@ -73,8 +72,8 @@ final class VouDeQueUITests: XCTestCase {
     func testGenerateLookFlow() throws {
         completeOnboardingIfNeeded()
         
-        tapTab(named: "Gerar")
-        XCTAssertTrue(app.staticTexts["Gerar Look"].waitForExistence(timeout: 3))
+        tapTab(named: "Briefing")
+        XCTAssertTrue(app.staticTexts["O briefing de hoje."].waitForExistence(timeout: 3))
         
         // Select an occasion (e.g., "Date")
         let dateButton = app.buttons["Date"]
@@ -86,11 +85,15 @@ final class VouDeQueUITests: XCTestCase {
         let textEditor = app.textViews.firstMatch
         if textEditor.waitForExistence(timeout: 2) {
             textEditor.tap()
-            textEditor.typeText("Algo romântico")
+            textEditor.typeText("Algo romantico")
+            if app.buttons["OK"].waitForExistence(timeout: 2) {
+                app.buttons["OK"].tap()
+            }
+            app.scrollViews.firstMatch.swipeUp()
         }
-        
+
         // Tap generate button
-        let generateButton = app.buttons["Gerar Look"]
+        let generateButton = app.buttons["Fechar a edicao"]
         XCTAssertTrue(generateButton.waitForExistence(timeout: 2))
         generateButton.tap()
         
@@ -99,8 +102,6 @@ final class VouDeQueUITests: XCTestCase {
         _ = loadingText.waitForExistence(timeout: 2)
         
         // Result should appear eventually (with mocked backend)
-        // In UI tests against a real backend this may timeout;
-        // we verify the transition started.
         XCTAssertTrue(generateButton.waitForExistence(timeout: 10) || app.navigationBars.firstMatch.exists)
     }
     
@@ -109,8 +110,8 @@ final class VouDeQueUITests: XCTestCase {
     func testFeedLoading() throws {
         completeOnboardingIfNeeded()
         
-        tapTab(named: "Feed")
-        XCTAssertTrue(app.staticTexts["Comunidade"].waitForExistence(timeout: 3))
+        tapTab(named: "Em pauta")
+        XCTAssertTrue(app.staticTexts["O que veste o Brasil esta semana."].waitForExistence(timeout: 3))
         
         // Feed should show content, empty state, or shimmer
         let hasContent = app.scrollViews.firstMatch.waitForExistence(timeout: 3)
@@ -125,7 +126,7 @@ final class VouDeQueUITests: XCTestCase {
     func testAccountDeletionFlow() throws {
         completeOnboardingIfNeeded()
         
-        tapTab(named: "Perfil")
+        tapTab(named: "Arquivo")
         XCTAssertTrue(app.staticTexts["Maria Silva"].waitForExistence(timeout: 3))
         
         // Scroll to delete account button
@@ -145,7 +146,7 @@ final class VouDeQueUITests: XCTestCase {
         
         // After deletion, onboarding should reappear or app resets
         let onboardingButton = app.buttons["Continuar"]
-        let onboardingStart = app.buttons["Começar"]
+        let onboardingStart = app.buttons["Comecar"]
         XCTAssertTrue(
             onboardingButton.waitForExistence(timeout: 10) || onboardingStart.waitForExistence(timeout: 10),
             "App should return to onboarding after account deletion"
@@ -155,10 +156,11 @@ final class VouDeQueUITests: XCTestCase {
     // MARK: - Helpers
     
     private func completeOnboardingIfNeeded() {
-        let startButton = app.buttons["Começar"]
+        let startButton = app.buttons["Comecar"]
         let continueButton = app.buttons["Continuar"]
         
-        if continueButton.waitForExistence(timeout: 3) || startButton.waitForExistence(timeout: 3) {
+        // Check if we're on onboarding by looking for VOUDEQUE masthead
+        if app.staticTexts["VOUDEQUE"].waitForExistence(timeout: 3) {
             if continueButton.exists {
                 continueButton.tap()
             }
@@ -168,20 +170,14 @@ final class VouDeQueUITests: XCTestCase {
             if startButton.waitForExistence(timeout: 2) {
                 startButton.tap()
             }
-            XCTAssertTrue(app.tabBars.firstMatch.waitForExistence(timeout: 5))
+            XCTAssertTrue(app.buttons["Capa"].waitForExistence(timeout: 5))
         }
     }
     
     private func tapTab(named name: String) {
-        let tab = app.tabBars.buttons[name]
+        let tab = app.buttons[name]
         if tab.waitForExistence(timeout: 3) {
             tab.tap()
-        } else {
-            // Fallback by index if label matching fails
-            let tabs = app.tabBars.firstMatch.buttons
-            if tabs.count > 0 {
-                tabs.element(boundBy: min(tabs.count - 1, 0)).tap()
-            }
         }
     }
 }

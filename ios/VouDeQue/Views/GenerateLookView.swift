@@ -9,58 +9,60 @@ struct GenerateLookView: View {
     @State private var selectedPhoto: PhotosPickerItem?
     @State private var selectedImage: Image?
     @State private var showResult = false
+    @FocusState private var notesFocused: Bool
 
-    let occasions = ["Casual", "Trabalho", "Date", "Festa", "Academia"]
+    let occasions = ["Casual", "Trabalho", "Date", "Festa", "Academia", "Viagem"]
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 24) {
+            VStack(spacing: 32) {
                 // Header
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Gerar Look")
-                        .font(.runwayDisplay(size: 28))
-                        .foregroundColor(.fashionChampagne)
-                    Text("Conte-nos sobre o momento e deixe a IA criar")
-                        .font(.runwayBody(size: 15))
-                        .foregroundColor(.fashionChampagne.opacity(0.6))
+                    Text("O briefing de hoje.")
+                        .font(.vdqDisplay(32, italic: true))
+                        .foregroundColor(.vdqInk)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
 
-                // Photo Picker
-                VStack(spacing: 12) {
+                // 01. Foto
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Text("01.")
+                            .font(.vdqDisplay(44, italic: true))
+                            .foregroundColor(.vdqInk)
+                        Text("Foto")
+                            .font(.vdqSerif(17, italic: true))
+                            .foregroundColor(.vdqAsh)
+                            .padding(.top, 16)
+                        Spacer()
+                    }
+
+                    let currentImage = selectedImage
                     PhotosPicker(selection: $selectedPhoto, matching: .images) {
-                        if let selectedImage {
-                            selectedImage
+                        if let currentImage {
+                            currentImage
                                 .resizable()
                                 .scaledToFill()
-                                .frame(height: 260)
-                                .clipShape(RoundedRectangle(cornerRadius: 16))
+                                .frame(height: 320)
+                                .clipShape(Rectangle())
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .stroke(Color.fashionGold.opacity(0.2), lineWidth: 1)
+                                    Rectangle()
+                                        .stroke(Color.vdqRule, lineWidth: 1)
                                 )
                         } else {
                             ZStack {
-                                RoundedRectangle(cornerRadius: 16)
-                                    .fill(Color.runwayCharcoal)
-                                    .frame(height: 260)
+                                Rectangle()
+                                    .fill(Color.vdqLinen)
+                                    .frame(height: 320)
                                     .overlay(
-                                        RoundedRectangle(cornerRadius: 16)
-                                            .stroke(Color.fashionGold.opacity(0.15), style: StrokeStyle(lineWidth: 2, dash: [8, 6]))
+                                        Rectangle()
+                                            .stroke(Color.vdqInk.opacity(0.12), style: StrokeStyle(lineWidth: 1, dash: [6, 4]))
                                     )
 
-                                VStack(spacing: 12) {
-                                    Image(systemName: "camera.fill")
-                                        .font(.system(size: 40))
-                                        .foregroundStyle(Color.fashionGold.opacity(0.6))
-                                    Text("Toque para adicionar foto")
-                                        .font(.runwayBody(size: 15, weight: .medium))
-                                        .foregroundColor(.fashionChampagne.opacity(0.6))
-                                    Text("Opcional — você pode gerar sem foto")
-                                        .font(.runwayCaption())
-                                        .foregroundColor(.fashionChampagne.opacity(0.4))
-                                }
+                                Text("+")
+                                    .font(.vdqDisplay(40, italic: true))
+                                    .foregroundColor(.vdqAsh2)
                             }
                         }
                     }
@@ -78,72 +80,91 @@ struct GenerateLookView: View {
                 }
                 .padding(.horizontal, 20)
 
-                // Occasion Selector
+                // 02. Ocasião
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Ocasião")
-                        .font(.runwayTitle(size: 16))
-                        .foregroundColor(.fashionChampagne)
-                        .padding(.horizontal, 20)
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Text("02.")
+                            .font(.vdqDisplay(44, italic: true))
+                            .foregroundColor(.vdqInk)
+                        Text("Ocasião")
+                            .font(.vdqSerif(17, italic: true))
+                            .foregroundColor(.vdqAsh)
+                            .padding(.top, 16)
+                        Spacer()
+                    }
 
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 10) {
-                            ForEach(occasions, id: \.self) { occasion in
-                                Button(action: {
-                                    HapticFeedback.light()
-                                    withAnimation(.spring(response: 0.3)) {
-                                        selectedOccasion = occasion
-                                    }
-                                }) {
-                                    Text(occasion)
-                                        .font(.runwayBody(size: 15, weight: .semibold))
-                                        .foregroundColor(selectedOccasion == occasion ? .fashionChampagne : .fashionChampagne.opacity(0.5))
-                                        .padding(.horizontal, 20)
-                                        .padding(.vertical, 12)
-                                        .background(
-                                            selectedOccasion == occasion
-                                                ? AnyView(Color.goldGradient)
-                                                : AnyView(Color.runwayCharcoal)
-                                        )
-                                        .cornerRadius(14)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 14)
-                                                .stroke(selectedOccasion == occasion ? Color.clear : Color.fashionGold.opacity(0.15), lineWidth: 1)
-                                        )
+                    FlowLayout(spacing: 10) {
+                        ForEach(occasions, id: \.self) { occasion in
+                            Button(action: {
+                                HapticFeedback.light()
+                                withAnimation(.spring(response: 0.3)) {
+                                    selectedOccasion = occasion
                                 }
+                            }) {
+                                Text(occasion)
+                                    .font(.vdqSerif(15, italic: true))
+                                    .foregroundColor(selectedOccasion == occasion ? .vdqBone : .vdqInk)
+                                    .padding(.horizontal, 18)
+                                    .padding(.vertical, 10)
+                                    .background(
+                                        selectedOccasion == occasion
+                                            ? AnyView(Color.vdqInk)
+                                            : AnyView(Color.clear)
+                                    )
+                                    .overlay(
+                                        Rectangle()
+                                            .stroke(Color.vdqInk.opacity(selectedOccasion == occasion ? 0 : 0.2), lineWidth: 1)
+                                    )
                             }
                         }
-                        .padding(.horizontal, 20)
                     }
                 }
+                .padding(.horizontal, 20)
 
-                // Style Notes
+                // 03. Notas
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Notas de Estilo (opcional)")
-                        .font(.runwayTitle(size: 16))
-                        .foregroundColor(.fashionChampagne)
-                        .padding(.horizontal, 20)
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Text("03.")
+                            .font(.vdqDisplay(44, italic: true))
+                            .foregroundColor(.vdqInk)
+                        Text("Notas")
+                            .font(.vdqSerif(17, italic: true))
+                            .foregroundColor(.vdqAsh)
+                            .padding(.top, 16)
+                        Spacer()
+                    }
 
-                    TextEditor(text: $styleNotes)
-                        .font(.runwayBody(size: 15))
-                        .foregroundColor(.fashionChampagne)
-                        .scrollContentBackground(.hidden)
-                        .runwayTextField()
-                        .frame(height: 100)
-                        .padding(.horizontal, 20)
-                        .overlay(
-                            Group {
-                                if styleNotes.isEmpty {
-                                    Text("Ex: Prefiro tons neutros, quero algo confortável...")
-                                        .font(.runwayBody(size: 15))
-                                        .foregroundColor(.fashionChampagne.opacity(0.3))
-                                        .padding(.horizontal, 36)
-                                        .padding(.vertical, 14)
-                                        .allowsHitTesting(false)
-                                }
-                            },
-                            alignment: .topLeading
-                        )
+                    VStack(spacing: 0) {
+                        Rectangle()
+                            .fill(Color.vdqInk)
+                            .frame(height: 1)
+
+                        TextEditor(text: $styleNotes)
+                            .font(.vdqSans(15))
+                            .foregroundColor(.vdqInk)
+                            .scrollContentBackground(.hidden)
+                            .frame(height: 80)
+                            .padding(.vertical, 8)
+                            .focused($notesFocused)
+                            .overlay(
+                                Group {
+                                    if styleNotes.isEmpty {
+                                        Text("Ex: Prefiro tons neutros, quero algo confortavel...")
+                                            .font(.vdqSans(15))
+                                            .foregroundColor(.vdqAsh2)
+                                            .padding(.vertical, 14)
+                                            .allowsHitTesting(false)
+                                    }
+                                },
+                                alignment: .topLeading
+                            )
+
+                        Rectangle()
+                            .fill(Color.vdqInk)
+                            .frame(height: 1)
+                    }
                 }
+                .padding(.horizontal, 20)
 
                 // Generate Button
                 Button(action: {
@@ -167,30 +188,88 @@ struct GenerateLookView: View {
                     HStack(spacing: 10) {
                         if isGenerating {
                             ProgressView()
-                                .tint(.fashionChampagne)
+                                .tint(.vdqBone)
                                 .scaleEffect(1.1)
-                        } else {
-                            Image(systemName: "sparkles")
-                                .font(.system(size: 18, weight: .semibold))
                         }
-                        Text(isGenerating ? "Criando look..." : "Gerar Look")
-                            .font(.runwayTitle(size: 17, weight: .bold))
+                        Text(isGenerating ? "Criando look..." : "Fechar a edicao")
+                            .font(.vdqSerif(17, italic: true))
+                        if !isGenerating {
+                            Text("≈ 2,8 s")
+                                .font(.vdqMono(11))
+                                .foregroundColor(.vdqAsh2)
+                        }
                     }
-                    .runwayButton()
-                    .opacity(isGenerating ? 0.8 : 1)
+                    .foregroundColor(.vdqBone)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 18)
+                    .background(Color.vdqInk)
                 }
                 .disabled(isGenerating)
+                .accessibilityLabel(isGenerating ? "Criando look..." : "Fechar a edicao")
+                .accessibilityIdentifier("generateLookButton")
                 .pressAnimation()
                 .padding(.horizontal, 20)
                 .padding(.bottom, 30)
             }
             .padding(.top, 16)
         }
-        .background(Color.runwayBlack.ignoresSafeArea())
+        .background(Color.vdqBone.ignoresSafeArea())
         .navigationDestination(isPresented: $showResult) {
             if let look = generatedLook {
                 LookResultView(look: look)
             }
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("OK") {
+                    notesFocused = false
+                }
+            }
+        }
+    }
+}
+
+// Simple flow layout for chips
+struct FlowLayout: Layout {
+    var spacing: CGFloat = 10
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let result = FlowResult(in: proposal.width ?? 0, subviews: subviews, spacing: spacing)
+        return result.size
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        let result = FlowResult(in: bounds.width, subviews: subviews, spacing: spacing)
+        for (index, subview) in subviews.enumerated() {
+            subview.place(at: CGPoint(x: bounds.minX + result.positions[index].x,
+                                      y: bounds.minY + result.positions[index].y),
+                          proposal: .unspecified)
+        }
+    }
+
+    struct FlowResult {
+        var size: CGSize = .zero
+        var positions: [CGPoint] = []
+
+        init(in maxWidth: CGFloat, subviews: Subviews, spacing: CGFloat) {
+            var x: CGFloat = 0
+            var y: CGFloat = 0
+            var rowHeight: CGFloat = 0
+
+            for subview in subviews {
+                let size = subview.sizeThatFits(.unspecified)
+                if x + size.width > maxWidth && x > 0 {
+                    x = 0
+                    y += rowHeight + spacing
+                    rowHeight = 0
+                }
+                positions.append(CGPoint(x: x, y: y))
+                rowHeight = max(rowHeight, size.height)
+                x += size.width + spacing
+            }
+
+            self.size = CGSize(width: maxWidth, height: y + rowHeight)
         }
     }
 }

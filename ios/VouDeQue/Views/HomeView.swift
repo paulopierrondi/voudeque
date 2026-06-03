@@ -1,139 +1,143 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var stats = UserStats.sample
     @State private var dailyChallenge = Challenge.sample
     @State private var isLoading = false
     @State private var loadError = false
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var timeRemaining = ""
 
+    let tocEntries = [
+        ("O briefing de hoje.", "014"),
+        ("Editorial: look do dia", "022"),
+        ("O que veste o Brasil", "034"),
+        ("Arquivo pessoal", "048")
+    ]
+
     var body: some View {
         ScrollView {
-            VStack(spacing: 24) {
-                // Editorial Hero Header
-                HStack {
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text("VouDeQue")
-                            .font(.runwayDisplay(size: 34, weight: .medium))
-                            .foregroundStyle(Color.goldGradient)
-                        Text("Seu estilista de IA")
-                            .font(.runwayBody(size: 15))
-                            .foregroundColor(.fashionChampagne.opacity(0.6))
-                    }
-                    Spacer()
-                    Image(systemName: "sparkle")
-                        .font(.system(size: 24))
-                        .foregroundStyle(Color.fashionGold)
-                }
-                .padding(.horizontal, 20)
+            VStack(spacing: 0) {
+                // Folio
+                Text("VOL. 04 · N.º 048 · MAIO · 2026")
+                    .vdqEyebrow()
+                    .padding(.horizontal, 20)
+                    .padding(.top, 12)
+                    .padding(.bottom, 16)
 
-                // Quick Stats
-                HStack(spacing: 12) {
-                    StatCard(title: "Looks", value: "\(stats.looksGenerated)", icon: "sparkles.rectangle.stack")
-                    StatCard(title: "Votos", value: "\(stats.votesReceived)", icon: "heart.fill")
-                    StatCard(title: "Ranking", value: "#\(stats.currentRank)", icon: "trophy.fill")
-                }
-                .padding(.horizontal, 20)
+                // Masthead
+                Text("VOUDEQUE")
+                    .font(.vdqMasthead(42))
+                    .foregroundColor(.vdqInk)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 24)
 
-                // Featured Daily Challenge
-                VStack(alignment: .leading, spacing: 14) {
-                    HStack {
-                        Label("Desafio do Dia", systemImage: "flame.fill")
-                            .font(.runwayTitle(size: 16))
-                            .foregroundColor(.fashionChampagne)
-                        Spacer()
-                        HStack(spacing: 4) {
-                            Image(systemName: "person.2.fill")
-                                .font(.runwayCaption())
-                            Text("\(dailyChallenge.participants)")
-                                .font(.runwayCaption())
+                // Cover Story
+                VStack(alignment: .leading, spacing: 12) {
+                    ZStack(alignment: .bottomLeading) {
+                        Rectangle()
+                            .fill(Color.vdqLinen)
+                            .aspectRatio(3/4, contentMode: .fit)
+                            .overlay(
+                                VStack(spacing: 8) {
+                                    Text("LOOK")
+                                        .font(.vdqMono(11))
+                                        .foregroundColor(.vdqAsh)
+                                    Text("+")
+                                        .font(.vdqDisplay(48, italic: true))
+                                        .foregroundColor(.vdqAsh2)
+                                }
+                            )
+
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("O look do dia")
+                                .font(.vdqSerif(14, italic: true))
+                                .foregroundColor(.vdqAsh)
+                            Text("Casual chic com\njeans wide leg")
+                                .font(.vdqDisplay(28, italic: true))
+                                .foregroundColor(.vdqInk)
+                                .lineSpacing(2)
                         }
-                        .foregroundColor(.fashionGold)
-                    }
-
-                    Text(dailyChallenge.title)
-                        .font(.runwayTitle(size: 20))
-                        .foregroundColor(.fashionChampagne)
-
-                    Text(dailyChallenge.description)
-                        .font(.runwayBody(size: 14))
-                        .foregroundColor(.fashionChampagne.opacity(0.7))
-                        .lineLimit(2)
-                        .lineSpacing(3)
-
-                    HStack {
-                        HStack(spacing: 4) {
-                            Image(systemName: "clock")
-                                .font(.runwayCaption())
-                            Text(timeRemaining)
-                                .font(.runwayCaption())
-                                .monospacedDigit()
-                        }
-                        .foregroundColor(.fashionRose)
-
-                        Spacer()
-
-                        Text("Tema: \(dailyChallenge.theme)")
-                            .runwayTag()
+                        .padding(16)
+                        .background(
+                            LinearGradient(
+                                colors: [.vdqBone.opacity(0.0), .vdqBone.opacity(0.9)],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
                     }
                 }
-                .padding(20)
-                .runwayCard()
                 .padding(.horizontal, 20)
-                .onReceive(timer) { _ in
-                    timeRemaining = Date().timeRemainingString(to: dailyChallenge.endsAt)
+                .padding(.bottom, 28)
+
+                // Table of Contents
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Nesta edição")
+                        .font(.vdqSerif(20, italic: true))
+                        .foregroundColor(.vdqInk)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 12)
+
+                    Rectangle()
+                        .fill(Color.vdqRule)
+                        .frame(height: 1 / UIScreen.main.scale)
+                        .padding(.horizontal, 20)
+
+                    ForEach(tocEntries.indices, id: \.self) { index in
+                        HStack(alignment: .firstTextBaseline) {
+                            Text(tocEntries[index].0)
+                                .font(.vdqSans(15, weight: .regular))
+                                .foregroundColor(.vdqInk2)
+                            Spacer()
+                            Text("P. \(tocEntries[index].1)")
+                                .font(.vdqMono(11))
+                                .foregroundColor(.vdqAsh)
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 12)
+
+                        Rectangle()
+                            .fill(Color.vdqRule)
+                            .frame(height: 1 / UIScreen.main.scale)
+                            .padding(.horizontal, 20)
+                    }
                 }
-                .onAppear {
-                    timeRemaining = Date().timeRemainingString(to: dailyChallenge.endsAt)
-                }
+                .padding(.bottom, 28)
 
                 // CTA Generate Look
                 NavigationLink(destination: GenerateLookView()) {
                     HStack(spacing: 12) {
-                        Image(systemName: "camera.fill")
-                            .font(.system(size: 22))
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("Gerar Novo Look")
-                                .font(.runwayTitle(size: 17))
-                            Text("Foto + IA = estilo perfeito")
-                                .font(.runwayBody(size: 13))
-                                .opacity(0.85)
+                            Text("Fechar a edição")
+                                .font(.vdqSerif(17, italic: true))
+                            Text("Novo look em ≈ 2,8 s")
+                                .font(.vdqMono(11))
+                                .foregroundColor(.vdqAsh)
                         }
                         Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.system(size: 16, weight: .semibold))
+                        Text("→")
+                            .font(.vdqSans(18, weight: .medium))
                     }
-                    .foregroundColor(.fashionChampagne)
+                    .foregroundColor(.vdqBone)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 18)
-                    .background(Color.goldGradient)
-                    .cornerRadius(14)
+                    .background(Color.vdqInk)
                 }
                 .pressAnimation()
                 .padding(.horizontal, 20)
-
-                // Recent Activity
-                VStack(alignment: .leading, spacing: 14) {
-                    Text("Atividade Recente")
-                        .font(.runwayTitle(size: 18))
-                        .foregroundColor(.fashionChampagne)
-                        .padding(.horizontal, 20)
-
-                    LookCardView(look: .sample)
-                        .padding(.horizontal, 20)
-                }
+                .padding(.bottom, 24)
 
                 Spacer(minLength: 30)
             }
             .padding(.top, 16)
         }
-        .background(Color.runwayBlack.ignoresSafeArea())
+        .background(Color.vdqBone.ignoresSafeArea())
         .task {
             await loadDailyChallenge()
         }
     }
-    
+
     private func loadDailyChallenge() async {
         do {
             dailyChallenge = try await APIService.shared.fetchDailyChallenge()
@@ -141,29 +145,6 @@ struct HomeView: View {
         } catch {
             loadError = true
         }
-    }
-}
-
-struct StatCard: View {
-    let title: String
-    let value: String
-    let icon: String
-
-    var body: some View {
-        VStack(spacing: 8) {
-            Image(systemName: icon)
-                .font(.system(size: 22))
-                .foregroundStyle(Color.fashionGold)
-            Text(value)
-                .font(.runwayTitle(size: 20))
-                .foregroundColor(.fashionChampagne)
-            Text(title)
-                .font(.runwayCaption())
-                .foregroundColor(.fashionChampagne.opacity(0.5))
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 16)
-        .runwayCard()
     }
 }
 

@@ -1,332 +1,24 @@
 # Project Brain Context
 
-Generated: `2026-05-18 09:07:11`
-Tool that refreshed this file: `sync`
+Generated: `2026-06-02 23:38:23`
+Tool: `sync`
 Local Obsidian vault: `/Users/paulopierrondi/Documents/Obsidian Vault`
-Repository: `/Users/paulopierrondi/Downloads/voudeque`
+Repository: `/Users/paulopierrondi/Projects/voudeque`
 
-This is a non-secret snapshot of the local Obsidian second brain for this repository. It exists so local and cloud coders can start from project memory instead of cold-starting.
+This is a non-secret snapshot of the local Obsidian second brain for this repository.
 
 ## Required Agent Workflow
 
-1. Read the repo instruction file for your agent: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or `KIMI.md`.
+1. Read the repo instruction file for your agent: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or `KIMI.md`. For Google Antigravity, read both `AGENTS.md` and `GEMINI.md`.
 2. Read this file before planning work.
 3. If local vault access exists, prefer the live Obsidian notes over this snapshot.
 4. If running in cloud without local vault access, use this file as the project memory source.
-5. Read the Paulo profile snapshot before career, executive, ServiceNow, Bradesco, FSI, deck, roadmap, positioning or personal context work.
-6. For product, monetization, app ideas, revenue, pricing, growth or side-project prioritization, use the Product Revenue MOC and opportunity backlogs.
-7. Select the relevant best-practice notes and checklists: app/web quality, screenshots, marketing creative/video, frontend, backend/API, web, iOS, Android, AI, release and security.
-8. For iOS/App Store Connect/TestFlight/signing/IAP/APNS work, use the Apple Developer And App Store Connect Inventory and App Store Connect Upload Runbook before asking for IDs, keys, CI values, provider env vars or running an upload.
-9. For roadmap, bug, release or planning work, check the Linear/Git tracking snapshot and matching Linear issue when the connector is available.
-10. Never store real API keys or secrets in Markdown. Store only inventory metadata.
-11. Capture reusable development lessons in the Learning Inbox or `.brain/SESSION_NOTES.md` when the vault is unavailable.
-12. After meaningful work, update the live Obsidian project note or append durable context to `.brain/SESSION_NOTES.md`.
+5. Select the relevant best-practice notes and checklists: app/web quality, screenshots, marketing creative/video, frontend, backend/API, web, iOS, Android, AI, release and security.
+6. Never store real API keys or secrets in Markdown. Store only inventory metadata.
+7. Capture reusable development lessons in the Learning Inbox or `.brain/SESSION_NOTES.md` when the vault is unavailable.
+8. After meaningful work, update the live Obsidian project note or append durable context to `.brain/SESSION_NOTES.md`.
 
 ## Required Checklist Snapshot
-
-## 04_Areas/Coding/Best Practices/Development Best Practices Hub.md
-
----
-type: best-practices-hub
-tags:
-  - best-practices
-  - coding
-  - learning-loop
----
-# Development Best Practices Hub
-
-Este e o hub vivo de melhores praticas de desenvolvimento.
-
-## Como usar
-
-Antes de implementar, revisar ou desenhar arquitetura, escolha os guias relevantes:
-
-- App/Web quality: [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]]
-- Web/Next/React: [[04_Areas/Coding/Best Practices/Web Next React Best Practices]]
-- Frontend UI/UX: [[04_Areas/Coding/Best Practices/Frontend UI UX Best Practices]]
-- Backend/API: [[04_Areas/Coding/Best Practices/Backend API Best Practices]]
-- Database/Data: [[04_Areas/Coding/Best Practices/Database Data Best Practices]]
-- Mobile/iOS: [[04_Areas/Coding/Best Practices/Mobile iOS Best Practices]]
-- Android: [[04_Areas/Coding/Best Practices/Android App Best Practices]]
-- Python/Data tools: [[04_Areas/Coding/Best Practices/Python Data Best Practices]]
-- AI/LLM apps: [[04_Areas/Coding/Best Practices/AI LLM Best Practices]]
-- DevOps/Railway: [[04_Areas/Coding/Best Practices/DevOps Railway Best Practices]]
-- Testing/QA: [[04_Areas/Coding/Best Practices/Testing QA Best Practices]]
-- Agent workflow: [[04_Areas/Coding/Best Practices/Agent Workflow Best Practices]]
-- Security baseline: [[04_Areas/Coding/Checklists/Security Checklist]]
-- Platform checklists: [[04_Areas/Coding/Checklists/Project Checklist Hub]]
-
-## Como aprender automaticamente
-
-Todo coder deve registrar aprendizados reutilizaveis em:
-
-- [[04_Areas/Coding/Best Practices/Learning Inbox]]
-- [[04_Areas/Coding/Best Practices/Patterns To Promote]]
-
-Aprendizado reutilizavel e algo que deve guiar projetos futuros:
-
-- erro recorrente;
-- comando canonico melhor;
-- convencao de plataforma;
-- decisao de arquitetura que se repetiu;
-- checklist que faltava;
-- risco de seguranca percebido;
-- padrao de deploy ou rollback;
-- regra de UX/design que melhorou resultado;
-- falha visual detectada por screenshot ou viewport;
-- regra de store readiness para App Store ou Google Play.
-
-## Regra para agentes
-
-Quando uma sessao terminar, perguntar internamente:
-
-- "Isto ensina algo reutilizavel?"
-- "Algum checklist deve ganhar item novo?"
-- "Alguma pratica antiga deve ser corrigida?"
-- "Isso vale para uma plataforma especifica ou para todos os projetos?"
-
-Se sim, registrar no Learning Inbox ou em `.brain/SESSION_NOTES.md` quando o vault nao estiver acessivel.
-
-## Promocao
-
-Itens do Learning Inbox viram melhores praticas quando:
-
-- aconteceram em mais de um projeto;
-- evitaram bug, retrabalho, custo ou risco;
-- melhoraram qualidade visual, seguranca, performance ou deploy;
-- foram confirmados por teste, build, deploy ou revisao.
-
-## Links
-
-- [[04_Areas/Coding/AI Coding Operating System]]
-- [[04_Areas/Coding/Checklists/Project Checklist Hub]]
-- [[04_Areas/Coding/Checklists/App Web Preflight Checklist]]
-- [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]]
-- [[99_System/AI Agent Vault Policy]]
-- [[99_System/Security And Secrets Policy]]
-
-
-## 04_Areas/Coding/Best Practices/App Web Quality Best Practices.md
-
----
-type: best-practices
-platform: app-web-quality
-tags:
-  - best-practices
-  - apps
-  - web
-  - screenshots
-  - quality
----
-# App Web Quality Best Practices
-
-## Principio
-
-Qualidade de app/web e uma combinacao de produto, design, estado, performance, acessibilidade, privacy, store readiness e evidencia visual. **Qualidade sempre sobe. Nunca degrada conscientemente.** Cada release, cada tela, cada screenshot, cada copy substituida deve estar igual ou melhor que a versao anterior. Se um deliverable parece pior que o anterior, ou pior que o competidor, e nao-aceitavel; refazer.
-
-## O padrao Paulo
-
-- Construir a experiencia real primeiro.
-- Evitar landing generica quando o pedido e app/ferramenta.
-- Todo app precisa nascer com identidade publica completa: icone final forte, landing page publica de padrao superior e links legais vivos. Isso e parte do produto, nao acabamento.
-- App icon nunca pode ser placeholder. Antes de review, TestFlight, launch, deck ou paid campaign, validar o icone dentro do build/app instalado, no asset catalog completo da plataforma e na landing/favicons/OG image.
-- Landing page publica nunca pode ser resposta JSON, pagina generica ou placeholder. `GET /` deve entregar HTML responsivo, branded, com proposta de valor clara, visual real do produto, CTA, links de suporte/privacy/terms e metadata social/SEO.
-- Interfaces operacionais devem ser claras, densas e rapidas.
-- Apps consumer podem ser mais expressivos, mas ainda precisam de fluxo obvio.
-- Screenshots sao deliverable de primeira classe, nao "depois". Submission, release, post, deck, anuncio ou pagina nova so e "feito" quando os arquivos finais artisticos existem, validados e registrados.
-- Tracking de aquisicao tambem e deliverable de primeira classe. Todo app novo ou em uso precisa ter SDK/pixel/MMP, eventos de funil, privacy/store labels e reporting antes de qualquer paid acquisition.
-- Toda tela importante precisa lidar com loading, erro, vazio e permissao.
-- Classificar cada screenshot por finalidade antes da QA final: produto real, store review, marketing, deck preview, teste visual ou dependencia. Screenshot de `node_modules`, fixture ou snapshot de pacote nao prova qualidade do app.
-
-## Ads tracking
-
-Regra maxima: app sem tracking de ads nao esta pronto para campanha paga, mesmo que a UI, screenshots e store listing estejam prontos.
-
-Padrao:
-- iOS/Android: TikTok App Events SDK ou MMP equivalente quando TikTok/Meta/social paid for possivel; SKAN/AdServices/ATT/privacy labels coerentes; um unico owner de conversion value.
-- Web/PWA: TikTok Pixel + Events API/UTM capture quando houver trafego pago/social.
-- Eventos minimos: app open/install, onboarding completed, ativacao principal, paywall viewed, trial/purchase started e purchase/subscription completed.
-- Reporting: toda campanha precisa chegar ao inventario/Marketing OS com spend, impressions, clicks/taps, installs/leads, CPA/CPT e receita/trial quando existir.
-- Apps existentes nao sao excecao. Se nao tem tracking, primeiro entra em remediation; depois paid launch.
-
-## Screenshots
-
-**Regra zero: screenshots para loja, marketing, posts ou capa de release sao SEMPRE "super awesome". Nunca raw, nunca generico, nunca placeholder enviado pra producao. Se nao da pra fazer awesome agora, e bloqueador do release, nao "TODO depois".**
-
-Definicao operacional de "super awesome":
-- Composicao branded: gradient/textura da marca + headline tipografica forte + frame de device realista (Dynamic Island, bezel, side buttons) + footer com wordmark/logo.
-- Resolucao EXATA do destino (App Store iPhone 6.9" = 1320x2868, 6.7" = 1290x2796, iPad 13" = 2064x2752, Instagram 1080x1350, etc.). Nunca aproximar nem upscale.
-- Por idioma de cada mercado (pt-BR + en-US no minimo para projetos Brazil/global). Render automatizado, nao manual.
-- Estado real do produto, com dados de demo plausiveis. Nao login, splash, tela vazia ou placeholder. Apple rejeita screenshot que e apenas tela de titulo.
-- Cada screenshot e um beat narrativo: hook, mecanica, payoff, social proof, monetizacao. Seis screenshots = arco completo da promessa.
-- Status bar limpa (9:41, bateria 100%, sinal cheio) — `xcrun simctl status_bar` ou captura no device fisico ja configurado.
-
-Trigger de aceitacao:
-- Se a screenshot final cabe num post de competidor direto sem parecer pior, passou.
-- Se parece template generico, simulator cru, ou "boa o suficiente", refazer.
-- Se nao tem headline + frame + brand background, refazer.
-
-Pipeline canonico:
-- HTML+CSS template + Playwright headless render alimentado por `manifest.json` (shot id + raw path + eyebrow + headline + subhead por idioma + brand tokens).
-- Raw capturas no device fisico (iPhone Pro Max para 6.9", iPad Pro 13" para tablet) com 9:41 + bateria 100%.
-- Output em `marketing/store-screenshots/<device>-<lang>/*.png` registrado na nota do projeto.
-- Re-render e barato; mudar manifest e re-rodar deve ser < 30s.
-
-Regras de evidencia (mantidas):
-- Screenshot bom prova um fluxo ou qualidad
-...[truncated]
-
-## 04_Areas/Coding/Best Practices/Recent App Web Screenshot Learnings.md
-
----
-type: learning-review
-area: app-web-quality
-tags:
-  - screenshots
-  - visual-qa
-  - apps
-  - web
-  - learning-loop
----
-# Recent App Web Screenshot Learnings
-
-Consolidado das criacoes e artefatos recentes encontrados no workspace.
-
-## Fontes observadas
-
-- `pierrondi-ia/docs/marketing/campaigns/.../buildinpublic-stats-1080x1350.png`
-- `ppt_engine/workspace/.../*.preview.png`
-- `fashioncore/apps/ios/fastlane/screenshots/en-US/*_1284x2778.png`
-- `fifa2026bolao/artifacts/review/*iphone*.png`
-- `fifa2026bolao/artifacts/review/*ipad*.png`
-- `servicenow-agent-army/marketing/video-*`
-- `pierrondi-ia/test-results`
-- `pierrondi-ia/tmp/ui-review`
-
-## Aprendizados promovidos
-
-- Screenshot de review/store precisa provar plataforma e tamanho, nao apenas "parece bonito".
-- App Store/Google Play pedem conjuntos diferentes de evidencia: phone, tablet/large screen quando aplicavel, idioma, dark/light e ausencia de dados sensiveis.
-- Imagens de marketing precisam nascer no formato de destino: feed, story, deck, landing, preview e video nao devem reaproveitar crop por acidente.
-- Screenshots de UI precisam capturar estado real: loading, empty, erro, permissao, auth, pagamento, onboarding e sucesso.
-- Render preview de deck/documento/site e uma forma de teste visual; se nao renderizou, nao esta pronto.
-- `node_modules`, package fixtures e snapshots de dependencias nao contam como evidencia do produto.
-- O vault deve registrar paths e decisao de qualidade, nao copiar imagens sensiveis nem inflar a memoria com dumps.
-
-## Regra operacional
-
-Quando um agente mexer em app/web visual:
-
-- usar [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]];
-- registrar os paths de evidencia na nota do projeto;
-- transformar falhas recorrentes em item de checklist;
-- nao anexar screenshot com segredo, PII, token, cookie ou ambiente de producao exposto.
-
-## Destinos
-
-- [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]]
-- [[04_Areas/Coding/Checklists/App Web Preflight Checklist]]
-- [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]]
-
-
-## 04_Areas/Coding/Best Practices/Android App Best Practices.md
-
----
-type: best-practices
-platform: android
-tags:
-  - best-practices
-  - android
-  - google-play
----
-# Android App Best Practices
-
-## Principios
-
-- Android nao e apenas "iOS portado": respeitar back navigation, intents, permissions, density, large screens e lifecycle.
-- Estado do usuario deve sobreviver background, rotacao e navegacao.
-- Permissoes perigosas precisam ser minimizadas e pedidas no contexto certo.
-- Data safety e privacy policy precisam bater com codigo e SDKs.
-
-## UI
-
-- Usar Material 3 quando estiver no stack.
-- Touch targets e fontes precisam escalar.
-- Layouts devem funcionar em phone, tablet e foldable quando relevante.
-- Dark mode precisa ser intencional, nao acidental.
-
-## Arquitetura
-
-- Segredos nunca entram no APK/AAB.
-- Offline e rede ruim precisam de estado explicito.
-- Background work deve usar APIs apropriadas e respeitar bateria.
-- Analytics/crash SDKs devem estar no inventario de privacy.
-
-## Release
-
-- Version code/name atualizados.
-- App Bundle com signing correto.
-- Store listing honesta.
-- Test track antes de producao.
-- Data safety atualizado a cada novo SDK/coleta.
-
-## Links
-
-- [[04_Areas/Coding/Checklists/Android App Preflight Checklist]]
-- [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]]
-
-
-## 04_Areas/Coding/Best Practices/Agent Workflow Best Practices.md
-
----
-type: best-practices
-platform: agents
-tags:
-  - best-practices
-  - agents
-  - codex
-  - claude
-  - kimi
-  - gemini
----
-# Agent Workflow Best Practices
-
-## Principios
-
-- Primeiro ler memoria; depois planejar; depois editar.
-- Agente nao deve pedir segredo que pode ser acessado via provider/CLI.
-- Mudancas devem ser pequenas, verificaveis e registradas.
-- Aprendizado reutilizavel deve voltar para o vault.
-- Quando houver subagentes, manter ownership claro e nao duplicar o mesmo escopo de escrita.
-- Antes de promover um padrao, diferenciar lição madura de caso puntual com dependencias de plataforma.
-- Para trabalhos paralelos, cada worker precisa de escopo disjunto, nao pode reverter edits de outros e deve aceitar que a base do codigo nao esta isolada.
-
-## Inicio
-
-- Rodar/usar `brain-preflight`.
-- Ler `.brain/PROJECT_CONTEXT.md`.
-- Ler nota do projeto e AI history.
-- Ler best practices e checklists relevantes.
-- Confirmar comandos canonicos.
-
-## Durante
-
-- Preservar mudancas do usuario.
-- Evitar refactor fora do escopo.
-- Usar ferramentas seguras para secrets: Railway, provider env vars, 1Password/Keychain.
-- Nao imprimir env completo.
-
-## Fim
-
-- Atualizar nota do projeto.
-- Atualizar `.brain/SESSION_NOTES.md` se sem vault.
-- Registrar aprendizado em [[04_Areas/Coding/Best Practices/Learning Inbox]] quando reutilizavel.
-- Sugerir promocao para best practice quando padrao aparecer de novo.
-
-## Aprendizados locais
-
-- Adicionar aqui comportamento que melhorou entregas dos coders.
-
 
 ## 04_Areas/Profile/Paulo Pierrondi Profile.md
 
@@ -449,9 +141,179 @@ Every Bradesco Now Assist material must explicitly connect:
 - Do not turn faith/family into generic motivational content.
 - Do not expose personal or enterprise-sensitive details outside the intended context.
 
+## 99_System/AI Agent Vault Policy.md
+
+---
+type: policy
+status: generated
+generated_at: "2026-06-02 23:37:30"
+tags:
+  - ai-agents
+  - policy
+  - second-brain
+  - generated
+---
+# AI Agent Vault Policy
+
+Vault principal: `/Users/paulopierrondi/Documents/Obsidian Vault`
+
+Esta politica vale para Codex, Claude Code, Gemini CLI e Kimi CLI.
+
+## User Operating Profile
+
+- Perfil completo: [[04_Areas/Profile/Paulo Pierrondi Profile]]
+- Paulo trabalha entre enterprise tech, side projects, familia e fe.
+- Profissionalmente, e TAE na ServiceNow, foco Banco Bradesco / FSI Brasil.
+- Estilo esperado: direto, executivo, denso, estruturado, copy-paste ready, sem fluff.
+- PT-BR para conteudo Brasil; pushback analitico e bem-vindo.
+- Para Now Assist no Bradesco, conectar sempre: modelo operacional -> velocidade de adocao -> expansao de receita.
+
+## Inicio de sessao
+
+- Identificar o `cwd` atual e procurar a nota correspondente em `02_Projects`.
+- Ler [[04_Areas/Profile/Paulo Pierrondi Profile]] para entender quem e Paulo, contexto profissional/pessoal, estilo de resposta e prioridades.
+- Ler `Home.md`, `02_Projects/Projects Index.md` e a nota do projeto antes de fazer mudancas relevantes.
+- Ler `.brain/PROJECT_CONTEXT.md` quando existir no repo.
+- Rodar `brain-linear-sync` ou ler [[04_Areas/Coding/Linear/Linear Git Sync Report]] para entender estado Git/local antes de iniciar.
+- Para trabalho multi-coder, background coder, automacao, Antigravity ou sessao que precise continuidade, ler [[04_Areas/Coding/Agent Coder Integration OS]] e criar/atualizar handoff em `Hub_Agentes/06_Runtime/handoffs`.
+- Para roadmap, bugs, status, prioridade, release ou planejamento, ler [[04_Areas/Coding/Linear/Linear Git Development Tracking OS]] e conferir o projeto/issue no Linear.
+- Ler [[04_Areas/Coding/Best Practices/Development Best Practices Hub]] e as melhores praticas relevantes da plataforma.
+- Ler [[04_Areas/Coding/Checklists/Project Checklist Hub]] e os checklists relevantes para a plataforma.
+- Para app, site, tela, fluxo visual, screenshot ou store submission, ler [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]], [[04_Areas/Coding/Checklists/App Web Preflight Checklist]] e [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]].
+- Para iOS, Android ou web app, ler tambem o preflight especifico da plataforma.
+- Para iOS/App Store Connect/TestFlight/signing/IAP/APNS, ler [[04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory]] e [[04_Areas/Coding/Checklists/App Store Connect Upload Runbook]] antes de pedir IDs, chaves, configurar CI ou fazer upload.
+- Para produto, monetizacao, novas ideias de app, receita, pricing, growth ou priorizacao de side projects, ler [[04_Areas/Product/Product Revenue MOC]], [[04_Areas/Product/Nightly Opportunity Engine]], [[04_Areas/Product/App Ideas Revenue Backlog]], [[04_Areas/Product/App Refinement Backlog]] e [[04_Areas/Product/Nightly Opportunity Report]].
+- Para criativos, videos, social, campanhas, ElevenLabs, legendas ou pierrondi.dev, ler [[04_Areas/Marketing/Marketing MOC]], [[04_Areas/Marketing/Pierrondi.dev Creative Video OS]], [[04_Areas/Marketing/ElevenLabs Voice And Subtitle Workflow]], [[04_Areas/Marketing/Social Video Platform Specs 2026]] e [[04_Areas/Marketing/Creative QA Checklist]].
+- Para Apple Ads / ASA, App Store paid acquisition, ASO, CPP, campanhas pagas ou tuning de marketing de apps, ler [[04_Areas/Marketing/App Marketing Intelligence OS]], [[04_Areas/Marketing/Apple Ads ASA Tuning Runbook]], [[04_Areas/Marketing/App Marketing Metrics Inventory]], [[04_Areas/Marketing/App Marketing Daily Tuning Report]] e [[04_Areas/Marketing/App Marketing Tuning Backlog]].
+- Para melhorar o proprio vault, memoria de agentes, Obsidian, MOCs ou rotinas, ler [[04_Areas/Second Brain/Second Brain Intelligence Loop]], [[99_System/Second Brain Intelligence Report]], [[99_System/Claude Code Nightly Second Brain Routine]] e [[04_Areas/Second Brain/External Source Watchlist]].
+- Para qualquer automacao, rotina, job agendado, cron, LaunchAgent, cloud runner ou follow-up automatico, ler [[99_System/Automation Email Policy]] e enviar email de encerramento para `pierrondi@gmail.com`.
+- Ler [[04_Areas/Coding/Checklists/Security Checklist]] antes de auth, dados, APIs, deploy ou IA.
+- Ler [[99_System/Security And Secrets Policy]] antes de lidar com API keys, tokens, env vars ou credenciais.
+- Para credenciais, tratar [[99_System/Credential Vault Operating Model]] como fonte canonica: o vault guarda inventario/referencia, nunca valor real.
+- Para env vars em files locais e automacoes, ler [[99_System/Central Env File Operating Model]]: `/Users/paulopierrondi/Projects/.keys.env` (chmod 600, gitignored) e a fonte unica local, carregada via `brain-env-run -- <comando>`; `./.env` do projeto sobrescreve. Nunca `source .env` ou `python-dotenv` cru em scripts novos.
+- Se a credencial estiver no escopo de [[99_System/Secret Exposure Incident - 2026-05-19]], exigir rotacao antes de uso e usar `/Users/paulopierrondi/.loc
+...[truncated]
+
+## 99_System/Prompt Caching Workflow Policy.md
+
+---
+type: policy
+status: active
+created: 2026-05-22
+tags:
+  - automation
+  - agents
+  - prompt-caching
+  - cost-control
+  - ai-runtime
+---
+# Prompt Caching Workflow Policy
+
+## Rule
+
+All recurring, high-token, multi-agent or production-adjacent AI workflows must be cache-aware.
+
+The required prompt shape is:
+
+```text
+CACHEABLE_PREFIX_START
+stable operating contract
+stable agent / workflow policy
+stable project context
+stable quality gates
+stable output schema
+CACHEABLE_PREFIX_END
+
+DYNAMIC_TASK_START
+current date, live state, user request, diffs, logs, search results, blockers
+DYNAMIC_TASK_END
+```
+
+Static context goes first. Dynamic context goes last. Do not mix timestamps, live status, search results, diffs, log tails or user-specific deltas into the cacheable prefix.
+
+## Cacheable Prefix Order
+
+Use this order whenever a workflow builds a prompt, handoff, CLI request or API call:
+
+1. System role and non-negotiable safety rules.
+2. Agent Hub enforcement and human gates.
+3. Paulo profile, response style and operating preferences.
+4. Runtime/provider routing policy.
+5. Project static context: `AGENTS.md`, `CLAUDE.md`, `KIMI.md`, `GEMINI.md`, `CODEX_RULES.md`, `.brain/PROJECT_CONTEXT.md`.
+6. Reusable checklists, quality gates, App Store rules, security policy and output contracts.
+7. Tool schemas or structured output schema.
+8. Dynamic task delta only after `CACHEABLE_PREFIX_END`.
+
+## Never Cache
+
+Do not include these in cacheable prefixes:
+
+- API keys, tokens, cookies, private keys, `.env` values, session exports or credential screenshots.
+- Current date/time, git dirty lists, live Linear issue bodies, App Store live status, provider dashboard state, web search results, logs, diffs or stack traces.
+- Personal data or private note content that is not required by the workflow.
+- Anything marked `ROTATE_REQUIRED`.
+
+Secrets must stay in provider env vars, Keychain, 1Password when available, or approved secret-intake flows. The vault stores references and metadata only.
+
+## Provider Mapping
+
+| Provider / surface | Cache mechanism | Required workflow behavior |
+| --- | --- | --- |
+| OpenAI / Codex / OpenAI API | Automatic prompt caching for exact repeated prefixes on eligible long prompts; optional `prompt_cache_key`; optional `prompt_cache_retention`; usage exposes `cached_tokens` | Keep identical static prefix, put dynamic task last, use a stable `prompt_cache_key` when direct API calls share a prefix, and log `cached_tokens` when surfaced. |
+| Anthropic / Claude API | Automatic or explicit `cache_control` breakpoints; default 5 minute TTL; optional 1 hour TTL; tool definitions can be cached | Put `cache_control` on the last stable block, not on timestamp or task delta. Keep stable tools/system/messages ordered; use deferred tools where available to avoid invalidating the prefix. |
+| Gemini API | Implicit caching on supported models plus explicit cached content objects for guaranteed savings; usage metadata exposes cached token counts | Create/reuse cached content for stable docs; send only task delta as fresh prompt when direct API supports it. Put large common content at the beginning for implicit cache hits. |
+| Kimi / Moonshot API | Context Caching with cache tags and `role=cache` references | Cache stable files/context with a workflow tag; pass `role=cache` reference plus task delta when direct API supports it. |
+| CLI wrappers without direct cache controls | Stable prefix file plus dynamic task file | Keep prefix files byte-stable; pass current task as suffix. Record strategy as `cli-prefix-layout`. |
+
+## Cache Keys
+
+When a workflow can control cache routing or tag names, use a stable key with this shape:
+
+```text
+paulo:{workflow_id}:{agent_id}:{project_id}:{policy_version}:{context_version}
+```
+
+Do not include dates, branch names that churn daily, live issue titles or secrets in cache keys.
+
+## Required Telemetry
+
+Every recurring workflow report, run note or email must include a redacted prompt-cache block:
+
+```yaml
+prompt_cache:
+  policy: "/Users/paulopierrondi/Documents/Obsidian Vault/99_System/Prompt Caching Workflow Policy.md"
+  strategy: "openai-auto | anthropic-cache-control | gemini-cached-content | kimi-context-cache | cli-prefix-layout | not-supported"
+  cache_key_or_tag: "redacted-or-nonsecret"
+  prefix_version: "YYYY-MM-DD-or-hash"
+  prefix_hash_recorded: true
+  cached_tokens: null
+  input_tokens: null
+  output_tokens: null
+  cache_hit_rate: null
+  notes: "metrics unavailable in this CLI" 
+```
+
+If a CLI does not expose token telemetry, record `null` and explain the strategy used. Absence of telemetry is a workflow quality issue, not a blocker for urgent execution.
+
+## Tool And Schema Hygiene
+
+Provider docs agree that cache invalidation is usually caused by changing the prefix. For agent workflows:
+
+- Keep always-needed tools and structured output schemas stable.
+- Put optional or discovered tools after the cacheable prefix when the runtime supports deferred tool loading.
+- Do not toggle web search
+...[truncated]
 
 ## 04_Areas/Coding/Linear/Linear Git Development Tracking OS.md
 
+---
+type: "coding-note"
+status: "indexed"
+normalized_on: "2026-05-20"
+tags:
+  - coding
+  - frontmatter-normalized
+---
 # Linear App + Git Development Tracking OS
 
 Status: active
@@ -528,16 +390,22 @@ Cloud coders and other machines will not automatically have the local vault. The
 - `AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or `KIMI.md`.
 - `.brain/PROJECT_CONTEXT.md`.
 - `.brain/CLAUDE_CLOUD_CONTEXT.md` when present.
-- Live Linear app connector if available. If unavailable, say so clearly and leave a concrete Linear update proposal for the next local run.
-
-When starting a new repo or machine, run `brain-sync`, `brain-preflight --all`, and `brain-cloud-ready -
+- Live Linear app connector if available. If unavailable, say so clearly and leave a concrete Linear update proposal for the nex
 ...[truncated]
 
 ## 04_Areas/Coding/Linear/Linear Project Map.md
 
+---
+type: "coding-note"
+status: "indexed"
+normalized_on: "2026-05-20"
+tags:
+  - coding
+  - frontmatter-normalized
+---
 # Linear Project Map
 
-Updated: 2026-05-17
+Updated: 2026-05-28
 
 This map links Linear projects to local repos and Obsidian project notes. It is mapping metadata only.
 
@@ -545,6 +413,7 @@ Important: this note is not the Linear source of truth. Always verify live proje
 
 | Linear project | Status | Priority | Repo / path hint | Obsidian note hint | Notes |
 | --- | --- | --- | --- | --- | --- |
+| Itaú NowMobile ServiceNow | Backlog | High | `itau-nowmobile-servicenow` | search Projects Index | New live project from 2026-05-21; repo appears in local sync as `/Users/paulopierrondi/Projects/itau-nowmobile-servicenow` on `codex/AGE-1517-vibe-code-integration` and as `/Users/paulopierrondi/Documents/itau-nowmobile-servicenow` in the project description. |
 | nowassistdemo | Planned | High | `nowassistdemo` | search Projects Index | ServiceNow AI demo control plane. Newest project in Linear. |
 | Pierrondi.ia - Apple Design Redesign | Backlog | High | `pierrondi-ia` | `pierrondi-ia` | Design-system redesign track for public site and Studio. |
 | fifa26bolao - Bolao Express | Backlog | No priority | `fifa2026bolao`, `bolao` | search Projects Index | iOS + Railway backend. Active issues remain in progress/todo. |
@@ -553,7 +422,7 @@ Important: this note is not the Linear source of truth. Always verify live proje
 | Pierrondi Marketing OS | In Progress | Urgent | `pierrondi-ia` | `pierrondi-ia` | Core marketing platform and Studio. |
 | PPT_Formation | Backlog | High | `ppt_engine`, `ppt` | search Projects Index | Agentic PPTX engine. |
 | Fashion Stylist AI | Completed | High | `fashion` | search Projects Index | Completed in Linear, still useful as app pattern source. |
-| Faith | Backlog | Urgent | `faith`, `faithschool` | search Projects Index | Homeschool app roadmap and UX track. |
+| Faith | Completed | High | `faith`, `faithschool` | `faithschool-web` | Moved to Past Projects after iOS `2.5.2 (64)` was submitted for App Store Review on 2026-05-26. |
 | Design System Consistency | Backlog | High | `csdm-validator` | search Projects Index | CSDM visual consistency project. |
 | Privacy & Cookie Compliance | Planned | No priority | `pierrondi-ia`, `agentcore`, `csdm-validator` | search Projects Index | Cross-product compliance queue. |
 | Brain Coach - Context-Aware Copilot & AI Architect Workflows | Planned | No priority | `brain`, `servicenow`, `csdm` | search Projects Index | ServiceNow architect/copilot workflows. |
@@ -569,461 +438,539 @@ Important: this note is not the Linear source of truth. Always verify live proje
 | Muse Edit Growth | Todo via issue | High | `fashioncore` | search Projects Index | Live issue AGE-1481 separates current Muse Edit growth from historical Fashion Stylist AI. |
 | MyTone - AI Ringtone Studio | Todo via issue | High | `mytone-app`, `mytone-ringtone` | search Projects Index | Live issue AGE-1476 covers StoreKit smoke test and post-approval hooks. |
 | Parabens IA BR | Todo via issue | High | `parabens-ai-br` | search Projects Index | Live issue AGE-1479 covers App Review/resubmit and BR creative proof. |
-| pierrondi.dev Public Site | Todo via issue | High | `pierrondi-site` | search Projects Index | Live issue AGE-1486 covers proof page and analytics readiness. |
-| ServiceNow SuperApp | Todo via issue | Medium | `servicenow-superapp` | search Projects Index | Live issue AGE-1487 defines product mapping and release readiness before more build work. |
-| SpecialApp | Todo via issue | Medium | `specialapp` | search Projects Index | Live issue AGE-1488 defines identity, ICP and continue/pause decision. |
-
-## Mapping Maintenance
-
-- If `brain-linear-sync` says `Needs Linear project mapping`, add the repo hint here.
-- If a Linear project is archived/completed, keep it here while the project note still has reusable context.
-- Use exact Linear project names when creating issues.
-- Prefer linking one Linear issue to one repo task. For broad p
+| pierrondi.dev Public Site | Todo via issue | High | `pierrondi-site` | search Projects Index | Live issue AGE-1486 covers proof page and analytics readiness. Canonical production is Railway (`www.pierrondi.dev` / `pierrondi-site-production.up.railway.app`); Vercel aliases are legacy/non-official. |
+| Ser
 ...[truncated]
 
-## 04_Areas/Coding/Linear/Linear Daily Sync Checklist.md
-
-# Linear Daily Sync Checklist
-
-Use this in daily automation and when manually deciding what to build next.
-
-Hard rule: the Linear app connector is required for Linear truth. `brain-linear-sync` is only a local Git/mapping snapshot.
-
-## Read
-
-- [ ] Run `brain-linear-sync`.
-- [ ] Open [[04_Areas/Coding/Linear/Linear Git Sync Report]] for Git state only.
-- [ ] Use the Linear app connector to read live Linear projects for `Agentcore`.
-- [ ] Use the Linear app connector to read live Linear issues in `In Progress`, `Todo`, `Backlog`, and assigned to `me`.
-- [ ] Use the Linear app connector to read current and next cycles/sprints for `Agentcore`.
-- [ ] Read labels, statuses, assignees and project status updates before proposing cleanup.
-- [ ] Read active repo project notes in [[02_Projects/Projects Index]].
-
-## Git Triage
-
-- [ ] Identify dirty repos.
-- [ ] Identify repos ahead of upstream.
-- [ ] Identify repos behind upstream.
-- [ ] Identify stale branches with Linear issues still open.
-- [ ] Identify repos without Linear mapping.
-
-## Linear Triage
-
-- [ ] Active work should have a project, priority, status and enough labels to filter later.
-- [ ] Active work should have a cycle/sprint decision: in current cycle, next cycle, backlog, or explicitly out of sprint.
-- [ ] `In Progress` work should map to a repo and next action.
-- [ ] `Todo` should be immediately actionable.
-- [ ] `Backlog` should not become a dumping ground without priority/context.
-- [ ] Issues with no project should be intentionally unprojected or mapped to the correct Linear project.
-- [ ] Completed issues with missing labels or missing assignee are cleanup candidates, not emergencies.
-
-## Update
-
-- [ ] Update [[04_Areas/Coding/Linear/Linear Cleanup Backlog]] with proposed changes only.
-- [ ] Update project notes with active Linear links and Git state.
-- [ ] Update live Linear issue/project when status, blocker, cycle/sprint, priority, assignee, labels or acceptance evidence changed.
-- [ ] Add a Linear comment/status summary when work progressed but should not move status yet.
-- [ ] Add reusable process improvements to [[04_Areas/Coding/Best Practices/Learning Inbox]].
-- [ ] Do not archive/delete/bulk-edit Linear automatically.
-
-## Daily Decision Rule
-
-Pick work in this order:
-
-1. Dirty repo with active Linear issue and deployment/release risk.
-2. `In Progress` issue with stale Git state.
-3. `Todo` urgent/high issue with clear acceptance criteria.
-4. Current cycle/sprint item with no owner, stale update or blocked status.
-5. Backlog cleanup only after active delivery risk is controlled.
-
-
-## 04_Areas/Coding/Linear/Linear Cleanup Backlog.md
-
-# Linear Cleanup Backlog
-
-Updated: 2026-05-17
-
-This note is for cleanup proposals. Do not treat it as permission to bulk-edit Linear.
-
-## Correction - 2026-05-16 22:35 -03
-
-- "Linear" means the live Linear app/workspace, not only local Git mapping hints.
-- The live Linear app connector must be used for projects, issues, cycles/sprints, statuses, labels, assignees, comments and project updates.
-- `brain-linear-sync` remains useful, but only as a local Git state and repo-to-project mapping snapshot.
-- Every automation or new coding/project chat should either update/read the matching Linear issue/project or explicitly say why no Linear update applies.
-
-## Current Observations
-
-- Workspace is centered on the `Agentcore` team with statuses: `Backlog`, `Todo`, `In Progress`, `Done`, `Duplicate`, `Canceled`.
-- Labels exist for product areas such as `ai`, `security`, `infra`, `website`, `marketing`, `automation`, `integration`, `ci-cd`, `Feature`, `Bug`, `Improvement`.
-- Several recent Apple redesign issues are `Done` but unassigned and unlabeled.
-- `fifa26bolao - Bolao Express` has the clearest active issue cluster right now.
-- Backlog is broad across nowassistdemo, Pierrondi Marketing OS, Faith, Cantus.ai and PPT_Formation.
-- Linear tracking issue active: [AGE-1469](https://linear.app/agentcore/issue/AGE-1469/second-brain-corrigir-integracao-real-com-linear-app-e-mapear-repos).
-
-## Daily Alignment Run - 2026-05-15 13:17 -03
-
-- `brain-linear-sync` completed and refreshed [[04_Areas/Coding/Linear/Linear Git Sync Report]] at `2026-05-15 13:17:00`.
-- Live Linear connector inspection was attempted but blocked by MCP startup failure while connecting to ChatGPT apps; no Linear issues, labels, projects or statuses were changed.
-- Current local Git report shows `30` repos scanned, `30` with local changes, `10` ahead of upstream, `2` behind upstream and `17` still needing Linear project mapping.
-- Highest cleanup priority remains repo mapping plus dirty-workset review before starting new backlog work.
-
-## Non-Destructive Cleanup Proposals - 2026-05-15
-
-- Confirm Linear project mappings for unmapped active repos: `servicenow-superapp`, `specialapp`, `adivinha-app`, `aura-affirmations`, `mytone-app`, `SADA`, `parabens-ai-br`, `exploratorio`, `csdm3d-public`, `csdm3d`, `calmaria-sounds`, `bandle-br`, `adivinha-music-quiz`, `mytone-ringtone`, `New project 2`, `New project 3`, `New project 4`.
-- Review dirty repos with large change counts before opening new implementation tasks: `faithschool-web`, `parabens-ai-br`, `fashioncore`, `calmaria-sounds`, `exploratorio`, `investcoach_ai`.
-- For repos ahead of upstream, decide per repo whether to push, open PR, or leave local-only; automation should not push or merge.
-- For repos behind upstream (`SADA`, `parabens-ai-br`), inspect remote delta before additional local edits.
-- Once Linear connector access is healthy, re-run Agentcore review for In Progress, Todo, Backlog, recently updated and assigned-to-me issues, then update this backlog with live issue evidence.
-
-## Daily Alignment Run - 2026-05-16 09:08 -03
-
-- Agent config alignment scan checked `134` local AGENTS/CLAUDE/GEMINI/KIMI files; `129` contain the Obsidian vault preflight or primary vault path.
-- Primary global files remain aligned: Codex, Claude, Gemini, Kimi and OpenClaw all point to `/Users/paulopierrondi/Documents/Obsidian Vault`.
-- Representative active project files remain aligned: `csdm-validator-ios`, `pierrondi-ia`, `investcoach_ai`, `fifa2026bolao`, `servicenow-superapp` and `nowassistdemofactory`.
-- Alignment repair command `/Users/paulopierrondi/.local/bin/obsidian-second-brain-sync` ran successfully and regenerated indexes at `2026-05-16 09:06:49`.
-- Five non-primary or nested files still lack the alignment block after repair; review manually before broad edits:
-  - `/Users/paulopierrondi/.hermes/hermes-agent/AGENTS.md`
-  - `/Users/paulopierrondi/.kimi_openclaw/workspace/AGENTS.md`
-  - `/Users/paulopierrondi/Downloads/faithschool-web/faithschool/CLAUDE.md`
-  - `/Users/paulopierrondi/Downloads/pierrondi-ia-apps-ads-readiness/AGENTS.md`
-  - `/Users/paulopierrondi/Downloads/pierrondi-ia-apps-ads-readiness/CLAUDE.md`
-- `brain-linear-sync` refreshed [[04_Areas/Coding/Linear/Linear Git Sync Report]] at `2026-05-16 09:06:30`: `31` repos scanned, `31` dirty, `8` ahead, `2` behind, `18` still needing Linear project mapping.
-- Live Linear connector inspection succeeded. Agentcore projects are readable; statuses are `Backlog`, `Todo`, `In Progress`, `Done`, `Duplicate`, `Canceled`.
-- Current live `In Progress` issues are still `AGE-1421` through `AGE-1424` for `fifa26bolao - Bolao Express`.
-- Historical 09:08 read: live `Todo` issues were `AGE-1469`, `AGE-1425`, `AGE-1426` and `AGE-1428`; `AGE-1469` was assigned to Paulo and carried `automation` and `Improvement` labels.
-- Later correction at 22:33 moved `AGE-1469` to `In Progress`, renamed it to Linear app integration cleanup and raised priority to Urgent.
-
-## Active /
-...[truncated]
-
-## 04_Areas/Coding/Linear/Linear Git Sync Report.md
-
-# Linear Git Sync Report
-
-Generated: `2026-05-18 09:06:33`
-
-This report is safe to keep in Obsidian. It stores Git metadata and Linear mapping hints only, never API keys, env values, cookies or deploy secrets.
-
-## Summary
-
-- Local Git repositories scanned: `35`
-- Repositories with local changes: `35`
-- Repositories ahead of upstream: `9`
-- Repositories behind upstream: `1`
-- Repositories needing Linear project mapping: `22`
-
-## Highest Risk Working Sets
-
-| Repo | Branch | Dirty | Ahead/Behind | Last commit | Linear project hint | Dirty sample |
-| --- | --- | --- | --- | --- | --- | --- |
-| servicenow-superapp | main | 6 | +41/-0 | 28db44d 2026-05-14 docs: update CHANGELOG with PaymentsRepository and MoneyFormatter tests | Needs Linear project mapping | M AGENTS.md; ?? .brain/; ?? .github/workflows/claude.yml; ?? CLAUDE.md; ?? GEMINI.md; ?? KIMI.md |
-| ppt_engine | main | 7 | +10/-0 | cda1137 2026-05-10 feat(spec-to-png): real Manus style — icons + topology + servicenow brand | PPT_Formation | M AGENTS.md;  M CLAUDE.md; ?? .brain/; ?? .env.local.bak; ?? .github/; ?? GEMINI.md |
-| fashioncore | codex/mobile-ai-gateway-merge | 2 | +7/-0 | 7744be9 2026-05-18 feat(stylist): IntentRouter image-aware + paid-channels baseline gate (AGE-1481) | Fashion Stylist AI | M .brain/PROJECT_CONTEXT.md; ?? artifacts/baselines/ |
-| investcoach_ai | main | 42 | +4/-0 | 04e0f56 2026-05-18 fix(orchestrator): wire coachAgent supplement to UNKNOWN intent + relax eval regex | Investcoach_ai | M .env.example;  M AGENTS.MD;  M CLAUDE.md;  D InvestCoachSwiftUI/appstore-assets/iphone-6-5/01-chat-coach.png;  D InvestCoachSwiftUI/appstore-assets/iphone-6-5/02-onboarding-rapido.png;  D InvestCoachSwiftUI/appstore-assets/iphone-6-5/03-perfil-e-assinatura.png |
-| mytone-app | main | 21 | +3/-0 | b81eca7 2026-05-15 fix(fastlane): fail-fast ASC app check + create_asc_app lane | Needs Linear project mapping | M .github/workflows/claude.yml;  M AGENTS.md;  M CLAUDE.md;  M GEMINI.md;  M KIMI.md;  M ios/MyTone.xcodeproj/project.pbxproj |
-| faithschool-web | main | 36 | +3/-0 | 8c5e082 2026-05-18 test(ai-safety): end-to-end smoke test for bible + risk guards | Faith | M AGENTS.md;  M CLAUDE.md;  M ios/App/App.xcodeproj/project.pbxproj;  M ios/App/CapApp-SPM/Sources/CapApp-SPM/FaithDevotionalView.swift;  M ios/App/CapApp-SPM/Sources/CapApp-SPM/FaithDomain.swift;  M ios/App/CapApp-SPM/Sources/CapApp-SPM/FaithFirebaseSnapshotProvider.swift |
-| pierrondi-ia | main | 21 | +2/-0 | 1a8b750 2026-05-18 feat(portfolio-intelligence): adapter bridging Recommendation → createApproval | Pierrondi Marketing OS / Pierrondi.ia Apple Design Redesign / Agentcore Website | M .brain/CLAUDE_CLOUD_CONTEXT.md;  M .brain/PROJECT_CONTEXT.md;  M .github/workflows/claude.yml;  M AGENTS.md;  M CLAUDE.md;  M GEMINI.md |
-| SADA | main | 7 | +1/-1 | 358efd1 2026-05-07 Refactor duplicated app patterns | Needs Linear project mapping | M CLAUDE.md; ?? .brain/; ?? .github/; ?? AGENTS.md; ?? GEMINI.md; ?? KIMI.md |
-| nowassistdemofactory | main | 6 | +1/-0 | 8f0485a 2026-05-18 feat(build): policy-gated mode picker + demo proof exporter (AGE-1464) | nowassistdemo | ?? .brain/; ?? .github/workflows/claude.yml; ?? AGENTS.md; ?? CLAUDE.md; ?? GEMINI.md; ?? KIMI.md |
-| csdm-validator | main | 9 | +0/-0 | fdf40c6 2026-05-13 feat(coach): Snovai-inspired features — Snap Context, zero retention badge, persistent memory | csdm_validator / Design System Consistency | M .claude/settings.json;  M AGENTS.md;  M CLAUDE.md; ?? .agents/skills/ui-ux-pro-max/; ?? .brain/; ?? .claude/worktrees/ |
-| pierrondi-marketing | main | 1 | +0/-0 | f577fc4 2026-05-18 feat: Creative Factory pipeline — script, voice, captions, render | Needs Linear project mapping | M .brain/PROJECT_CONTEXT.md |
-| provadoria | main | 7 | +0/-0 | de0d8ca 2026-05-18 fix(railway): add root Dockerfile for Railway build | Needs Linear project mapping | M .brain/PROJECT_CONTEXT.md;  M AGENTS.md;  M CLAUDE.md; ?? .brain/README.md; ?? .brain/SESSION_NOTES.md; ?? GEMINI.md |
-| parabens-ai-br | main | 1 | +0/-0 | d07dda5 2026-05-18 fix(railway): increase healthcheck timeout to 300s | Needs Linear project mapping | M .brain/PROJECT_CONTEXT.md |
-| pierrondi-site | main | 8 | +0/-0 | c74f30c 2026-05-16 chore(deploy): add scripts/redeploy.sh + document GitHub auto-deploy | Needs Linear project mapping | M .brain/PROJECT_CONTEXT.md;  M AGENTS.md;  M CLAUDE.md;  M GEMINI.md;  M KIMI.md; ?? .brain/CLAUDE_CLOUD_CONTEXT.md |
-| creative-video-factory | main | 10 | +0/-0 | b6dd584 2026-05-17 docs(.brain): guardrail apontando pra canonical creative pipeline em Pierrondi.ia | Needs Linear project mapping | M .brain/CLAUDE_CLOUD_CONTEXT.md; ?? .brain/CLAUDE_PROMPTS.md; ?? .brain/PROJECT_CONTEXT.md; ?? .brain/README.md; ?? .brain/SESSION_NOTES.md; ?? .github/ |
-
-## Linear Project Coverage
-
-| Linear project hint | Repo count |
-| --- | --- |
-| csdm_validator / Design System Consistency | 5 |
-| Faith | 1 |
-| Fashion Stylist AI | 1 |
-| fifa26bolao - Bolao Expre
-...[truncated]
-
-## 04_Areas/Product/Product Revenue MOC.md
+## 99_System/Automation Email Policy.md
 
 ---
-type: moc
-area: product-revenue
-tags:
-  - product
-  - revenue
-  - automation
-  - second-brain
----
-# Product Revenue MOC
-
-Centro de operacao para transformar o second brain em ideias de apps, melhorias de produtos existentes, marketing melhor e backlog executavel.
-
-## Core Notes
-
-- [[04_Areas/Product/Nightly Opportunity Engine]]
-- [[04_Areas/Product/Nightly Opportunity Report]]
-- [[04_Areas/Product/App Ideas Revenue Backlog]]
-- [[04_Areas/Product/App Refinement Backlog]]
-- [[04_Areas/Product/Repo Data Improvement Backlog]]
-- [[04_Areas/Product/AI Domain Strategy/AI Domain Strategy MOC]]
-- [[04_Areas/Marketing/Marketing Growth Backlog]]
-
-## Inputs
-
-- Perfil e contexto: [[04_Areas/Profile/Paulo Pierrondi Profile]]
-- Projetos locais: [[02_Projects/Projects Index]]
-- Historico de agentes: [[03_AI-Chats/AI Chats Index]]
-- Git/Linear: [[04_Areas/Coding/Linear/Linear Git Development Tracking OS]]
-- Marketing: [[04_Areas/Marketing/Marketing MOC]]
-- Best practices: [[04_Areas/Coding/Best Practices/Development Best Practices Hub]]
-- Checklists: [[04_Areas/Coding/Checklists/Project Checklist Hub]]
-- Vault intelligence: [[04_Areas/Second Brain/Second Brain Intelligence Loop]]
-
-## Output esperado
-
-Toda madrugada, a automacao deve produzir ou atualizar:
-
-- ideias de apps com tese de dinheiro, canal, MVP e score;
-- melhorias nos apps atuais por impacto/tempo/risco;
-- melhorias de marketing com criativo, canal, CTA e prova;
-- melhorias em repos e dados, sem fazer mudanca destrutiva;
-- uma lista curta de apostas para Paulo revisar no dia seguinte.
-
-## Regra de seguranca
-
-A automacao pode escrever notas e propostas no vault. Ela nao pode deployar, publicar, enviar mensagens, gastar dinheiro, alterar secrets, deletar arquivos, fazer push/merge, fechar Linear em massa ou mexer em producao sem pedido explicito.
-
-
-## 04_Areas/Product/Nightly Opportunity Engine.md
-
----
-type: operating-system
-area: product-revenue
+type: policy
 status: active
 tags:
-  - product
-  - revenue
   - automation
-  - nightly
+  - email
+  - notification
 ---
-# Nightly Opportunity Engine
+# Automation Email Policy
 
-Status: active
-Owner: Paulo
-Updated: 2026-05-16
+Regra fixa: toda automacao, independente de rodar em Codex, Claude, Kimi/OpenClaw, Gemini, LaunchAgent local, cloud runner ou script agendado, deve enviar um email de encerramento para `pierrondi@gmail.com`.
 
-## Purpose
+## Obrigatorio
 
-Usar o Obsidian second brain como motor noturno de oportunidades: descobrir ideias de apps para fazer dinheiro, refinar apps existentes, melhorar marketing, melhorar repos e transformar aprendizados em backlog executavel.
+- Enviar email ao final de cada run, tanto em sucesso quanto em falha.
+- Destinatario padrao unico: `pierrondi@gmail.com`.
+- Assunto deve identificar automacao e status.
+- Corpo deve incluir:
+  - nome/id da automacao;
+  - status final;
+  - horario;
+  - principais mudancas/achados;
+  - arquivos/relatorios atualizados;
+  - decisoes humanas pendentes;
+  - falhas ou bloqueios.
+- Redigir segredos antes do envio.
 
-## Nightly Flow
+## Transporte Local Padrao
 
-1. Atualizar telemetria local com `brain-intelligence-pulse`.
-2. Atualizar estado Git/local com `brain-linear-sync`; isso nao substitui o app Linear.
-3. Ler estado vivo do app Linear quando o conector estiver disponivel: projects, issues, current/next cycles, statuses, labels, assignees e project updates.
-4. Ler os hubs principais: Profile, Projects, AI Chats, Coding, Marketing, Linear, Security e Product Revenue MOC.
-5. Revisar notas de projeto, AI histories, learning inbox, screenshots/visual QA, creative workflows e reports recentes.
-6. Pesquisar fontes publicas atuais quando disponivel: mercado de apps, indie hackers, app store patterns, SEO/social/video trends, AI products, Obsidian/agent workflows e repos publicos relevantes.
-7. Gerar outputs curtos e priorizados nos backlogs certos.
-8. Registrar somente propostas e notas. Nenhuma acao destrutiva ou externa.
+Em automacoes locais no Mac, usar:
 
-## Scoring
-
-Cada oportunidade deve receber score simples de 1 a 5:
-
-| Score | Pergunta |
-|---|---|
-| Fit Paulo | Aproveita ServiceNow/FSI, produtos pessoais, familia/fe, marketing ou IP existente? |
-| Velocidade | Da para validar em ate 7 dias? |
-| Receita | Tem caminho claro para assinatura, servico, lead, template, curso, API ou B2B? |
-| Distribuicao | Existe canal real: LinkedIn, YouTube Shorts, TikTok, Instagram, SEO, comunidades, Bradesco/ServiceNow network ou App Store? |
-| Reuso | Reaproveita repos, workflows, assets, dados ou automacoes existentes? |
-| Risco | Evita dependencia fragil, policy risk, secrets, compliance ou custo alto? |
-
-## Output Notes
-
-- [[04_Areas/Product/Nightly Opportunity Report]]
-- [[04_Areas/Product/App Ideas Revenue Backlog]]
-- [[04_Areas/Product/App Refinement Backlog]]
-- [[04_Areas/Product/Repo Data Improvement Backlog]]
-- [[04_Areas/Marketing/Marketing Growth Backlog]]
-- [[04_Areas/Second Brain/Second Brain Improvement Inbox]]
-
-## Decision Rules
-
-- Ideia boa sem canal vira pesquisa, nao prioridade.
-- App existente com caminho de receita vence app novo, salvo quando a ideia nova tiver MVP muito barato.
-- Produto B2B com IP de Paulo recebe peso maior que app generico.
-- Melhorias de marketing devem sempre produzir pacote: hook, roteiro, prova visual, CTA, canal e metrica.
-- Melhorias de repo/dados devem virar PR-sized tasks, nao reescrita ampla.
-- Melhorias de Linear devem partir do app Linear vivo: issue, projeto, cycle/sprint, status, labels e assignee. Nao usar apenas hints do `brain-linear-sync`.
-- Qualquer coisa que exija segredo real, compra, deploy, publicacao ou contato externo vira proposta para Paulo, nao execucao automatica.
-
-## Daily Prompt Contract
-
-```text
-Read Paulo's Obsidian vault as a product/revenue intelligence system. Generate a nightly opportunity report with app ideas, app refinements, marketing moves, repo/data improvements and second-brain improvements. Prioritize by revenue path, speed to validate, distribution, reuse of existing assets and risk. Update only vault notes/backlogs. Do not deploy, publish, send messages, spend money, alter secrets, push/merge code, delete files or make destructive Linear/Git changes.
+```bash
+/Users/paulopierrondi/.local/bin/brain-send-automation-email --automation "<id>" --status "<success|failed>" --log "<path>"
 ```
 
+Para LaunchAgents ou `run.sh`, usar o wrapper/trap:
 
-## 04_Areas/Product/Nightly Opportunity Report.md
+```bash
+/Users/paulopierrondi/.local/bin/brain-run-with-email --automation "<id>" --log "<path>" -- <command>
+```
+
+ou:
+
+```bash
+source /Users/paulopierrondi/.local/bin/brain-automation-email-trap
+brain_automation_email_setup "<id>"
+```
+
+## Cloud / Connector Rule
+
+Se a automacao rodar fora do Mac local:
+
+- usar o conector/ferramenta de email disponivel para enviar a `pierrondi@gmail.com`;
+- se nao houver transporte de email disponivel, criar um draft em Markdown e registrar `EMAIL_FAILED` em [[99_System/Automation Email Log]];
+- a falha de transporte deve aparecer no relatorio final e no vault.
+
+## Guardrails
+
+- Esta regra e a unica excecao padrao a "nao enviar mensagens externas".
+- Nao enviar email para terceiros automaticamente.
+- Nao anexar `.env`, tokens, API keys, cookies, private keys, credenciais, dumps de banco, PII bruta ou logs sem redacao.
+- Nao usar `/usr/bin/mail` direto para Gmail; usar Mail.app/iCloud local quando no Mac.
+- Se o email falhar, salvar draft seguro em [[99_System/Automation Email Drafts]].
+
+## 99_System/Credential Vault Operating Model.md
 
 ---
-type: nightly-report
-area: product-revenue
+type: policy
 status: active
 tags:
-  - product
-  - revenue
-  - automation
-  - report
+  - security
+  - secrets
+  - credentials
+  - second-brain
 ---
-# Nightly Opportunity Report
+# Credential Vault Operating Model
 
-Last configured: 2026-05-18
+## Answer First
 
-This note is the executive output of the nightly opportunity engine.
+O Obsidian pode ser o **cofre operacional** das credenciais, mas nao deve guardar o **valor real** de API keys, tokens, senhas, cookies, private keys ou arquivos `.env`.
 
-## Latest Executive Summary
+Modelo correto:
 
-- Latest run: `2026-05-18 03:55 GMT-3`.
-- Current focus: `AGE-1474` (Urgent, In Progress, milestone `Review queue`) is the canonical portfolio revenue OS. Its In Progress children are `AGE-1479` Parabens IA BR (High, due 2026-05-31) and `AGE-1481` Muse Edit (High, due 2026-06-14). All In Progress issues are already attached to next cycle `Sprint 4` (2026-05-19 → 2026-06-02); current dated cycles close 2026-05-19.
-- ASC delta vs last run: Casa Clara flipped `REJECTED` → `WAITING_FOR_REVIEW` (build 18) and Bandle BR is now `WAITING_FOR_REVIEW` on build 3 — review resubmission paths are clearing. Ten apps are now in review, two are `READY_FOR_SALE` (InvestCoach.AI, SuperApp ServiceNow). Zero actionable CSV/TSV exports under `98_Attachments/marketing-data`.
-- Repo telemetry: 35 repos scanned (up from 32), 35 dirty, 10 ahead, 2 behind, 22 still needing Linear project mapping (up from 19). New unmapped repos that appeared since 2026-05-17 morning: `calmaria-sounds`, `mytone-ringtone`, `adivinha-music-quiz`, `csdm3d`, `csdm3d-public`, `provadoria`, `voudeque`, `pierrondi-marketing`, `New project 4` — most are experimental and should be classified before chasing Linear mappings.
-- Strongest reusable assets: ServiceNow/CSDM expertise, `ppt_engine`, pierrondi.ia marketing studio, iOS app pipeline, Apple Ads/App Store review history, Railway deploy patterns, AI-agent workflows and creative/video pipeline.
-- Guardrail: the automation writes proposals, backlogs and watchlist updates only; it does not deploy, publish, mutate campaigns, store secrets or make destructive Linear app/Git changes.
+```text
+Obsidian             = indice, inventario, runbook, owner, escopo, rotacao, referencia
+/Projects/.keys.env       = fonte unica local para files e automacoes (chmod 600, gitignored)
+Apple Keychain       = cofre durable de valores (paulo-second-brain namespace)
+1Password (futuro)   = referencias multi-machine via op://...
+Provider env vars    = runtime/producao (Railway, Vercel, GitHub Actions)
+```
 
-## 2026-05-18 (03:55 GMT-3)
+Carregamento canonico em scripts locais: `brain-env-run -- <comando>`. Detalhes operacionais em [[99_System/Central Env File Operating Model]].
 
-### Executive Summary
+## Por que nao guardar segredo real em Markdown
 
-- `obsidian-second-brain-sync`, `brain-intelligence-pulse` and `brain-linear-sync` ran clean. Live Linear read confirms 11 issues `In Progress`: `AGE-1474` (Urgent, parent), `AGE-1479` Parabens IA BR (High, parentId `AGE-1474`), `AGE-1481` Muse Edit (High, parentId `AGE-1474`), `AGE-1464` Demo Builder (Urgent, `nowassistdemo`), `AGE-1148` ppt_engine evals (High), `AGE-1490` CSDM Validator target cleanup (Urgent), `AGE-1469` Second Brain Linear integration (Urgent), and four fifa26bolao epics (`AGE-1421/1422/1423/1424`). The portfolio revenue OS (`AGE-1474`) is now formally structured with milestone `Review queue` — do not build a parallel queue surface; vault tables should reference it.
-- ASC state delta: Casa Clara recovered from `REJECTED` to `WAITING_FOR_REVIEW` (build 18), and Bandle BR is in review on build 3 (commit `d65b2b6` 2026-05-17 "ship build 3 with iPad fix + real-feature screenshots"). Ten apps now sit `WAITING_FOR_REVIEW`; nothing is currently rejected. This shifts the "rejection-to-resubmission" theme from urgent unblock to reusable evidence package work.
-- Sprint boundary tonight: all In Progress issues are assigned to next cycle `Sprint 4` (`c9bee14f...`, 2026-05-19 → 2026-06-02). Current dated cycles (`Sprint 4 — Coach Intelligence`, `Sprint 7 — Envelope Budgeting`, `Sprint 3`) all end 2026-05-19. Paulo does not need to re-scope on boundary day; the queue is already mapped. Two Urgent issues outside `AGE-1474` (`AGE-1464`, `AGE-1490`) still compete for daylight against the portfolio queue.
-- Repo growth signal: 35 repos vs 32 last morning. New repos `calmaria-sounds`, `mytone-ringtone`, `adivinha-music-quiz`, `csdm3d`, `csdm3d-public`, `provadoria`, `voudeque`, `pierrondi-marketing` and `New project 4` are mostly experimental scaffolds; classifying them as `prototype`/`active` is more useful tonight than mapping each to a Linear project.
-- Highest-risk repos: `servicenow-superapp` (+41/-0, 6 dirty), `ppt_engine` (+10/-0, 7 dirty), `specialapp` (+7/-0, 21 dirty). All three carry meaningful unpushed history; none should be auto-pushed.
-- Public-source check: no new official sources warranted tonight; established Apple Ads/PPO/CPP/StoreKit/GitHub/Railway anchors remain authoritative. Saving Firecrawl credits.
-- Recommendation: do not start a new build and do not propose a parallel review queue. Tonight's high-EV operational moves are: (1) classify the 9 new unmapped repos as `prototype` vs `active` to defang the 22-unmapped count, (2) close out the Bandle/Casa Clara rejection-to-resubmission templates while the evidence is fresh, (3) confirm sprint carry-over on 2026-05-19 morning, (4) keep Apple Ads/TikTok budgets frozen until at least one campaign CSV/API export lands.
+- O Obsidian guarda notas como arquivos Markdown em texto plano no filesystem local.
+- Obsidian Sync pode proteger o remote vault, mas o vault local continua legivel para qualquer processo/usuario com acesso ao Mac desbloqueado.
+- Plugins, indexadores, backups, search, logs, screenshots e agentes podem acabar lendo o conteudo.
+- LLMs e automacoes devem usar referencias e inventario, nao receber valor real.
 
-### Top 5 App Ideas
+## Onde guardar o valor real
 
-| Rank | Idea | Why now | Revenue path | MVP in 7 days | Next action |
-|---:|---|---|---|---|---|
-| 1 | App Review + Paid Evidence Dashboard Kit | `AGE-1474` milestone `Review queue` makes this the canonical artifact; 10 apps in review with no CSV evidence | template pack, consulting, internal launch O
+| Uso | Local recomendado | Motivo |
+| --- | --- | --- |
+| Variaveis compartilhadas entre projetos locais | `/Users/paulopierrondi/Projects/.keys.env` (chmod 600, gitignored) carregado via `brain-env-run` | Fonte unica para files e automacoes; precedence aceita override por projeto. |
+| Override por projeto local | `./.env` no diretorio do projeto | Aplicado apos o central, vence em conflito. |
+| Senhas/passkeys pessoais | Apple Passwords / iCloud Keychain ou 1Password | Sync seguro com devices aprovados. |
+| API keys de desenvolvimento durable | 1Password Developer / 1Password CLI | Permite `op://...` references e `op run` sem plaintext. |
+| Secrets de producao Railway/Vercel/Netlify/Fly/Render | Provider env vars | O runtime injeta sem passar pelo vault. |
+| CI/CD | GitHub Actions Secrets ou provider equivalente | Separacao de acesso por repo/env. |
+| Cloud enterprise | AWS/GCP/Azure secret manager | IAM, audit, rotacao e least privilege. |
+| Fallback local Mac | Apple Keychain via `brain-load-secrets`/`brain-secret-intake` | Bom para credenciais humanas e backing durable do `.env` central. |
+
+## O que o vault deve guardar
+
+Guardar em [[04_Areas/Coding/Checklists/Secrets And API Keys Register]]:
+
+- Nome da env var.
+- Provider.
+- Projeto/repos que usam.
+- Ambiente: local, staging, prod, CI.
+- Onde o valor real esta guardado.
+- Referencia segura, quando houver, como `op://vault/item/field`.
+- Escopo/permissao.
+- Owner.
+- Data de criacao/rotacao.
+- Procedimento de revogacao.
+- Evidencia de que `.env.example` existe sem valor real.
+
+## O que o vault nunca deve guardar
+
+- API key real.
+- Bearer token, refresh token, session token ou cookie.
+- Senha.
+- Private key `.p8`, `.pem`, `.key`, `.p12`.
+- Service account JSON.
+- `.env` completo.
+- Screenshot mostrando credenciais.
+- Output de CLI que imprima secrets.
+
+## Padrao recomendado para Paulo
+
+### 1. `/Users/paulopierrondi/Projects/.keys.env` como fonte unica local
+
+Carregar com `brain-env-run`:
+
+```bash
+brain-env-run -- npm run dev
+brain-env-run -- python3 scripts/factory.py
+brain-env-run list           # mostra apenas nomes
+brain-env-run check          # confirma chmod 600 e contagem de keys
+```
+
+Regras: `chmod 600`, gitignored, nunca em Markdown/chat/Linear/email/screenshot. Detalhes em [[99_System/Central Env File Operating Model]].
+
+### 2. Apple Keychain como backing durable do `.env` central
+
+`brain-secret-intake` grava no Keychain; `brain-load-secrets` exporta no shell ou subprocess. Useful para regerar o `.env` central apos rotacao ou em maquina nova. Receita completa em [[99_System/Central Env File Operating Model]].
+
+### 3. 1Password como cofre principal multi-machine (futuro)
+
+Quando `op` estiver instalado:
+
+```bash
+export OPENAI_API_KEY="op://Developer/OpenAI/api-key"
+op run -- npm run dev
+```
+
+Regra: `.env.op` pode guardar referencias `op://...`; `.env.local` com valor real fica local e gitignored.
+
+### 4. Apple Passwords / iCloud Keychain para credenciais humanas
+
+Usar para contas, passkeys, senhas de apps e acesso no iPhone/Mac. Bom para uso humano; nao e o melhor formato para automacoes de coders porque nao tem referencias `op://...` portaveis por repo.
+
+### 5. Provider env vars para producao
+
+Railway/Vercel/GitHub/etc. continuam fonte de runtime. O vault guarda somente:
+
+```text
+RAILWAY_PROJECT=x
+RAILWAY_SERVICE=y
+ENV_VAR_NAME=OPENAI_API_KEY
+stored_at=Railway Variables
+value=never stored here
+```
+
+## Regras para coders
+
+- Default para automacoes locais: `brain-env-run -- <comando>`. Carrega `/Projects/.keys.env` central + override de projeto, sem ecoar valores.
+- Nunca pedir que Paulo co
 ...[truncated]
 
-## 04_Areas/Product/App Ideas Revenue Backlog.md
+## 04_Areas/Coding/Best Practices/Development Best Practices Hub.md
 
 ---
-type: backlog
-area: product-revenue
+type: best-practices-hub
 tags:
-  - app-ideas
-  - revenue
-  - backlog
+  - best-practices
+  - coding
+  - learning-loop
 ---
-# App Ideas Revenue Backlog
+# Development Best Practices Hub
 
-Backlog de ideias de apps/produtos criadas a partir do second brain. A automacao noturna deve adicionar ideias aqui com score e proximo experimento.
+Este e o hub vivo de melhores praticas de desenvolvimento.
 
-## Score Legend
+## Como usar
 
-1 = fraco, 3 = plausivel, 5 = forte.
+Antes de implementar, revisar ou desenhar arquitetura, escolha os guias relevantes:
 
-| Idea | Source assets | User/buyer | Revenue path | Distribution | Fit | Speed | Revenue | Distribution score | Reuse | Risk | Next experiment | Status |
-|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|
-| ServiceNow FSI Operating Model Kit | Bradesco/Now Assist/CSDM context, deck workflows, `ppt_engine` | TAE/SC/FSI leaders, partners | consulting package, templates, workshop, deck generator | LinkedIn + ServiceNow network | 5 | 3 | 5 | 4 | 5 | 3 | Build one anonymized sample package and landing page section | candidate |
-| CSDM Data Quality Analyzer SaaS | `csdm-validator`, CSDM scripts, ServiceNow expertise | ServiceNow platform owners, partners | B2B subscription, audit report, services lead-gen | LinkedIn, partner network, SEO | 5 | 3 | 5 | 4 | 5 | 3 | Create public demo report with fake/sample data | candidate |
-| AI Presentation Factory for Executives | `ppt_engine`, deck skills, Bradesco executive workflows | enterprise sellers, consultants, founders | SaaS/CLI, premium templates, services | LinkedIn, YouTube demos, Gumroad-style templates | 5 | 4 | 4 | 4 | 5 | 3 | Turn one internal flow into public demo video | candidate |
-| Family Homeschool Copilot | `faithschool-web`, family/faith context | homeschool families | subscription | SEO, parent communities, short video | 4 | 3 | 4 | 3 | 4 | 3 | Define one daily planner workflow and pricing page | candidate |
-| Short-Form Creative OS for Founders | pierrondi.ia studio, ElevenLabs/subtitle workflow | founders/consultants | service + productized package | LinkedIn, Shorts, TikTok, Instagram | 4 | 4 | 4 | 5 | 5 | 2 | Publish 3 sample creator packages for pierrondi.dev | candidate |
-| App Store + Apple Ads Launch Copilot | iOS history, App Store checklist, TestFlight learnings, 4 live Apple Ads apps with no CSV connected | indie app builders | checklist product, consulting, automation | SEO, GitHub, App Store communities | 4 | 4 | 3 | 3 | 5 | 3 | Convert current `App Marketing Daily Tuning Report` shape into a public template (strip account-specific values); pair with iOS preflight checklist | candidate |
-| Music/Ringtone Micro-App Bundle | `mytone-app`, `mytone-ringtone`, music quiz repos | consumers, musicians | freemium + IAP/subscription | App Store, TikTok demos | 3 | 4 | 3 | 4 | 4 | 3 | Validate one viral short format with app demo | candidate |
-| Faith + Affirmation Audio App | `aura-affirmations`, ElevenLabs workflow | wellness/faith users | subscription/IAP | App Store + short video | 3 | 4 | 3 | 4 | 4 | 3 | Finish TestFlight/IAP path and create 5 sample audios | candidate |
-| App Store Product Page Experiment Kit | App Store launch history, screenshots, creative pipeline, App Store docs | indie iOS builders and Paulo's own app portfolio | checklist/template + consulting + internal launch OS | SEO, GitHub, App Store communities | 4 | 5 | 3 | 3 | 5 | 4 | Turn PPO/CPP/App Analytics workflow into one public checklist and one internal launch table | research |
-| AI Agent Memory Hygiene Kit | Obsidian vault, AGENTS/CLAUDE/GEMINI/KIMI patterns, `brain-*` scripts | builders using coding agents | template pack, setup service, content lead magnet | GitHub, blog, YouTube Shorts | 4 | 4 | 3 | 3 | 5 | 4 | Publish a small before/after of concise memory + linked detail; keep private facts out | research |
-| Apple Ads / ASA Evidence-First Tuning Kit | `App Marketing Intelligence OS`, `App Marketing Daily Tuning Report`, 4 live ASA apps as testbed | indie iOS builders running paid spend | template pack + private OS service + consulting | GitHub, SEO, ASA community | 4 | 4 | 3 | 3 | 5 | 4 | Pull one redacted ASA daily-tuning example and a "no CSV, no budget change" gate rule into a public template | candidate |
-| Provider Secret Leakage Guardrail Pack | `Security And Secrets Policy`, `Railway Secrets Inventory`, `brain-railway-run` wrapper | builders shipping Railway/Vercel/Heroku apps with agents | template pack + setup service | GitHub, blog, agent-builder communities | 4 | 4 | 2 | 2 | 5 | 4 | Document the `railway variables --json` + targeted-key pattern as a reusable agent guardrail (no real secrets in the repo) | research |
-| App Review + Paid Evidence Dashboard Kit | App Store review queue, App Marketing Daily Tuning Report, ASA export gate, Obsidian Bases, Linear `AGE-1474` | indie iOS builders and Paulo's app portfolio | template pack, consulting, internal launch OS | GitHub, blog, pierrondi.dev, App Store communities | 4 | 5 | 3 | 3 | 5 | 4 | Use `AGE-1474` as the canonical validation spine; build one redacted queue template with review state, revenue blocker, post-approval action and paid evidence gate | active-candidate-2026-05
+- App/Web quality: [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]]
+- High-craft frontend visual standard: [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]]
+- Guided tour UX: [[04_Areas/Coding/Best Practices/Guided Tour UX Standard]]
+- Mobile opening motion: [[04_Areas/Coding/Best Practices/Mobile App Opening Motion Standard]]
+- Mobile privacy/consent: [[04_Areas/Coding/Best Practices/Mobile App Privacy Consent Standard]]
+- iOS QA/TestFlight closure: [[04_Areas/Coding/Best Practices/iOS Functional QA And TestFlight Closure Standard]]
+- Web/Next/React: [[04_Areas/Coding/Best Practices/Web Next React Best Practices]]
+- Frontend UI/UX: [[04_Areas/Coding/Best Practices/Frontend UI UX Best Practices]]
+- Backend/API: [[04_Areas/Coding/Best Practices/Backend API Best Practices]]
+- Database/Data: [[04_Areas/Coding/Best Practices/Database Data Best Practices]]
+- Mobile/iOS: [[04_Areas/Coding/Best Practices/Mobile iOS Best Practices]]
+- Android: [[04_Areas/Coding/Best Practices/Android App Best Practices]]
+- Python/Data tools: [[04_Areas/Coding/Best Practices/Python Data Best Practices]]
+- AI/LLM apps: [[04_Areas/Coding/Best Practices/AI LLM Best Practices]]
+- DevOps/Railway: [[04_Areas/Coding/Best Practices/DevOps Railway Best Practices]]
+- Testing/QA: [[04_Areas/Coding/Best Practices/Testing QA Best Practices]]
+- **Cyclomatic complexity (mandatory end-of-activity gate): [[99_System/Cyclomatic Complexity Policy]]**
+- Agent workflow: [[04_Areas/Coding/Best Practices/Agent Workflow Best Practices]]
+- Security baseline: [[04_Areas/Coding/Checklists/Security Checklist]]
+- Authorized security testing / bug bounty engine: [[04_Areas/Coding/Best Practices/Authorized Security Testing Engine]]
+- Platform checklists: [[04_Areas/Coding/Checklists/Project Checklist Hub]]
+
+## Como aprender automaticamente
+
+Todo coder deve registrar aprendizados reutilizaveis em:
+
+- [[04_Areas/Coding/Best Practices/Learning Inbox]]
+- [[04_Areas/Coding/Best Practices/Patterns To Promote]]
+
+## Padrões recentemente promovidos
+
+- Authorized security testing: gated request harness (default-deny scope, ≤1 req/s, auto-redacted evidence, no active request without human gate), self-evolution loop (outcomes → lessons → behavior, EV-ranked targets), adversarial self-audit of safety tooling. Ver [[04_Areas/Coding/Best Practices/Authorized Security Testing Engine]].
+
+- Prompt caching e workflow layout: separar prefixo estável de delta dinâmico, registrar `prompt_cache.strategy`, `prefix_version` e telemetria quando houver.
+- CLI/headless orchestration: comandos batch devem ter modo não-interativo explícito; quando o CLI default for TUI, usar flag headless/documentada antes de integrar em automação.
+- iOS/Android/App Store/Play submissions: smoke real no runtime alvo continua sendo gate obrigatório, mesmo quando lint/build/health check passam.
+- Screenshot/release QA: assets de loja e marketing precisam composição final, dimensão exata e validação lado a lado antes do submit.
+- Guided tours: cada rota/funcionalidade relevante precisa tour contextual com spotlight correto, persistencia por usuario e validacao desktop/mobile/producao antes de release.
+- Complexidade ciclomatica: gate obrigatorio de fim-de-atividade via `complexity-guard.py scan --changed`; nada com funcao acima do teto HARD (CCN 15) fecha sem refator ou waiver logado. Engine universal `lizard` + nativo (`ruff C901`, eslint `complexity`). Ver [[99_System/Cyclomatic Complexity Policy]].
+
+Aprendizado reutilizavel e algo que deve guiar projetos futuros:
+
+- erro recorrente;
+- comando canonico melhor;
+- convencao de plataforma;
+- decisao de arquitetura que se repetiu;
+- checklist que faltava;
+- risco de seguranca percebido;
+- padrao de deploy ou rollback;
+- regra de UX/design que melhorou resultado;
+- falha visual detectada por screenshot ou viewport;
+- regra de store readiness para App Store ou Google Play.
+
+## Regra para agentes
+
+Quando uma sessao terminar, perguntar internamente:
+
+- "Isto ensina algo reutilizavel?"
+- "Algum checklist deve ganhar item novo?"
+- "Alguma pratica antiga deve ser corrigida?"
+- "Isso vale para uma plataforma especifica ou para todos os projetos?"
+
+Se sim, registrar no Learning Inbox ou em `.brain/SESSION_NOTES.md` quando o vault nao estiver acessivel.
+
+## Promocao
+
+Itens do Learning Inbox viram melhores praticas quando:
+
+- aconteceram em mais de um projeto;
+- evitaram bug, retrabalho, custo ou risco;
+- melhoraram qualidade visual, seguranca, performance ou deploy;
+- foram confirmados por teste, build, deploy ou revisao.
+
+## Links
+
+- [[04_Areas/Coding/AI Coding Operating System]]
+- [[04_Areas/Coding/Checklists/Project Checklist Hub]]
+- [[04_Areas/Coding/Checkli
 ...[truncated]
 
-## 04_Areas/Product/App Refinement Backlog.md
+## 04_Areas/Coding/Best Practices/App Web Quality Best Practices.md
 
 ---
-type: backlog
-area: product-refinement
+type: best-practices
+platform: app-web-quality
 tags:
+  - best-practices
   - apps
-  - product
-  - backlog
----
-# App Refinement Backlog
-
-Backlog de melhorias nos apps/produtos existentes. A automacao noturna deve priorizar itens por impacto comercial, esforco, risco e proximidade de release.
-
-| Project | Current thesis | Highest-value refinement | Revenue/impact path | Effort | Risk | Next action | Status |
-|---|---|---|---|---|---|---|---|
-| pierrondi-ia | Agency/site + marketing OS | Make creative/video workflow visible as productized service | leads + service packages | M | M | ✅ Landing copy + 3 sample creative packages (InvestCoach/FaithSchool/Muse) em [[Pre-Launch Pack 2026-05-17]] §4. Pendente humano: publicar em pierrondi.dev/criativo | pack-shipped-2026-05-17 |
-| ppt_engine | Executive deck generation CLI/product | Productize one repeatable executive deck flow | template/API/SaaS/services | M | M | ✅ Demo deck outline (10-slide Bradesco Q2 update) + 3-tier pricing (R$197 pay-per-deck, R$497/seller/mês, R$3.997/time/mês) em [[Pre-Launch Pack 2026-05-17]] §3. Pendente: rodar ppt_engine pra gerar o demo .pptx + landing | pack-shipped-2026-05-17 |
-| aura-affirmations | TTS affirmation app, 3 IAPs ready | Submitted for review 2026-05-15; prep 5 audio-led Reels/TikTok variants + 1 CPP hypothesis for post-approval | subscription | S | M | ✅ 5 hooks (4 mood-led + 1 sleep-led) com scripts completos + CPP A/B hypothesis (mood vs sleep) decisão de priorizar mood em [[Pre-Launch Pack 2026-05-17]] §1. Pendente: aguardar aprovação Apple + gravar audio + screenshots | pack-ready-2026-05-17 |
-| mytone-app | Music/audio app with Railway backend; App Store review now `WAITING_FOR_REVIEW` | Make MyTone the first US TikTok/Meta acquisition candidate with IAP, tracking events and demo creatives | IAP/subscription | M | M | ✅ 10 hooks TikTok/Reels prontos (POV, áudio do filho, music quiz, antes/depois, etc) + StoreKit/export smoke-test checklist completo (pre-flight + edge cases + performance gates) em [[Pre-Launch Pack 2026-05-17]] §2. Pendente: aguardar aprovação + gravar UGC + executar smoke test | pack-ready-2026-05-17 |
-| adivinha-app | Music quiz, submitted for review 2026-05-15 | On approval: install `APPLE_SHARED_SECRET` in backend secret manager + finish RevenueCat product/entitlement wiring | subscription/IAP | S | M | On approval: set shared secret in provider env (never Markdown), configure RevenueCat app/products/entitlement, redeploy backend, sandbox smoke test | submitted-review |
-| parabens-ai-br | Personalized birthday/message app; Linear `AGE-1479` now In Progress | Resolve App Review/resubmit path and prepare BR proof creatives without paid spend | IAP/server payments + WhatsApp sharing | M | M | Manual ASC read required: capture exact review reason, fill rejection checklist, validate IAP/subscription blocker, draft 10 birthday/WhatsApp hooks; no campaign/budget mutation | linear-in-progress-2026-05-18 |
-| faithschool-web | Family homeschool copilot; strongest current US Apple Ads learning candidate | **Repositionar weekly planner → copiloto diário 5min de fé em família** (resolve TikTok 7.9k views/0 cliques + ativação D1). Notificação devocional matinal 60s + lição da semana resumida em 90s na primeira sessão + copy app store "5 min de Deus em família" | subscription | M | M | ✅ ASC copy ([[Repositioning Package 2026-05-16]]) + i18n tagline/devotionalBanner PT-BR/EN + scheduler 7am Capacitor (`src/lib/notifications/`) hookado no `(app)/layout.tsx`. Pendente humano: `npx cap sync ios` + NSUserNotificationUsageDescription no Info.plist | code-shipped-2026-05-17 |
-| fashioncore | Closet-smart styling companion; Muse Edit has generated creative package and low/zero Apple Ads delivery signals; Linear `AGE-1481` now In Progress | **Colapsar fluxo pra "1 foto → 3 looks em 10s"** (destrava zero delivery US trocando keyword "wardrobe planner" por cauda longa "outfit ideas"/"what to wear"). Câmera como home; cadastro de guarda-roupa vira opcional Pro; "Look do dia" notificação 7h | subscription/affiliate | M | M | ✅ ASC copy ([[Repositioning Package 2026-05-16]]) + SnapHomeView camera-first como tab 0 + Closet Pro-gated via `ClosetProGate.swift` (RootTabView swapped). 🔄 Pendente: classificar UGC assets (usar/refazer/descartar), exportar baseline Apple Ads/TikTok/App Store antes de budget change, IntentRouter image-aware input, decisão de Pro pricing R$/US$; affiliate partnership | linear-in-progress-2026-05-18 |
-| csdm-validator | ServiceNow/CSDM validation tool | Package as audit/report generator | B2B service/SaaS | M | M | ✅ Sample report anonimizado (Banco Andromeda) em [[CSDM Sample Audit Report 2026-05-17]] — pronto pra leave-behind em discovery call. Pendente: 1) pricing decision; 2) publicar redacted version no Pierrondi.dev | sample-shipped-2026-05-17 |
-| servicenow-agent-army | Community ServiceNow agent product | Clarify ICP and first paid workflow | community/product/service | M | M | ✅ ICP definido (Sr. SC/SA em parceiro
-...[truncated]
-
-## 04_Areas/Product/Repo Data Improvement Backlog.md
-
----
-type: backlog
-area: repo-data
-tags:
-  - repos
-  - data
-  - backlog
+  - web
+  - screenshots
   - quality
 ---
-# Repo Data Improvement Backlog
+# App Web Quality Best Practices
 
-Backlog noturno para melhorar repos, dados e confiabilidade sem fazer mudancas destrutivas automaticamente.
+## Principio
 
-## Categories
+Qualidade de app/web e uma combinacao de produto, design, estado, performance, acessibilidade, privacy, store readiness e evidencia visual. **Qualidade sempre sobe. Nunca degrada conscientemente.** Cada release, cada tela, cada screenshot, cada copy substituida deve estar igual ou melhor que a versao anterior. Se um deliverable parece pior que o anterior, ou pior que o competidor, e nao-aceitavel; refazer.
 
-| Category | What to look for | Output |
-|---|---|---|
-| Dirty repo risk | many modified files, ahead/behind, stale branches | proposal in project note or Linear cleanup backlog |
-| Release readiness | missing tests, build commands, App Store/TestFlight gaps | checklist tasks |
-| Data quality | missing migrations, seed data, analytics events, ownership fields | repo/data task |
-| Security | `.env` drift, missing `.env.example`, secrets inventory gaps | metadata-only inventory update |
-| Product analytics | missing event names, conversion funnel, retention metric | measurement task |
-| Marketing proof | missing screenshots, demo videos, before/after assets | creative task |
-| Database health | schema drift, missing backup notes, untracked production dependencies | non-secret review task |
+## O padrao Paulo
 
-## Current Nightly Targets
+- Construir a experiencia real primeiro.
+- Evitar landing generica quando o pedido e app/ferramenta.
+- Todo app precisa nascer com identidade publica completa: icone final forte, landing page publica de padrao superior e links legais vivos. Isso e parte do produto, nao acabamento.
+- App icon nunca pode ser placeholder. Antes de review, TestFlight, launch, deck ou paid campaign, validar o icone dentro do build/app instalado, no asset catalog completo da plataforma e na landing/favicons/OG image.
+- Landing page publica nunca pode ser resposta JSON, pagina generica ou placeholder. `GET /` deve entregar HTML responsivo, branded, com proposta de valor clara, visual real do produto, CTA, links de suporte/privacy/terms e metadata social/SEO.
+- Interfaces operacionais devem ser claras, densas e rapidas.
+- Apps consumer podem ser mais expressivos, mas ainda precisam de fluxo obvio.
+- Idioma e contrato de produto: cada app precisa declarar um idioma primario canonico por mercado/release e nenhuma rota/tela deve misturar PT/EN por fallback de browser, string hardcoded ou asset antigo. Apps bilingues precisam de locale explicito, switch claro e QA separada por idioma.
+- Todo app mobile deve ter uma pequena animacao de abertura contextual ao dominio do app, antes de privacidade/auth/home, sem parecer splash generico e sem atrasar o uso.
+- Em app iOS, modificacao significativa so fecha depois de teste funcional no app instalado e upload do novo build para TestFlight/App Store Connect, salvo excecao explicita.
+- Screenshots sao deliverable de primeira classe, nao "depois". Submission, release, post, deck, anuncio ou pagina nova so e "feito" quando os arquivos finais artisticos existem, validados e registrados.
+- Privacidade e consentimento tambem sao deliverable de primeira classe. Todo app novo precisa ter tela padrao de primeira abertura, links legais vivos e tracking desligado por padrao antes de qualquer SDK/evento de marketing.
+- Toda tela importante precisa lidar com loading, erro, vazio e permissao.
+- Classificar cada screenshot por finalidade antes da QA final: produto real, store review, marketing, deck preview, teste visual ou dependencia. Screenshot de `node_modules`, fixture ou snapshot de pacote nao prova qualidade do app.
 
-| Target | Why | Next action | Status |
-|---|---|---|---|
-| Dirty repos from Linear Git Sync Report | Many project notes currently show dirty snapshots | Prioritize by active Linear/project revenue relevance | recurring |
-| Railway variables inventory | Production apps depend on provider env vars | Keep metadata fresh; never store values | recurring |
-| iOS release pipeline | Multiple apps depend on App Store Connect/TestFlight | Use Apple inventory + iOS preflight before upload work | recurring |
-| Creative/video assets | Marketing improves only with proof and iteration | Link generated assets, captions, hooks and metrics | recurring |
-| Linear mapping for revenue-active repos | 19 repos still show `Needs Linear project mapping` | Draft mappings for MyTone, Aura, Adivinha, specialapp, servicenow-superapp, parabens-ai-br, bandle-br, pierrondi-site first | candidate |
-| App Store product-page measurement | Paid app growth needs product page optimization/custom product page discipline | Add PPO/CPP/App Analytics fields to launch package before scaling spend | candidate |
-| GitHub secret protection readiness | Many repos are public or near-public and use provider env vars | Check push protection/secret scanning status as metadata only; never store secret values | candidate |
-| Agent memory note hygiene | Large always-loaded histories reduce retrieval quality | Keep global instructions concise and link to vault detail instead of copying long histories | candidate |
-| Apple Ads / ASA CSV connection | 4 live Apple Ads apps with no CSV connected — no impressions/taps/installs/CR/CPA/spend evidence | Add per-app inventory row in `App Marketing Metrics Inventory` (file path + columns, metadata only, no API tokens); use as gate for budget changes | candidate |
-| Railway secret hygiene | `railway variables` (no flag) printed `PGPASSWORD` in plaintext during Muse Edit render | Default to `railway variables --json` + targeted-key extraction or `brain-railway-run -- <cmd>`; never paste output in Markdown, logs or screenshots | candidate |
-| FaithSchool resubmission risk | Build 15 uploaded after 5+ rejections | Run a rejection-pattern review against past project-note history before next ASC submit; verify against `App Store Connect Upload Runbook` | candidate |
-| pierrondi.ia split hygiene | Repo split into `pierrondi-site` (public) and `pierrondi-os` (internal automation) | Confirm both project notes exist; propose non-destructive Railway service rename; isolate analytics surfaces | candidate |
-| App review queue data | Multiple apps are `WAITING_FOR_REVIEW`, one is rejected, and ready-for-sale apps need paid evidence gates | Add safe metadata fields: app, version, build, review state, blocker, post-approval action, evidence path, human owner | candidate |
-| Launch-bound repo secret scanning metadata | GitHub docs support secret scanning/push protection as a credential-exposure control | Track whether public or launch-bound repos have secret scanning/push protection readiness checked; store status only, never findings or secret values | candidate |
-| Linear connector read nuance | `list_projects` returned 400 when `includeMilestones=true`, but succeeded without that flag | Record tool usage pattern so future automations get live project state reliably | candidate |
-| Dirty repo portfolio triage | Latest sync shows 32/32 scanned repos dirty, 8 ahead and 3 behind | Create non-destructive cleanup proposal order by revenue proximity: app review/revenue apps first, then B2B/IP repos, then experiments | candidate |
-| Cantus.ai Harmonizer -> exploratorio/CantuStudio mapping | Linear project `Cantus.ai Harmonizer` is `In Progress` but `exploratorio` and `CantuStudio` repos still report `Needs Linear project mapping` | Add the mapping row in `Linear Project Map`; do not write to Linear | candidate |
-| creative-video-factory source-of-truth confusion | New standalone repo (2026-
+## Privacy and consent
+
+Regra maxima: app sem clareza de privacidade nao esta pronto para TestFlight externo, review, campanha ou launch.
+
+Padrao:
+- Primeiro launch deve explicar uso funcional de dados, oferecer links legais e permitir continuar sem tracking.
+- Tracking entre apps/sites, IDFA, ads SDK, MMP e medicao de marketing ficam desligados por padrao e exigem decisao explicita de produto.
+- Se nao houver tracking, remover SDKs de ads/attribution, SKAdNetwork IDs e chaves client-side do binario final.
+- Se houver tracking, ATT/privacy labels/termos/eventos precisam estar coerentes antes do upload.
+- Screenshot da tela de consentimento por idioma principal vira evidencia obrigatoria do release.
+
+Guia canonico: [[04_Areas/Coding/Best Practices/Mobile App Privacy Consent Standard]]
+
+## Opening motion
+
+Regra maxima: todo app mobile precisa de uma assinatura curta de abertura, contextual ao produto, local/offline e respeitando acessibilidade.
+
+Padrao:
+- Launch screen nativo fica estatico; a animacao acontece dentro do app apos o primeiro frame.
+- A animacao usa a metafora real do produto: musica, financas, devocional, escola, saude, foto/video, SaaS etc.
+- Primeiro uso pode durar ate `1.6s`; cold start recorrente deve ser mais curto, idealmente `0.4s-0.9s`; nunca passar de `2s`.
+- Deve respeitar Reduce Motion e nao depender de backend.
+- Nao pode inicializar tracking, ads SDK ou medicao de marketing antes do consentimento aplicavel.
+- Evidencia visual da animacao deve ser registrada na nota do projeto quando houver release visual/mobile.
+
+Guia canonico: [[04_Areas/Coding/Best Practices/Mobile App Opening Motion Standard]]
+
+## iOS QA and TestFlight closure
+
+Regra maxima: para app iOS, "feito" nao significa apenas codigo compilando. Significa app testado, build incrementado, archive/export feito e upload TestFlight concluido.
+
+Padrao:
+- Ao fechar mudanca iOS significativa, testar no app instalado: cold start/opening motion, privacy/consent, auth/demo ou anonimo, Home, navegacao principal, feature alterada, links legais e APIs relevantes.
+- Incrementar build number antes do archive.
+- Usar lane/script
+...[truncated]
+
+## 04_Areas/Coding/Best Practices/Recent App Web Screenshot Learnings.md
+
+---
+type: learning-review
+area: app-web-quality
+tags:
+  - screenshots
+  - visual-qa
+  - apps
+  - web
+  - learning-loop
+---
+# Recent App Web Screenshot Learnings
+
+Consolidado das criacoes e artefatos recentes encontrados no workspace.
+
+## Fontes observadas
+
+- `pierrondi-ia/docs/marketing/campaigns/.../buildinpublic-stats-1080x1350.png`
+- `ppt_engine/workspace/.../*.preview.png`
+- `fashioncore/apps/ios/fastlane/screenshots/en-US/*_1284x2778.png`
+- `fifa2026bolao/artifacts/review/*iphone*.png`
+- `fifa2026bolao/artifacts/review/*ipad*.png`
+- `servicenow-agent-army/marketing/video-*`
+- `pierrondi-ia/test-results`
+- `pierrondi-ia/tmp/ui-review`
+
+## Aprendizados promovidos
+
+- Screenshot de review/store precisa provar plataforma e tamanho, nao apenas "parece bonito".
+- App Store/Google Play pedem conjuntos diferentes de evidencia: phone, tablet/large screen quando aplicavel, idioma, dark/light e ausencia de dados sensiveis.
+- Imagens de marketing precisam nascer no formato de destino: feed, story, deck, landing, preview e video nao devem reaproveitar crop por acidente.
+- Screenshots de UI precisam capturar estado real: loading, empty, erro, permissao, auth, pagamento, onboarding e sucesso.
+- Render preview de deck/documento/site e uma forma de teste visual; se nao renderizou, nao esta pronto.
+- `node_modules`, package fixtures e snapshots de dependencias nao contam como evidencia do produto.
+- O vault deve registrar paths e decisao de qualidade, nao copiar imagens sensiveis nem inflar a memoria com dumps.
+
+## Regra operacional
+
+Quando um agente mexer em app/web visual:
+
+- usar [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]];
+- registrar os paths de evidencia na nota do projeto;
+- transformar falhas recorrentes em item de checklist;
+- nao anexar screenshot com segredo, PII, token, cookie ou ambiente de producao exposto.
+
+## Destinos
+
+- [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]]
+- [[04_Areas/Coding/Checklists/App Web Preflight Checklist]]
+- [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]]
+
+## 04_Areas/Coding/Best Practices/Android App Best Practices.md
+
+---
+type: best-practices
+platform: android
+tags:
+  - best-practices
+  - android
+  - google-play
+---
+# Android App Best Practices
+
+## Principios
+
+- Android nao e apenas "iOS portado": respeitar back navigation, intents, permissions, density, large screens e lifecycle.
+- Estado do usuario deve sobreviver background, rotacao e navegacao.
+- Permissoes perigosas precisam ser minimizadas e pedidas no contexto certo.
+- Data safety e privacy policy precisam bater com codigo e SDKs.
+
+## UI
+
+- Usar Material 3 quando estiver no stack.
+- Touch targets e fontes precisam escalar.
+- Layouts devem funcionar em phone, tablet e foldable quando relevante.
+- Dark mode precisa ser intencional, nao acidental.
+
+## Arquitetura
+
+- Segredos nunca entram no APK/AAB.
+- Offline e rede ruim precisam de estado explicito.
+- Background work deve usar APIs apropriadas e respeitar bateria.
+- Analytics/crash SDKs devem estar no inventario de privacy.
+
+## Release
+
+- Version code/name atualizados.
+- App Bundle com signing correto.
+- Store listing honesta.
+- Test track antes de producao.
+- Data safety atualizado a cada novo SDK/coleta.
+
+## Links
+
+- [[04_Areas/Coding/Checklists/Android App Preflight Checklist]]
+- [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]]
+
+## 04_Areas/Coding/Best Practices/Agent Workflow Best Practices.md
+
+---
+type: best-practices
+platform: agents
+tags:
+  - best-practices
+  - agents
+  - codex
+  - claude
+  - kimi
+  - gemini
+  - cursor
+---
+# Agent Workflow Best Practices
+
+## Principios
+
+- Primeiro ler memoria; depois planejar; depois editar.
+- Agente nao deve pedir segredo que pode ser acessado via provider/CLI.
+- Mudancas devem ser pequenas, verificaveis e registradas.
+- Aprendizado reutilizavel deve voltar para o vault.
+- Quando houver subagentes, manter ownership claro e nao duplicar o mesmo escopo de escrita.
+- Antes de promover um padrao, diferenciar lição madura de caso puntual com dependencias de plataforma.
+- Para trabalhos paralelos, cada worker precisa de escopo disjunto, nao pode reverter edits de outros e deve aceitar que a base do codigo nao esta isolada.
+- Background Coders ativos sao Codex, Claude Code, Kimi CLI, Gemini CLI e Google Antigravity. Cursor Background Agent fica dormente, salvo ativacao explicita do Paulo.
+- `GEMINI.md` deve ficar em paridade operacional com `AGENTS.md`; Gemini CLI usa essa memoria e Antigravity tambem deve conseguir ler `AGENTS.md` + `GEMINI.md`.
+- Antigravity deve operar com Project folders explicitos. Se o vault nao estiver no Project, usar `.brain/PROJECT_CONTEXT.md` ou pedir acesso ao vault antes de assumir contexto vivo.
+
+## Inicio
+
+- Rodar/usar `brain-preflight`.
+- Ler `.brain/PROJECT_CONTEXT.md`.
+- Ler nota do projeto e AI history.
+- Ler best practices e checklists relevantes.
+- Confirmar comandos canonicos.
+- Para trabalho multi-agent, criar primeiro um mission packet com `agent-mastery intake --goal "..."`; usar `--all-core-coders` quando a intencao for acionar Kimi, Qwen, Codex, Gemini, Antigravity e Claude no mesmo desenho operacional.
+- Para background work, confirmar `.brain/BACKGROUND_CODER_CONTEXT.md`, owner (`codex`, `claude`, `kimi`, `gemini` ou `antigravity`), issue/tarefa unica, artefato esperado e stop condition.
+
+## Durante
+
+- Nao deixar chat operacional passar de 60% de contexto sem checkpoint. Em 50-55%, rodar `chat-context-guard checkpoint`; em >=60%, produzir resume pack e continuar em novo chat.
+- Manter session journal vivo. Preflight escreve automaticamente, mas coders devem rodar `session-journal heartbeat` a cada 10 minutos de trabalho ativo, depois de patch relevante, falha de teste/build, mudanca de fase, human gate ou contexto em 50-55%.
+- Usar a superficie certa antes de chamar outro LLM: `llm-routing-guard route --task "..."` quando houver duvida. Codex integra; Claude resolve risco complexo; Kimi pesquisa/triage; Gemini valida; Antigravity faz browser/visual/worktree; Qwen faz draft isolado.
+- Usar a tool certa antes de executar: `tool-usage-guard route --task "..."` quando houver duvida. Obsidian registra memoria duravel; Linear registra realidade viva de produto; Git/GitHub registra codigo/PR/CI; CodeGraph responde estrutura de codigo; Browser/Antigravity prova visual/browser; secrets ficam fora de Markdown/chat/logs.
+- Preservar mudancas do usuario.
+- Evitar refactor fora do escopo.
+- Usar ferramentas seguras para secrets: Railway, provider env vars, 1Password/Keychain.
+- Nao imprimir env completo.
+- Nao pedir a nenhum background coder para operar secrets, deploy, App Store/TestFlight, paid ads, social publishing, migrations de producao ou multi-repo changes sem aprovacao explicita.
+
+## Fim
+
+- Atualizar nota do projeto.
+- Atualizar `.brain/SESSION_NOTES.md` se sem vault.
+- Registrar aprendizado em [[04_Areas/Coding/Best Practices/Learning Inbox]] quando reutilizavel.
+- Sugerir promocao para best practice quando padrao aparecer de novo.
+- Se a entrega veio de background coder, registrar owner, handoff aceito/rejeitado e atualizar Linear apenas depois de validação local.
+
+## Aprendizados locais
+
+- Adicionar aqui comportamento que melhorou entregas dos coders.
+
+- 2026-05-21: Cursor Background Agent deve entrar no Hub como worker remoto de branch/PR pequeno, nunca como integrador final. Ele usa snapshots `.brain` e `.cursor/rules`; Codex/Claude local valida e Obsidian/Linear registram a realidade.
+- 2026-05-21: Paulo decidiu nao abrir Cursor por ora. Background work deve ficar embutido nos coders atuais: Kimi para volume/triagem, Codex para patch/integracao, Claude Code para complexidade/compliance, Gemini CLI para validacao independente/MCP/terminal e Antigravity para orquestracao/browser/worktree/artefatos. Cursor fica dormente.
+- 2026-05-21: Gemini CLI e Google Antigravity entram como coders ativos no Hub. Gemini cobre validacao independente/MCP/terminal com `GEMINI.md`; Antigravity cobre orquestracao agent-first, browser/Chrome, worktrees, subagentes e artefatos com `AGENTS.md` + `GEMINI.md`.
+- 2026-05-25: Multi-agent work deve comecar por mission packet, nao por prompt solto. `agent-mastery.py` gera `mission.md`, `status.json` e handoff prompts com owner, artefato, stop condition, hard gates e prompt cache antes de qualquer dispatch.
+- 2026-05-25: Contexto de chat e recurso operacional finito. Em 50-55%, checkpoint obrigatorio;
 ...[truncated]
 
 ## 04_Areas/Coding/Checklists/Project Checklist Hub.md
@@ -1045,13 +992,16 @@ Antes de implementar, revisar ou fazer deploy, o agente deve escolher os checkli
 
 - Preflight essencial app/web: [[04_Areas/Coding/Checklists/App Web Preflight Checklist]]
 - Visual QA/screenshots: [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]]
+- High-craft frontend/site/portfolio: [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]]
 - Frontend: [[04_Areas/Coding/Checklists/Frontend Checklist]]
 - Backend/API: [[04_Areas/Coding/Checklists/Backend API Checklist]]
 - Web/Next/Node: [[04_Areas/Coding/Checklists/Platform Web Next Node Checklist]]
 - Web app quality: [[04_Areas/Coding/Checklists/Web App Preflight Checklist]]
 - Mobile/iOS: [[04_Areas/Coding/Checklists/Platform Mobile iOS Checklist]]
 - iOS app quality: [[04_Areas/Coding/Checklists/iOS App Preflight Checklist]]
+- iOS QA/TestFlight closure: [[04_Areas/Coding/Best Practices/iOS Functional QA And TestFlight Closure Standard]]
 - App Store Connect upload: [[04_Areas/Coding/Checklists/App Store Connect Upload Runbook]]
+- **🚨 Apple reject resolution (LEITURA OBRIGATÓRIA antes de tocar em qualquer reject):** [[04_Areas/Coding/Checklists/Apple Reject Resolution Audit Checklist]]
 - Android app quality: [[04_Areas/Coding/Checklists/Android App Preflight Checklist]]
 - Python/Data: [[04_Areas/Coding/Checklists/Platform Python Data Checklist]]
 - IA/LLM: [[04_Areas/Coding/Checklists/AI Integrations Checklist]]
@@ -1070,23 +1020,31 @@ O vault guarda inventario, decisoes e referencias. O vault **nao guarda valores 
 - [ ] Identificar plataforma: web, mobile, backend, IA, data, infra.
 - [ ] Abrir nota do projeto em `02_Projects`.
 - [ ] Abrir `.brain/PROJECT_CONTEXT.md` quando existir.
+- [ ] Rodar `brain-linear-sync` ou ler [[04_Areas/Coding/Linear/Linear Git Sync Report]] para estado Git/local.
+- [ ] Para roadmap, bug, status, prioridade, release, sprint/cycle, automacao ou backlog cleanup, ler o projeto/issue vivo no Linear via conector quando disponivel.
 - [ ] Selecionar checklists relevantes deste hub.
 - [ ] Para app, site, tela, fluxo visual ou store submission, abrir [[04_Areas/Coding/Checklists/App Web Preflight Checklist]].
+- [ ] Para portfolio, landing premium, hero, animacao ou referencia visual, abrir [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]].
 - [ ] Para mudanca visual, planejar screenshots com [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]].
 - [ ] Verificar riscos e decisoes antigas.
 - [ ] Confirmar onde secrets reais devem ficar.
 - [ ] Para iOS/App Store, abrir o inventario Apple antes de pedir IDs ou chaves.
+- [ ] Para mudanca iOS significativa, planejar QA funcional instalada e upload TestFlight no fechamento.
 - [ ] Definir comandos de lint, test e build.
 
 ## Finish gate para qualquer projeto
 
 - [ ] Atualizar nota do projeto.
+- [ ] Atualizar Linear quando a realidade da issue/projeto mudou; se nao for apropriado alterar status, registrar proposta clara em [[04_Areas/Coding/Linear/Linear Cleanup Backlog]] ou na nota do projeto.
+- [ ] Nao fechar, arquivar, relabelar, reatribuir ou mover issues em massa sem proposta e aprovacao explicita.
 - [ ] Atualizar inventario de env vars/secrets sem valores reais.
 - [ ] Atualizar inventario Apple quando houver mudanca de Issuer ID, Team ID, Key ID, APNS, IAP ou signing.
 - [ ] Registrar comandos rodados.
+- [ ] Para iOS significativo, registrar TestFlight build/version/status ou excecao explicita.
 - [ ] Registrar paths dos screenshots relevantes ou motivo de nao capturar.
 - [ ] Registrar riscos, decisoes e proximos passos.
 - [ ] Confirmar que nenhum segredo foi escrito em Markdown, logs, commits ou screenshots.
+- [ ] Se isto foi automacao/rotina/job/cloud runner, enviar email final para `pierrondi@gmail.com` conforme [[99_System/Automation Email Policy]].
 
 ## Referencias externas
 
@@ -1095,12 +1053,8 @@ O vault guarda inventario, decisoes e referencias. O vault **nao guarda valores 
 - Android Core App Quality: https://developer.android.com/docs/quality-guidelines/core-app-quality
 - Android technical quality: https://developer.android.com/quality/technical
 - Google Play Developer Program Policy: https://support.google.com/googleplay/android-developer/answer/16933379
-- Web Vitals: https://web.dev/articles/vitals
-- WCAG 2.2: https://www.w3.org/TR/wcag/
-- OWASP Top 10 2021: https://owasp.org/Top10/2021/
-- OWASP API Security Top 10 2023: https://owasp.org/API-Security/
-- OWASP ASVS: https://owasp.org/www-project-application-security-verification-standard/
-
+- Web V
+...[truncated]
 
 ## 04_Areas/Coding/Checklists/App Web Preflight Checklist.md
 
@@ -1145,8 +1099,11 @@ Este e o preflight mais importante antes de criar, alterar ou revisar qualquer a
 - [ ] Nota do projeto em `02_Projects`.
 - [ ] `.brain/PROJECT_CONTEXT.md`.
 - [ ] AI history do projeto.
+- [ ] `brain-linear-sync` rodado ou [[04_Areas/Coding/Linear/Linear Git Sync Report]] lido.
+- [ ] Linear issue/projeto vivo lido via conector quando o trabalho for roadmap, bug, release, status, prioridade, sprint/cycle, backlog ou automacao.
 - [ ] [[04_Areas/Coding/Best Practices/Development Best Practices Hub]]
 - [ ] [[04_Areas/Coding/Best Practices/Frontend UI UX Best Practices]]
+- [ ] [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]] quando houver site publico, portfolio, landing, hero, animacao, referencia visual ou pedido de qualidade premium.
 - [ ] [[04_Areas/Coding/Checklists/Project Checklist Hub]]
 - [ ] [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]]
 - [ ] [[04_Areas/Coding/Checklists/Security Checklist]]
@@ -1157,16 +1114,18 @@ Este e o preflight mais importante antes de criar, alterar ou revisar qualquer a
 - [ ] iOS: [[04_Areas/Coding/Checklists/iOS App Preflight Checklist]]
 - [ ] Android: [[04_Areas/Coding/Checklists/Android App Preflight Checklist]]
 - [ ] Backend/API: [[04_Areas/Coding/Checklists/Backend API Checklist]]
-- [ ] AI/LLM: [[04_Areas/Coding/Checklists/AI Integrations Checklist]]
+- [ ] AI/LLM: [[04_Areas/Coding/Checklists/AI Integrations Checklist]] — se houver IA, smoke real do endpoint + fluxo UI no runtime alvo sao obrigatorios; sem isso, production/TestFlight/App Store/Play Console e NO-GO.
 - [ ] Release/deploy: [[04_Areas/Coding/Checklists/Release Deploy Checklist]]
 
 ## 3. Produto e UX
 
 - [ ] Primeira tela mostra valor real, nao placeholder ou marketing vazio.
 - [ ] Todo app tem identidade publica pronta: icone final forte, landing page publica superior e links legais vivos.
+- [ ] Mobile app tem opening motion contextual ao dominio do produto, curto, offline, sem spinner generico e sem bloquear o uso.
 - [ ] `GET /` do dominio publico entrega landing HTML responsiva, nao JSON cru, pagina vazia ou placeholder.
 - [ ] Landing inclui nome do app, promessa clara, visual real/screenshot, CTA, support/privacy/terms, favicon/app icon e Open Graph/Twitter metadata.
 - [ ] Fluxo principal tem inicio, acao, feedback, erro e conclusao.
+- [ ] Se for app iOS com mudanca significativa, fechamento inclui QA funcional no app instalado e upload TestFlight/App Store Connect.
 - [ ] Estados vazios, loading, erro, offline e permissao negada foram tratados.
 - [ ] Usuario consegue recuperar de erro sem perder trabalho.
 - [ ] Copy esta em idioma correto e nao promete o que app nao entrega.
@@ -1178,20 +1137,7 @@ Este e o preflight mais importante antes de criar, alterar ou revisar qualquer a
 
 - [ ] App icon foi validado como final, forte e reconhecivel; nao e placeholder, template cru ou asset generico.
 - [ ] App icon esta consistente entre build instalado, App Store/Play, landing, favicon e OG image.
-- [ ] Screenshot desktop e mobile foram capturados quando ha mudanca visual.
-- [ ] Para store submission: 6 screenshots composed por idioma e device class, no formato exato (App Store 6.9" = 1320x2868). Sem composer brandado e bloqueador, nao "TODO".
-- [ ] Cada nova screenshot comparada lado-a-lado com a versao anterior — degradacao visual e regressao.
-- [ ] Nao ha texto cortado, overlap, overflow ou botao com label quebrado.
-- [ ] Layout nao pula no hover/loading.
-- [ ] Paleta nao parece generica ou monocromatica sem intencao.
-- [ ] Densidade visual combina com dominio: operacional, editorial, game, social, SaaS, app mobile.
-- [ ] Imagens/assets mostram o produto/estado real quando o usuario precisa inspecionar.
-
-## 5. Acessibilidade
-
-- [ ] Navegacao por teclado/foco visivel.
-- [ ] Labels e nomes acessiveis em inputs e icon buttons.
-- [ ] Contraste a
+- [ ] Screenshot
 ...[truncated]
 
 ## 04_Areas/Coding/Checklists/Screenshots Visual QA Checklist.md
@@ -1218,6 +1164,7 @@ tags:
 - [ ] Bug visual, overflow ou responsividade.
 - [ ] Antes/depois de refactor de UI — comparar lado-a-lado.
 - [ ] Marketing post, anuncio, deck, video preview — formato e dimensoes do canal final, nao reaproveitar de outro lugar.
+- [ ] Site/landing/portfolio com referencia visual externa — capturar referencia e resultado novo em desktop/mobile para comparar.
 
 ## Viewports
 
@@ -1227,6 +1174,15 @@ tags:
 - [ ] Desktop padrao.
 - [ ] Desktop largo quando layout for responsivo.
 - [ ] Light/dark mode quando suportado.
+
+## Sites, landings e portfolio high-craft
+
+- [ ] Primeiro viewport mostra marca, pessoa, produto ou objeto principal sem depender de texto pequeno no nav.
+- [ ] Se ha referencia visual, o resultado foi comparado contra a referencia por tese visual, movimento, composicao, tipografia, paleta e assets.
+- [ ] Ha screenshot do hero e pelo menos um screenshot em scroll state.
+- [ ] Canvas/WebGL/SVG animado foi validado como nao branco, nao travado, corretamente enquadrado e respeitando reduced motion quando aplicavel.
+- [ ] Foto, produto ou diagrama principal parecem parte do sistema visual, nao colagem.
+- [ ] CTA, contato, SEO/Open Graph e favicon foram conferidos quando a pagina e publica.
 
 ## "Super awesome" para store/marketing — checklist obrigatorio
 
@@ -1273,32 +1229,8 @@ tags:
 ## Evidencia
 
 - [ ] Paths dos screenshots registrados na nota do projeto.
-- [ ] Se screenshot contem dado sensivel, nao anexar ao vault; registrar apenas que foi verificado.
-- [ ] Falhas visuais viram item no projeto ou Learning Inbox.
-
-## Pipeline canonico — HTML composer + Playwright
-
-Para produzir screenshots "super awesome" reusavel entre projetos:
-
-```
-project/marketing/
-  composer/
-    template.html      # brand gradient + headline + frame + footer
-    manifest.json      # {shots: [{id, raw, pt:{eyebrow,headline,subhead}, en:{...}}, ...]}
-    render.mjs         # itera manifest, renderiza 1320x2868 em pt+en
-    package.json       # playwright
-  store-screenshots/
-    raw/               # capturas do device fisico (iPhone Pro Max, status bar limpa)
-      02-daily.png
-      03-feature.png
-      ...
-    iphone-69-pt/      # output final pt-BR
-    iphone-69-en/      # output final en-US
-```
-
-Fluxo: capturar raws no device fisico -> editar manifest com copy -> `node render.mjs` -> upload no ASC. Re-render < 30s para todo o set.
-
-Implementacao de referencia: `Downloads/bandle-br/marketing/composer/` (Bandle BR, 2026-0
+- [ ] Cada screenshot de QA tem interpretacao humana registrada: o que passou, o que falhou, se bloqueia release e qual e o proximo passo.
+- [ ] Screenshot em simulador/device compartilhado com outros apps/agentes nao conta como evide
 ...[truncated]
 
 ## 04_Areas/Coding/Checklists/Web App Preflight Checklist.md
@@ -1316,6 +1248,7 @@ tags:
 ## UX
 
 - [ ] O primeiro viewport mostra produto, estado real ou tarefa principal.
+- [ ] Para portfolio, landing premium, hero, animacao ou referencia visual, aplicar [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]].
 - [ ] Navegacao principal e retorno sao claros.
 - [ ] Estados empty/loading/error/success existem.
 - [ ] Forms preservam dados em erro.
@@ -1353,6 +1286,8 @@ tags:
 
 - [ ] Screenshot desktop.
 - [ ] Screenshot mobile.
+- [ ] Para site/landing high-craft, screenshot do hero e de estado com scroll em desktop/mobile.
+- [ ] Canvas/WebGL/SVG animado validado como nao branco, nao travado e corretamente enquadrado quando aplicavel.
 - [ ] Screenshot de estado de erro/loading se mudou fluxo.
 - [ ] Sem overflow horizontal.
 - [ ] Sem texto sobrepondo UI.
@@ -1360,8 +1295,8 @@ tags:
 ## Referencias
 
 - Web Vitals: https://web.dev/articles/vitals
-- WCAG 2.2: https://www.w3.org/TR/wcag/
-
+- WCAG 2.2: https://www.w3.org/TR/WCAG22/
+- High Craft Frontend Visual Standard: [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]]
 
 ## 04_Areas/Coding/Checklists/iOS App Preflight Checklist.md
 
@@ -1379,7 +1314,9 @@ tags:
 ## Produto e UX
 
 - [ ] App segue convencoes iOS/HIG em navegacao, controles, gestos e feedback.
+- [ ] App tem opening motion contextual ao dominio, implementado apos LaunchScreen estatico, curto e sem bloquear o uso.
 - [ ] Fluxo principal funciona em device/simulador.
+- [ ] Fluxos core e feature alterada foram testados no app instalado antes do fechamento.
 - [ ] Safe area, Dynamic Type, dark mode e orientacao foram considerados.
 - [ ] Permissoes aparecem no momento certo e explicam valor ao usuario.
 - [ ] Offline/network slow nao quebra estado.
@@ -1399,8 +1336,13 @@ tags:
 - [ ] Metadata, screenshots, descricao e notas de review batem com o app real.
 - [ ] Support URL, Privacy URL e Terms URL retornam `200 text/html` antes da submissao.
 - [ ] Se o dominio do produto nao estiver pronto, usar `https://www.pierrondi.dev/apps/<app-slug>/support`, `/privacy` e `/terms` como fallback oficial.
+- [ ] Gate de release registrado no vault antes de push/upload: comandos, build number, simulator/device, screenshots, pass/fail humano, blockers e decisao final.
+- [ ] Se houver outro chat/agente/processo trabalhando no app, usar simulador/device isolado ou registrar conflito; screenshot de device compartilhado nao conta como evidencia final sem confirmar app/bundle/processo.
+- [ ] Push/ASC bloqueados se qualquer fluxo core abrir web indevidamente, mostrar app errado, ficar preso em login sem demo account/demo mode, tiver texto truncado, placeholder visual ou acao principal nao validada.
+- [ ] Fluxos nativos minimos testados no app instalado: Auth/demo, Home, Planner/AI planner, Coach, Devotional, Records e Settings/sign-out.
 - [ ] IAP/subscriptions estao visiveis, funcionais e explicados.
 - [ ] Privacy policy e App Privacy Details batem com SDKs e coleta real.
+- [ ] Opening motion nao inicializa tracking/ads/marketing antes de consentimento e respeita Reduce Motion.
 - [ ] Privacy manifest (`PrivacyInfo.xcprivacy`) bate com dominios reais usados em producao.
 - [ ] UGC tem report, block, moderation e contato quando aplicavel.
 - [ ] Kids, saude, financeiro, sorteios/jogos, IA ou conteudo sensivel foram revisados.
@@ -1420,6 +1362,7 @@ tags:
 - [ ] Asset catalog de AppIcon tem todos os slots/tamanhos exigidos pelo build alvo ou usa configuracao universal comprovadamente aceita pelo Xcode/App Store; validar no app instalado/TestFlight, nao so no arquivo fonte.
 - [ ] Build number foi incrementado antes de novo upload.
 - [ ] Upload nao sera considerado concluido ate App Store Connect mostrar build processing/`VALID`.
+- [ ] Ao fechar mudanca iOS significativa, novo build foi enviado ao TestFlight/App Store Connect ou excecao explicita foi registrada.
 
 ## Screenshots
 
@@ -1430,14 +1373,13 @@ tags:
 - [ ] Idiomas suportados tem screenshots separados no `fastlane/screenshots/<locale>`.
 - [ ] Dimensoes dos screenshots foram validadas por script.
 
-## Referencias
+## Fechamento TestFlight
 
-- Apple HIG: https://developer.apple.com/design/human-interface-guidelines
-- Apple App Review Guidelines: https://developer.apple.com/app-store/review/guidelines/
-- App Privacy Details: https://developer.apple.com/app-store/app-privacy-details/
-- Apple/App Store Connect Inventory: [[04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory]]
-- App Store Connect Upload Runbook: [[04_Areas/Coding/Checklists/App Store Connect Upload Runbook]]
-
+- [ ] [[04_Areas/Coding/Best Practices/iOS Functional QA And TestFlight Closure Standard]] foi seguido.
+- [ ] Comando de upload usado foi registrado.
+- [ ] IPA/archive/dSYM path registrado quando aplicavel.
+- [ ] Status App Store Connect regis
+...[truncated]
 
 ## 04_Areas/Coding/Checklists/Android App Preflight Checklist.md
 
@@ -1455,6 +1397,7 @@ tags:
 ## Produto e UX
 
 - [ ] App segue Core App Quality e padroes Android.
+- [ ] App tem opening motion contextual ao dominio, curto, offline e coerente com Material/brand.
 - [ ] Material 3/Compose ou sistema visual escolhido foi aplicado consistentemente.
 - [ ] Back navigation funciona e nao perde dados.
 - [ ] Estado e restaurado ao voltar do background.
@@ -1465,6 +1408,7 @@ tags:
 ## Technical quality
 
 - [ ] Startup, scroll, transicoes e memoria aceitaveis.
+- [ ] Opening motion respeita animator duration scale/acessibilidade e nao bloqueia o app por mais de 2s.
 - [ ] Crash-free e ANR considerados.
 - [ ] Offline/network slow tratado.
 - [ ] WorkManager/background work usado de forma apropriada.
@@ -1503,6 +1447,9 @@ tags:
 - Android technical quality: https://developer.android.com/quality/technical
 - Google Play policies: https://support.google.com/googleplay/android-developer/answer/16933379
 
+## Fonte verificada
+
+- `2026-05-18`: Android Core App Quality consultado; pagina oficial indica ultimo update em `2026-04-08 UTC`.
 
 ## 04_Areas/Coding/Checklists/Security Checklist.md
 
@@ -1566,7 +1513,6 @@ tags:
 - [ ] Atualizar [[04_Areas/Coding/Checklists/Secrets And API Keys Register]] se env vars mudaram.
 - [ ] Registrar risco residual na nota do projeto.
 
-
 ## 04_Areas/Coding/Checklists/Secrets And API Keys Register.md
 
 ---
@@ -1580,6 +1526,12 @@ tags:
 # Secrets And API Keys Register
 
 Este arquivo e inventario. Ele **nao guarda valores reais**.
+
+## Fonte unica local
+
+Variaveis de ambiente compartilhadas vivem em `/Users/paulopierrondi/Projects/.keys.env` (chmod 600, gitignored). Carregamento canonico via `brain-env-run -- <comando>`. Override por projeto: `.env` no diretorio do projeto. Detalhes em [[99_System/Central Env File Operating Model]].
+
+Este register continua sendo **inventario** (nome, owner, projeto, ambiente, status, rotacao). O valor real continua em `/Projects/.keys.env` + Apple Keychain durable + provider env vars de producao.
 
 ## Regra
 
@@ -1607,18 +1559,32 @@ Nao guardar aqui:
 
 ## Locais recomendados para valor real
 
-- Apple Keychain local.
-- 1Password ou outro password manager.
+- `/Users/paulopierrondi/Projects/.keys.env` (chmod 600, gitignored) — fonte unica local; carregar com `brain-env-run`.
+- `./.env` do projeto — override quando o projeto precisa de valor diferente do global.
+- Apple Keychain via `brain-secret-intake`/`brain-load-secrets` — backing durable do `.env` central.
+- 1Password ou outro password manager com referencias seguras, por exemplo `op://Developer/OpenAI/api-key`.
+- Apple Passwords / iCloud Keychain para senhas/passkeys humanas.
 - GitHub Actions Secrets.
-- Vercel/Railway/Netlify/Fly/Render environment variables.
+- Vercel/Railway/Netlify/Fly/Render environment variables (producao).
 - AWS/GCP/Azure secret manager.
-- `.env.local` apenas local, sem commit.
+
+## Modelo de uso
+
+Ver [[99_System/Credential Vault Operating Model]].
+
+- Valor real nunca entra neste arquivo.
+- Referencia segura pode entrar, por exemplo `op://vault/item/field`.
+- Provider env var pode entrar, por exemplo `Railway Variables -> project/service -> OPENAI_API_KEY`.
+- Se `op`/secret manager nao existir no ambiente, deixar acao humana clara em vez de pedir key em chat.
+- Intake local seguro disponivel em `/Users/paulopierrondi/.local/bin/brain-secret-intake`; ele pede o valor no prompt do Apple Keychain, sem passar segredo por argumento de shell.
+- Intake por arquivo temporario disponivel em `/Users/paulopierrondi/.second-brain-secrets.env`; importar com `/Users/paulopierrondi/.local/bin/brain-secret-intake import /Users/paulopierrondi/.second-brain-secrets.env --delete`.
 
 ## Checklist para nova API key
 
 - [ ] Existe env var com nome claro.
 - [ ] Valor real esta em secret manager, nao no vault.
 - [ ] `.env.example` foi atualizado sem valor real.
+- [ ] Se usado arquivo temporario de intake, ele foi apagado apos importacao.
 - [ ] Escopo/permissao minima.
 - [ ] Ambiente separado: dev/staging/prod.
 - [ ] Rotacao/revogacao planejada.
@@ -1626,232 +1592,29 @@ Nao guardar aqui:
 - [ ] Logs nao imprimem a key.
 - [ ] Client nao recebe segredo server-side.
 
+## Incidente de exposicao - 2026-05-19
+
+Valores reais de credenciais foram colados em chat em `2026-05-19`. Tratar como comprometidos. Nenhum valor real deve ser copiado para o vault.
+
+Registro canonico: [[99_System/Secret Exposure Incident - 2026-05-19]].
+
+| Area | Referencias afetadas | Onde o valor novo deve ficar | Status |
+| --- | --- | --- | --- |
+| Google Gemini | `GEMINI_API_KEY` | 1Password/Apple Keychain + provider env vars | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| ElevenLabs / Eventlabs | `ELEVENLABS_API_KEY`, `EVENTLABS_API_KEY` | 1Password/Apple Keychain + provider env vars | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| Pexels | `PEXELS_API_KEY` | 1Password/Apple Keychain + provider env vars | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| Creatomate | `CREATOMATE_API_KEY` | 1Password/Apple Keychain + provider env vars | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| YourVersion | `YOURVERSION_API_KEY` | 1Password/Apple Keychain + provider env vars | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| Linear | `LINEAR_API_KEY` | 1Password/Apple Keychain + local automation env | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| Railway | `RAILWAY_ACCOUNT_TOKEN`, `RAILWAY_PPT_TOKEN`, `RAILWAY_PIERRONDI_IA_TOKEN`, `RAILWAY_CSDM_TOKEN` | 1Password/Apple Keychain + Railway/GitHub Actions as needed | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| Cantus mobile | test user password | Apple Passwords/1Password; nao Markdown | **ROTATE_REQUIRED** - exposta em chat 2026-05-19 |
+| Apple App Store Connect | API key metadata/private key file | Apple Developer Portal + local secure `.p8` path | **VERIFY_AND_ROTATE_IF_PRIVATE_KEY_EXPOSED** |
+
 ## Inventario
 
 | Projeto | Env var | Fornecedor | Ambientes | Onde esta o valor real | Escopo | Rotacao | Dono | Status |
 |---|---|---|---|---|---|---|---|---|
-| _template_ | `OPENAI_API_KEY` | OpenAI | local/staging/prod | 1Password + provider env vars | server-side model calls | trimestral ou incidente | Paulo | planned |
-| global-ios | `APP_STORE_CONNECT_ISSUER_ID` | Apple App Store Connect | local/CI/provider env | [[04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory]] | identificador nao-secreto para ASC API/TestFlight/upload; private key `.p8` fica fora do vault | n/a salvo troca de conta Apple | Paulo | **ativo** — registrado 2026-05-15 |
-| global-ios | `ASC_KEY_ID` / `APP_STORE_CONNECT_KEY_ID` | Apple App Store Connect | local/CI/provider env | [[04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory]] | identificador nao-secreto da API key (`95ULBVD2BW`); `.p8` fica fora do vault | n/a salvo rotacao da API key | Paulo | **ativo** — confirmado 2026-05-15 |
-| global-ios | `ASC_KEY_PATH` / `APP_STORE_CONNECT_PRIVATE_KEY_PATH` | Apple App Store Connect | local only | `~/.appstoreconnect/private_keys/AuthKey_95ULBVD2BW.p8` | caminho local para private key; o conteudo da `.p8` e segredo real | rotacionar se comprometida | Paulo | **ativo** — path metadata only |
-| global-ios | `APPLE_TEAM_ID` | Apple Developer | local/CI/provider env | [[04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory]] | identificador nao-secreto de team/signing (`8ULNGWJZ6B`) | n/a salvo troca de conta/team | Paulo | **ativo** — confirmado 2026-05-15 |
-| global-marketing | `APPLE_ADS_CLIENT_ID` | Apple Ads / ASA | local/CI/provider env | Apple Ads API user / secret manager | OAuth client identifier para Campaign Management API; valor pode ser metadata, segredo OAuth fica fora do vault | rotacao se cliente OAuth mudar | Paulo | planned |
-| global-marketing | `APPLE_ADS_TEAM_ID` | Apple Ads / ASA | local/CI/provider env | Apple Ads API user / secret manager | team/client metadata para OAuth Apple Ads | n/a salvo troca de conta | Paulo | planned |
-| global-marketing | `APPLE_ADS_KEY_ID` | Apple Ads / ASA | local/CI/provider env | Apple Ads API user / secret manager | key identifier para OAuth Apple Ads | rotacao se key mudar | Paulo | planned |
-| global-marketing | `APPLE_ADS_PRIVATE_KEY_PATH` | Apple Ads / ASA | local only | local key path or password manager | caminho local para private key; conteudo da private key nunca entra no vault | rotacionar se comprometida | Paulo | planned |
-| global-marketing | `APPLE_ADS_ORG_ID` / `APPLE_ADS_ACCOUNT_ID` | Apple Ads / ASA | local/CI/provider env | Apple Ads account settings | account/org metadata para reports; sem token | n/a salvo troca de conta | Paulo | planned |
-| adivinha-app | `GEMINI_API_KEY` | Google Gemini | local/.env + Railway prod | `.env` local (nao commitado) + Railway Variables | server-side AI agents (explain, rival, hint) | trimestral ou incidente | Paulo | **ativo** (configurado 2026-05-14) |
-| adivinha-app | `ADMIN_KEY` | interno (64-hex) | local/.env + Railway prod | `.env` local (nao commitado) + Railway Variables | rotas admin protegidas | anual ou incidente | Paulo | **ativo** (gerado/configurado 2026-05-14) |
-| adivinha-app | `APPLE_SHARED_SECRET` | Apple App Store Connect | Railway prod | Railway Variables | validacao de IAP/subscricoes server-side | rotacao manual no ASC | Paulo | **pendente** — sem IAP em prod ate configurar |
-| adivinha-app | `REVENUECAT_SECRET_API_KEY` | RevenueCat | Railway prod | Railway Variables | validacao server-side de receipts RevenueCat | anual ou incidente | Paulo | **pendente** — necessario para subscricoes Pro |
-| mytone-app | `GROQ_API_KEY` | Groq | local/.env + Railway pr
-...[truncated]
-
-## 04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory.md
-
----
-type: provider-inventory
-provider: apple
-tags:
-  - apple
-  - app-store-connect
-  - ios
-  - secrets
-  - checklist
----
-# Apple Developer And App Store Connect Inventory
-
-Este arquivo guarda inventario e identificadores nao-secretos para trabalhos Apple/iOS. Ele nao guarda private keys, tokens, senhas, shared secrets, cookies, provisioning profiles ou certificados.
-
-## Identificadores nao-secretos registrados
-
-| Item | Valor | Escopo | Uso | Status |
-|---|---|---|---|---|
-| App Store Connect Issuer ID | `20a81f12-b22c-4ff8-8b33-c1e5e411a24b` | App Store Connect API | Upload/TestFlight/API automation quando combinado com API Key ID e `.p8` guardados fora do vault | **ativo** — registrado 2026-05-15 |
-| App Store Connect API Key ID | `95ULBVD2BW` | App Store Connect API | JWT/Fastlane/Xcode/Transporter auth metadata; private key separada | **ativo** — confirmado por historico 2026-05-15 |
-| Apple Team ID | `8ULNGWJZ6B` | Apple Developer signing/App Store Connect | Signing, provisioning, Fastlane, Xcode export/upload | **ativo** — confirmado por historico 2026-05-15 |
-| Canonical local `.p8` path | `~/.appstoreconnect/private_keys/AuthKey_95ULBVD2BW.p8` | Local machine only | Path metadata only; never print file content | **ativo** — confirmar existencia com `test -f`, nunca `cat` |
-
-## Pendencias para automacao Apple completa
-
-| Item | Valor | Onde registrar | Regra |
-|---|---|---|---|
-| App Store Connect API Key ID | `95ULBVD2BW` | Inventario/provider env vars | Identificador de configuracao; pode ser inventariado, mas nao substitui a `.p8`. |
-| App Store Connect `.p8` private key | NUNCA em Markdown | Apple Keychain, 1Password, GitHub Actions Secrets ou provider env vars | Segredo real. Nunca colar em chat, nota, commit ou screenshot. |
-| Apple Team ID | `8ULNGWJZ6B` | Inventario/provider env vars | Configuracao usada para signing/APNS. |
-| APNS Key ID | TBD | Inventario/provider env vars | Identificador de configuracao; a chave `.p8` continua fora do vault. |
-| APNS `.p8` / `APNS_KEY_BASE64` | NUNCA em Markdown | Railway/Vercel/GitHub Actions/secret manager | Segredo real. |
-| App-specific shared secret / IAP shared secret | NUNCA em Markdown | Railway/Vercel/GitHub Actions/secret manager | Segredo real para validacao de compras/subscricoes. |
-| Provisioning profiles / certificates | NUNCA em Markdown | Apple Developer, Keychain, CI signing store | Material sensivel de assinatura. |
-
-## Regra de uso para coders
-
-- Para qualquer trabalho de App Store Connect, TestFlight, upload, IAP, APNS, signing, entitlement ou review notes, ler este arquivo antes de pedir valores ao Paulo.
-- Para upload de build, ler tambem [[04_Areas/Coding/Checklists/App Store Connect Upload Runbook]].
-- Usar `APP_STORE_CONNECT_ISSUER_ID=20a81f12-b22c-4ff8-8b33-c1e5e411a24b` apenas como identificador nao-secreto.
-- Se precisar de API Key ID, Team ID, APNS Key ID ou Bundle ID, registrar como metadado de configuracao quando fornecido.
-- Se precisar de `.p8`, shared secret, certificate, password, token ou cookie, usar secret manager/provider env vars. Nao registrar o valor no vault.
-- Para CI/cloud, passar o Issuer ID como env var/config e a `.p8` como segredo do provedor.
-
-## Links relacionados
-
-- [[04_Areas/Coding/Checklists/Secrets And API Keys Register]]
-- [[04_Areas/Coding/Checklists/App Store Connect Upload Runbook]]
-- [[04_Areas/Coding/Checklists/Platform Mobile iOS Checklist]]
-- [[04_Areas/Coding/Checklists/iOS App Preflight Checklist]]
-- [[04_Areas/Coding/Checklists/Railway Secrets Inventory]]
-- [[99_System/Security And Secrets Policy]]
-
-
-## 04_Areas/Coding/Checklists/App Store Connect Upload Runbook.md
-
----
-type: runbook
-platform: ios
-provider: apple
-tags:
-  - ios
-  - app-store-connect
-  - testflight
-  - upload
-  - claude-code
-  - checklist
----
-# App Store Connect Upload Runbook
-
-Updated: 2026-05-15
-
-Este e o caminho pratico para upload de build iOS para App Store Connect/TestFlight. Use este runbook quando Claude Code, Codex, Kimi ou Gemini estiverem fazendo archive/upload.
-
-## Answer First
-
-O caminho mais confiavel para Paulo hoje e:
-
-1. Usar o lane/script existente do repo.
-2. Autenticar com App Store Connect API key, nao Apple ID/2FA.
-3. Usar signing de distribuicao (`Apple Distribution`) e export/upload `app-store-connect`.
-4. Validar build/signing/icon antes do upload.
-5. Confirmar que o build apareceu e ficou `VALID` no App Store Connect.
-
-Nao fazer:
-
-- nao escrever JWT custom em Python/Node quando Fastlane/Xcode/Transporter ja resolvem;
-- nao pedir `.p8` ao Paulo se o inventario mostra o caminho local/secret manager;
-- nao usar development signing/device provisioning para upload App Store;
-- nao confundir upload/TestFlight com submit for review;
-- nao colar private key, token ou certificado em Markdown/chat.
-
-## Required Context
-
-Antes de agir, ler:
-
-- [[04_Areas/Coding/Checklists/Apple Developer And App Store Connect Inventory]]
-- [[04_Areas/Coding/Checklists/iOS App Preflight Checklist]]
-- [[04_Areas/Coding/Checklists/Platform Mobile iOS Checklist]]
-- [[04_Areas/Coding/Checklists/Secrets And API Keys Register]]
-- [[99_System/Security And Secrets Policy]]
-- Nota do projeto em [[02_Projects/Projects Index]]
-- Historico do projeto em [[03_AI-Chats/AI Chats Index]]
-
-## Known Apple Config Metadata
-
-| Item | Valor |
-|---|---|
-| Team ID | `8ULNGWJZ6B` |
-| App Store Connect Issuer ID | `20a81f12-b22c-4ff8-8b33-c1e5e411a24b` |
-| App Store Connect API Key ID | `95ULBVD2BW` |
-| Canonical local private key path | `~/.appstoreconnect/private_keys/AuthKey_95ULBVD2BW.p8` |
-| Legacy local key path seen in history | `~/Downloads/AuthKey_95ULBVD2BW.p8` |
-
-The `.p8` value is secret. It must never be printed, copied into Markdown, committed or pasted into an LLM chat.
-
-## Choose The Upload Path
-
-| Repo pattern | Prefer this command | Notes |
-|---|---|---|
-| Capacitor/Next repo with `script/build_ios.sh` and `package.json` script `ios:upload` | `npm run ios:upload` | Known working pattern from `fifa2026bolao`; uses `xcodebuild -exportArchive` with `ios/UploadOptions.plist`. |
-| Native iOS repo with `fastlane/Fastfile` lane `local_beta` | `ASC_ISSUER_ID=20a81f12-b22c-4ff8-8b33-c1e5e411a24b bundle exec fastlane local_beta` | Known working pattern from `fashioncore` and `mytone-app`; uses `app_store_connect_api_key`, `sigh`, `gym/build_app`, `pilot/upload_to_testflight`. |
-| Repo with CI/match setup | `bundle exec fastlane beta` | Only when `MATCH_GIT_URL`, `MATCH_PASSWORD`, `APPLE_TEAM_ID`, `ASC_KEY_ID`, `ASC_ISSUER_ID`, and key content/path are configured in secret manager. |
-| No lane/script exists | Create a repo-local Fastlane lane first, then upload | Do not run ad hoc commands repeatedly without encoding the known-good lane. |
-| Manual fallback | Xcode Organizer or Transporter | Use when automation is blocked by signing/profile/account permissions. |
-
-## Preflight Commands
-
-Run from the repo root unless the project note says otherwise.
-
-```bash
-xcodebuild -version
-security find-identity -v -p codesigning | rg "Apple Distribution|8ULNGWJZ6B" || true
-test -f ~/.appstoreconnect/private_keys/AuthKey_95ULBVD2BW.p8
-```
-
-For Capacitor/Next:
-
-```bash
-npm run lint
-npm run build
-npm run ios:sync
-plutil -p ios/UploadOptions.plist
-```
-
-Expected `ios/UploadOptions.plist` shape:
-
-```text
-destination = upload
-method = app-store-connect
-teamID = 8ULNGWJZ6B
-signingStyle = automatic or manual
-uploadSymbols = true
-```
-
-For native/Fastlane:
-
-```bash
-cd ios  # or apps/ios, depending on repo
-bundle config set path vendor/bundle
-bundle install
-bundle exec fastlane lanes
-ASC_ISSUER_ID=20a81f12-b22c-4ff8-8b33-c1e5e411a24b bundle exec fastlane local_beta
-```
-
-For XcodeGen repos:
-
-```bash
-cd apps/ios
-xcodegen
-xcodebuild -list -project *.xcodeproj
-```
-
-## Icon Alpha Gate
-
-ASC rejects 1024px app icons with alpha. Before upload, verify the large icon is opaque.
-
-```bash
-sips -g hasAlpha path/to/AppIcon-512@2x.png
-sips -g hasAlpha path/to/icon-1024.png
-```
-
-Expected: `hasAlpha: no` for the 1024px large app icon. If the answer is `yes`, flatten the icon against an opaque brand background before archiving.
-
-## Known Working Patterns From History
-
-### fifa2026bolao
-
-Working path:
-
-- `npm run ios:upload`
-- `script/build_ios.sh upload`
-- `xcodebuild -exportArchive`
-- `ios/UploadOptions.plist` with `destination=upload`, `method=app-store-connect`, `teamID=8ULNGWJZ6B`
-
-Observed success:
-
-- `xcodebuild -exportArchive` completed with `Uploaded App` and `** EXPORT SUCCEEDED **`.
-- Build reached App Store Connect processing and became `VALID` about 90 seconds later.
-
-Observed failures and fixes:
-
-- `No Devices Registered for Provisioning`: agent tried de
+| _template_ | `OPENAI_API_KEY` | OpenAI | local/staging/prod | 1Password + provider env vars | server-side model calls | trimestral ou
 ...[truncated]
 
 ## 04_Areas/Marketing/Marketing MOC.md
@@ -1872,6 +1635,8 @@ Este e o centro de operacao para criativos, videos curtos, campanhas, legendas, 
 ## Pierrondi.dev
 
 - [[04_Areas/Marketing/Pierrondi.dev Creative Video OS]]
+- [[04_Areas/Marketing/Creative Forge UGC Video Production OS]]  ← local UGC ad pipeline, M5 Max, ~$0.02/peça
+- [[04_Areas/Marketing/Social Video Ad Trends 2026]]  ← hook templates + formats que estão batendo · revalidar a cada 6 semanas
 - [[04_Areas/Marketing/ElevenLabs Voice And Subtitle Workflow]]
 - [[04_Areas/Marketing/Social Video Platform Specs 2026]]
 - [[04_Areas/Marketing/Creative QA Checklist]]
@@ -1882,6 +1647,9 @@ Este e o centro de operacao para criativos, videos curtos, campanhas, legendas, 
 
 ## App Marketing / ASA
 
+- [[04_Areas/Marketing/Soro SEO App Distribution OS]]
+- [[04_Areas/Marketing/Soro SEO Automation - Claude Code Runbook]]
+- [[04_Areas/Marketing/Soro SEO Automation - Kimi Runbook]]
 - [[04_Areas/Marketing/Ready App Campaign Factory Procedure]]
 - [[04_Areas/Marketing/Ready Apps Sales Effectiveness Scorecard]]
 - [[04_Areas/Marketing/Apple Connect Ready Apps Campaign Matrix]]
@@ -1902,7 +1670,7 @@ Este e o centro de operacao para criativos, videos curtos, campanhas, legendas, 
 ## Projeto
 
 - [[02_Projects/pierrondi-ia]]
-- Repo: `/Users/paulopierrondi/Downloads/pierrondi-ia`
+- Repo: `/Users/paulopierrondi/Projects/pierrondi-ia`
 - Studio: `/studio/videos`, `/studio/creatives`, `/studio/creatives/factory`, `/studio/campaigns`, `/studio/topics`, `/studio/approvals`, `/studio/health`
 
 ## Regra
@@ -1932,7 +1700,7 @@ Todo pedido de criativo deve gerar um pacote, nao apenas uma peca:
 - Todo ad de app, UGC ou nao UGC, deve passar pelo fluxo nativo `Creative Video Factory` do Pierrondi IA Studio antes de geracao, upload ou publicacao.
 - Tela canonica: `/studio/creatives/factory`.
 - API canonica: `/api/marketing-os/content-factory/creative-video`.
-- Engine canonica: `/Users/paulopierrondi/Downloads/pierrondi-ia/lib/marketing-os/content-factory/creative-video-factory.ts`.
+- Engine canonica: `/Users/paulopierrondi/Projects/pierrondi-ia/lib/marketing-os/content-factory/creative-video-factory.ts`.
 - O app standalone `creative-video-factory` e os artefatos do `investcoach_ai` sao biblioteca/prototipo historico, nao a fonte de verdade.
 - Primeiro perguntar e registrar: canal principal (`TikTok`, `Instagram`, `LinkedIn`, `YouTube`), objetivo, pago/organico, tela real do app, hook dos 2 primeiros segundos e angulo de venda.
 - Sempre que possivel, capturar demo real via Xcode/iOS Simulator antes de usar b-roll generico. A prova de produto deve vir antes de UGC, avatar, Veo ou Pexels.
@@ -1945,12 +1713,8 @@ Todo pedido de criativo deve gerar um pacote, nao apenas uma peca:
 - Apple Ads / ASA, Meta, TikTok, YouTube, LinkedIn Ads ou qualquer canal pago podem gerar diagnostico e recomendacao diaria.
 - Nenhum agente pode pausar, aumentar budget, mudar bid, criar campanha, publicar criativo pago ou alterar target CPA sem aprovacao explicita do Paulo.
 - O vault guarda metricas agregadas, decisoes e hipoteses; segredos de API/OAuth ficam fora do vault.
-- Para apps financeiros ou IA financeira no TikTok, `TikTok Financial Ads Compliance Runbook` e preflight obrigatorio antes de upload, duplicacao, edicao, submit ou refresh criativo.
-
-## Templates
-
-- [[06_Templates/Creative Brief]]
-
+- Para apps financeiros ou IA financeira no TikTok, `TikTok Financial Ads Compliance Runbook` e preflight obrigatorio
+...[truncated]
 
 ## 04_Areas/Marketing/Pierrondi.dev Creative Video OS.md
 
@@ -1972,6 +1736,21 @@ Criar criativos e videos de marketing de alta qualidade para Pierrondi.dev e pro
 
 O output bom nao e "um video". E um pacote de campanha com roteiro, voz, legendas, assets, variacoes por canal, QA e aprendizado.
 
+## Pierrondi.dev site visual language
+
+O site publico de Paulo deve operar como prova executiva de capacidade, nao como landing generica de IA.
+
+Padrao visual atual:
+- preto profundo + branco forte + lime como sinal eletrico;
+- campo neural vivo como camada de sistema;
+- sinapses/sinais conectando agentes, workflows, governanca, inferencia e plataformas;
+- foto executiva integrada ao ambiente visual, sem fundo branco colado;
+- diagramas de arquitetura com fluxo de contexto, permissao, acao e evidencia;
+- movimento real no scroll, com progress bar, reveal e responsividade;
+- copy executiva, sem nome de cliente quando nao houver autorizacao.
+
+Antes de mexer em pierrondi.dev, ler [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]], [[04_Areas/Coding/Best Practices/App Web Quality Best Practices]], [[04_Areas/Coding/Checklists/App Web Preflight Checklist]] e [[04_Areas/Coding/Checklists/Screenshots Visual QA Checklist]].
+
 ## Regra de ouro — LinkedIn
 
 - **LinkedIn fica 100% restrito a ServiceNow ate Paulo dizer explicitamente o contrario.**
@@ -1981,14 +1760,14 @@ O output bom nao e "um video". E um pacote de campanha com roteiro, voz, legenda
 
 ## Fonte de verdade no repo
 
-- Repo: `/Users/paulopierrondi/Downloads/pierrondi-ia`
-- Creative Video Factory: `/Users/paulopierrondi/Downloads/pierrondi-ia/docs/marketing-os/creative-video-factory.md`
+- Repo: `/Users/paulopierrondi/Projects/pierrondi-ia`
+- Creative Video Factory: `/Users/paulopierrondi/Projects/pierrondi-ia/docs/marketing-os/creative-video-factory.md`
 - Studio: `/studio/creatives/factory`
 - API: `/api/marketing-os/content-factory/creative-video`
-- Engine: `/Users/paulopierrondi/Downloads/pierrondi-ia/lib/marketing-os/content-factory/creative-video-factory.ts`
-- Creative engine runbook: `/Users/paulopierrondi/Downloads/pierrondi-ia/docs/marketing/creative-engine-test-runbook.md`
-- Criativos curados: `/Users/paulopierrondi/Downloads/pierrondi-ia/assets/creatives/post-images/`
-- Background videos: `/Users/paulopierrondi/Downloads/pierrondi-ia/assets/video-backgrounds/`
+- Engine: `/Users/paulopierrondi/Projects/pierrondi-ia/lib/marketing-os/content-factory/creative-video-factory.ts`
+- Creative engine runbook: `/Users/paulopierrondi/Projects/pierrondi-ia/docs/marketing/creative-engine-test-runbook.md`
+- Criativos curados: `/Users/paulopierrondi/Projects/pierrondi-ia/assets/creatives/post-images/`
+- Background videos: `/Users/paulopierrondi/Projects/pierrondi-ia/assets/video-backgrounds/`
 - API force video: `/api/marketing-os/force-video`
 - Preflight: `/api/marketing-os/video/preflight`
 
@@ -2023,32 +1802,7 @@ O output bom nao e "um video". E um pacote de campanha com roteiro, voz, legenda
 - Primeiros 2 segundos precisam ter tese, contraste ou prova.
 - O roteiro precisa soar falado, nao escrito.
 - Legenda precisa ser legivel sem audio e sem cobrir UI do canal.
-- Voz precisa combinar com o canal: LinkedIn mais autoridade, TikTok/Reels mais ritmo, YouTube Shorts mais clareza e retenção.
-- B-roll precisa reforcar a ideia; se for generico, melhor usar screen/product proof.
-- Cada peca precisa ter um unico CTA.
-- Nao publicar sem approval quando houver canal externo.
-
-## Formatos canonicos
-
-- Master vertical: MP4 H.264/AAC, 1080x1920, 30fps, 9:16.
-- Feed vertical/crop: 1080x1350, 4:5.
-- Square fallback: 1080x1080, 1:1.
-- LinkedIn professional cut: 9:16 ou 4:5, com SRT sidecar quando possivel.
-- Shorts/TikTok/Reels: 9:16, legendas burned-in, safe zones respeitadas.
-
-## Duracao recomendada por intencao
-
-- Prova rapida: 12-20s.
-- Hook + tese + CTA: 20-35s.
-- Mini tutorial: 35-60s.
-- Story/problem-solution: 45-90s.
-- YouTube Shorts longo: ate 3 min quando a historia realmente precisa, mas evitar se houver risco de musica/Content ID.
-
-## Assets primeiro, IA depois
-
-O pipeline deve consultar assets curados antes de gerar asset novo:
-
-- imagem/post: `assets/creatives/po
+- Voz precisa combinar com o canal: LinkedIn mais autoridade, TikTok/Ree
 ...[truncated]
 
 ## 04_Areas/Marketing/ElevenLabs Voice And Subtitle Workflow.md
@@ -2085,8 +1839,8 @@ Gerar voz natural e legendas sincronizadas para videos de marketing, sem perder 
 
 ## ElevenLabs no repo
 
-- Adapter: `/Users/paulopierrondi/Downloads/pierrondi-ia/lib/marketing-os/voice/elevenlabs.ts`
-- Captions: `/Users/paulopierrondi/Downloads/pierrondi-ia/lib/marketing-os/video/captions.ts`
+- Adapter: `/Users/paulopierrondi/Projects/pierrondi-ia/lib/marketing-os/voice/elevenlabs.ts`
+- Captions: `/Users/paulopierrondi/Projects/pierrondi-ia/lib/marketing-os/video/captions.ts`
 - Env vars:
   - `ELEVENLABS_API_KEY`
   - `ELEVENLABS_PAULO_VOICE_ID`
@@ -2149,8 +1903,6 @@ ElevenLabs retorna `alignment` e `normalized_alignment` com timestamps por carac
 - ElevenLabs timestamps API: https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps
 - YouTube caption file formats: https://support.google.com/youtube/answer/2734698
 - LinkedIn video captions specs: https://www.linkedin.com/help/linkedin/answer/a424737
-
-
 
 ## 04_Areas/Marketing/Social Video Platform Specs 2026.md
 
@@ -2248,8 +2000,6 @@ Use este master sempre que possivel:
 - Meta Reels ads guidance: https://www.facebook.com/business/ads/facebook-instagram-reels-ads
 - LinkedIn video ad specs: https://www.linkedin.com/help/linkedin/answer/a424737
 
-
-
 ## 04_Areas/Marketing/Creative QA Checklist.md
 
 ---
@@ -2316,6 +2066,15 @@ tags:
 - [ ] Nenhum frame todo preto/branco ou quebrado.
 - [ ] Sem stock generico quando a peca precisa provar algo.
 
+## Site/portfolio creative standard
+
+- [ ] Para pierrondi.dev, site pessoal ou portfolio executivo, ler [[04_Areas/Coding/Best Practices/High Craft Frontend Visual Standard]] antes de editar.
+- [ ] Primeiro viewport prova Paulo, a oferta ou o sistema de trabalho; nao pode parecer landing generica de IA.
+- [ ] Referencia visual foi decomposta em tese, movimento, composicao, tipografia, paleta e assets antes da implementacao.
+- [ ] Foto executiva, diagramas e workflows estao integrados ao ambiente visual.
+- [ ] Nao citar nomes de clientes sem autorizacao; usar prova por categoria, industria, padrao tecnico e resultado.
+- [ ] Contato, email, SEO/Open Graph e CTA foram tratados como parte da conversao, nao acabamento.
+
 ## Export
 
 - [ ] MP4 H.264/AAC.
@@ -2346,7 +2105,6 @@ tags:
 - [ ] O que remixar definido.
 - [ ] Aprendizado registrado em [[04_Areas/Marketing/Creative Learning Loop]].
 
-
 ## 04_Areas/Marketing/Creative Prompt Starters.md
 
 ---
@@ -2371,7 +2129,7 @@ Use o vault e o repo pierrondi-ia. Leia:
 - 04_Areas/Marketing/Social Video Platform Specs 2026.md
 - 04_Areas/Marketing/Creative QA Checklist.md
 - 02_Projects/pierrondi-ia.md
-- /Users/paulopierrondi/Downloads/pierrondi-ia/docs/marketing-os/video-render-pipeline.md
+- /Users/paulopierrondi/Projects/pierrondi-ia/docs/marketing-os/video-render-pipeline.md
 
 Crie um pacote de criativo para:
 Produto/oferta: <produto>
@@ -2439,55 +2197,14 @@ Criativo atual:
 ## Pedir execucao no repo
 
 ```text
-No repo /Users/paulopierrondi/Downloads/pierrondi-ia, use o pipeline existente de video factory. Antes de mexer, rode/consulte o preflight do video. Gere apenas draft/review, sem publicar automaticamente. Use RENDER_BACKEND=ffmpeg como default e registre output paths, renderId, scriptId, custos, blockers e proximos passos no vault.
+No repo /Users/paulopierrondi/Projects/pierrondi-ia, use o pipeline existente de video factory. Antes de mexer, rode/consulte o preflight do video. Gere apenas draft/review, sem publicar automaticamente. Use RENDER_BACKEND=ffmpeg como default e registre output paths, renderId, scriptId, custos, blockers e proximos passos no vault.
 ```
 
+## Kimi Claw - radar diario de video ads
 
-## 04_Areas/Marketing/Marketing Growth Backlog.md
+2026-05-18: prompt operacional criado para tarefa diaria no Kimi Claw as 22:40, com pesquisa avancada de video ads por plataforma, ranking de tendencias, matriz de IA por custo-beneficio, prompts por ferramenta e backlog de criativos. Arquivo: `/Users/paulopierrondi/Documents/Codex/2026-05-18/quero-um-prompt-para-o-kimi-2/kimi-claw-daily-video-ads-intelligence-prompt.md`.
 
----
-type: backlog
-area: marketing
-tags:
-  - marketing
-  - growth
-  - creative
-  - backlog
----
-# Marketing Growth Backlog
-
-Backlog noturno para transformar projetos, aprendizados e assets em marketing executavel.
-
-## Regra de ouro — LinkedIn
-
-- LinkedIn e exclusivo para ServiceNow ate nova ordem explicita do Paulo.
-- Ideias fora de ServiceNow devem ir para X, Shorts, TikTok, Reels, blog, email ou backlog de produto, mas nao para LinkedIn.
-- Se uma linha antiga deste backlog sugerir LinkedIn fora de ServiceNow, tratar como obsoleta.
-
-## Growth Moves
-
-| Product/asset | Channel | Hook angle | Proof needed | CTA | Metric | Status |
-|---|---|---|---|---|---|---|
-| pierrondi.ia creative workflow | site/email/Shorts | "I can turn one product idea into a full creative package" | screen recording + output examples | book a productized creative sprint | leads | candidate |
-| CSDM/Data Quality Analyzer | LinkedIn | "Your CMDB quality problem is measurable before it is political" | anonymized report screenshot | request sample assessment | qualified conversations | candidate |
-| ppt_engine | YouTube Shorts/GitHub/blog | "Executive decks should be generated from structured thinking, not slides first" | before/after deck demo | join waitlist/request template | signups | candidate |
-| App Store Launch Copilot | SEO/GitHub/blog | "Every iOS rejection becomes a reusable checklist" | checklist screenshots + examples | download checklist | downloads | candidate |
-| FaithSchool/family copilot | Instagram/Reels/SEO | "One parent workflow to reduce weekly homeschool chaos" | product walkthrough | early access | waitlist | candidate |
-| MyTone | TikTok/Reels/Meta | "Your iPhone ringtone does not have to sound like 2009" | real screen recording: import -> AI hook -> export | download on App Store after approval | install -> export -> purchase | submitted-review |
-| Aura | TikTok/Reels/Meta | "Uma afirmação para ouvir, não para ler" | real app audio + player + practice flow | download on App Store after approval | install -> first listen -> trial/purchase | submitted-review |
-| Adivinha | TikTok/Reels/Stories | "Acerte a musica brasileira do dia em 6 trechos" | real gameplay + share card | download after App Store approval | install -> first game -> share | submitted-review |
-| InvestCoach.AI | TikTok Ads/Reels | "Seu dinheiro some? Organize pelo chat em minutos" | real app screens + compliant voiceover | App Store BR URL | install -> onboarding -> core action -> trial | active-review (30 BRL/day) |
-| pierrondi.dev creative sprint proof | site + Shorts | "One idea -> full creative package in 48h" | Muse/InvestCoach asset walkthrough (site-only, not LinkedIn) | book a creative sprint via pierrondi.dev | site form submissions | candidate |
-| Apple Ads / ASA daily tuning | internal report | "Before any budget change, the CSV must be on disk" | per-app CSV pulled into `App Marketing Metrics Inventory` | gate for budget changes | budget-change gate pass rate | candidate |
-| FaithSchool US paid learning sprint | Apple Ads + TikTok/Reels proof clips | "Plan the homeschool week without rebuilding it from scratch" | Apple Ads export + US product-page/onboarding audit + screen recording | download/try on App Store after page audit | install -> plan_created -> lesson_generated -> trial | candidate-first |
-| Muse Edit creative QA sprint | TikTok/Reels/Meta review package | "Get a real outfit idea from clothes you already own" | existing UGC MP4s + App Store/paywall/tracking check | download on App Store after approval | install -> look_generated -> edit_saved -> purchase | candidate-review |
-| FaithSchool post-pause relaunch | TikTok App Promotion / Reels proof clips | "Planeje a semana de estudos sem reconstruir tudo do zero" | v1.0.3 approval + advertiser separation + Events SDK Test Events | download after v1.0.3 approval | install -> plan_created -> lesson_generated -> trial | paused-pending-events |
-| App review + paid evidence kit | blog/GitHub/pierrondi.dev | "Every iOS review and ad dollar needs a decision log" | redacted queue template + export-field checklist | download template | downloads -> consult requests | candidate |
-| Apple Ads keyword evidence template | GitHub/blog/pierrondi.dev | "Do not touch bids until the keyword report can defend it" | fake-data CSV/API report with decision columns | download template | downloads -> paid audit requests | research |
-| Bandle rejection-to-resubmission story | blog/GitHub/internal checklist | "A rejection is only useful after it becomes a checklist" | redacted rejection reason + evidence path + resubmission gate | download review checklist | checklist downloads -> app review consults | candidate |
-| ASA export gate proof | internal/reporting template | "Every paid recommendation starts with the export, not the screenshot" | one sanitized Apple Ads CSV template + before/after decision log | use as daily budget-change gate | report completeness -> approved decisions | candidate |
-| Casa Clar
-...[truncated]
+2026-05-19: prompt ampliado para Kimi Claw / Kimi CLI como `Kimi Growth War Room`, cobrindo pesquisa ampla de marketing digital, comunidades, ferramentas/agentes, ASO/ASA, App Store, melhoria de apps por receita, pacotes de campanha, criativos, posts e escrita segura no vault. Arquivo: `/Users/paulopierrondi/Documents/Codex/2026-05-19/me-da-um-super-maximo-prompt/kimi-claw-marketing-growth-superprompt.md`.
 
 ## 04_Areas/Marketing/Creative Pipeline Secrets Inventory.md
 
@@ -2550,489 +2267,6 @@ Esta nota registra apenas nomes e finalidade. Nao registrar valores reais.
 - [[04_Areas/Coding/Checklists/Secrets And API Keys Register]]
 - [[04_Areas/Coding/Checklists/Railway Secrets Inventory]]
 
-
-
-## 04_Areas/Marketing/App Marketing Intelligence OS.md
-
----
-type: operating-system
-area: marketing
-status: active
-tags:
-  - marketing
-  - apple-ads
-  - asa
-  - app-store
-  - tuning
----
-# App Marketing Intelligence OS
-
-Status: active
-Owner: Paulo
-Updated: 2026-05-17
-
-## Purpose
-
-Manter um loop diario para apps que rodam ou podem rodar Apple Ads / ASA e outros canais de marketing, com foco em tuning, aprendizado e melhoria do vault.
-
-Este sistema coleta sinais, interpreta performance e gera propostas. Ele nao muda budget, bid, campanha, criativo, publicacao ou segmentacao automaticamente.
-
-## Regra maxima — tracking obrigatorio em todo app
-
-Todo app novo, em desenvolvimento, em review, publicado ou ja em uso precisa nascer e permanecer com tracking de aquisicao pago pronto. Nao existe app "pequeno demais" ou "ainda cedo demais" para isso.
-
-Padrao minimo obrigatorio:
-
-- Mobile iOS/Android: TikTok App Events SDK ou MMP equivalente quando o app puder receber TikTok/Meta/social paid; SKAN/AdServices/ATT/privacy labels coerentes; ownership unico de conversion value; eventos `app_opened/install`, `onboarding_completed`, ativacao principal, `paywall_viewed`, `trial_started`/`purchase_started` e `purchase_completed`/`subscription_started`.
-- Web/PWA/landing: TikTok Pixel + Events API quando houver trafego pago/social; UTM capture; dedupe/event_id quando aplicavel; eventos de lead, signup, checkout e purchase.
-- Todos os apps: reporting central em `pierrondi-ia` ou inventario equivalente com app, campanha, channel, spend, impressions, clicks/taps, installs/leads, CPA/CPT, trial/purchase/revenue quando existir.
-- Todo repo de app deve ter doc ou checklist de tracking dizendo: provider, env var names, eventos, privacy/store impact, Test Events status e ultimo build validado.
-
-Gate duro:
-
-- App novo nao fecha MVP/release sem plano de tracking.
-- App existente nao recebe campanha paga nova, budget scale, creative refresh pago ou App Store paid launch sem SDK/pixel/MMP, eventos e reporting validados.
-- Se o app ainda nao tem credenciais de provider, registrar o gap e bloquear paid launch ate preencher via secret manager/build env. Nunca escrever segredo no vault.
-- Essa regra nao autoriza mutacao de campanha. Budget, bid, target CPA, publicacao, criativo e audiencia continuam exigindo aprovacao humana.
-
-## Daily Inputs
-
-- [[04_Areas/Marketing/App Marketing Metrics Inventory]]
-- [[04_Areas/Marketing/iOS App Paid Growth Execution OS]]
-- [[04_Areas/Marketing/Apple Ads ASA Tuning Runbook]]
-- [[04_Areas/Marketing/App Marketing Daily Tuning Report]]
-- [[04_Areas/Marketing/App Marketing Tuning Backlog]]
-- [[04_Areas/Marketing/TikTok Financial Ads Compliance Runbook]]
-- [[04_Areas/Product/App Refinement Backlog]]
-- [[04_Areas/Product/Nightly Opportunity Report]]
-- [[04_Areas/Marketing/Marketing Growth Backlog]]
-- Notas de projeto em [[02_Projects/Projects Index]]
-- App Store / TestFlight / ASC state quando existir nas notas de projeto
-- Dados exportados para `98_Attachments/marketing-data`
-
-## Daily Flow
-
-1. Rodar `/Users/paulopierrondi/.local/bin/brain-app-marketing-pulse`.
-2. Conferir se existe export recente de Apple Ads / ASA, App Store Connect, RevenueCat, web analytics, TikTok, Meta, YouTube ou LinkedIn.
-3. Para cada app, atualizar o status de marketing: ativo, pausado, candidato, bloqueado, sem dados.
-4. Gerar recomendacoes de tuning separadas por:
-   - TikTok Ads / Meta Ads;
-   - Apple Ads / ASA;
-   - App Store product page / CPP;
-   - ASO metadata;
-   - criativos sociais;
-   - funil de assinatura/IAP;
-   - retencao e eventos in-app.
-5. Registrar somente propostas seguras em [[04_Areas/Marketing/App Marketing Tuning Backlog]].
-6. Se houver aprendizado reutilizavel, atualizar [[04_Areas/Coding/Best Practices/Learning Inbox]] ou [[04_Areas/Marketing/Creative Learning Loop]].
-
-## Tuning Model
-
-| Layer | Question | Output |
-|---|---|---|
-| Spend | Onde o dinheiro esta indo? | app/campaign/ad group/keyword com spend, taps, installs |
-| Efficiency | O CPA/CPT esta aceitavel? | keep / reduce / investigate |
-| Conversion | Onde perde usuario? | product page, paywall, onboarding, offer |
-| Creative | Qual promessa visual esta convertendo? | screenshot/video/CPP hypotheses |
-| Keyword | Quais termos compram usuario certo? | scale, exact, negative, research |
-| Revenue | Instala virou trial/purchase/retention? | ROI hypothesis and missing telemetry |
-| Risk | Algo pode gastar sem aprendizado? | budget cap / pause proposal / data gap |
-
-## Guardrails
-
-- Nunca armazenar tokens, OAuth secrets, API keys, cookies ou private keys no vault.
-- Nunca alterar budget, bid, target CPA, campanha, keyword, criativo ou publicacao automaticamente.
-- Nunca tratar tracking de ads como tarefa opcional em app novo ou existente; se nao houver SDK/pixel/MMP, eventos e reporting, o app fica bloqueado para paid acquisition.
-- Nunca publicar em LinkedIn fora da regra ServiceNow-only registrada em [[04_Areas/Marketing/Marketing MOC]].
-- Qualquer acao paga vira proposta humana.
-- Qualquer dado de usuario deve ficar
-...[truncated]
-
-## 04_Areas/Marketing/Apple Ads ASA Tuning Runbook.md
-
----
-type: runbook
-area: marketing
-status: active
-tags:
-  - apple-ads
-  - asa
-  - app-store
-  - paid-acquisition
-  - tuning
----
-# Apple Ads ASA Tuning Runbook
-
-Use este runbook para Apple Ads / Apple Search Ads / ASA.
-
-## Answer First
-
-Para tunar ASA direito, o vault precisa saber diariamente:
-
-- app;
-- pais/regiao;
-- placement: Search Results, Search tab, Today tab, Product pages;
-- campaign;
-- ad group;
-- keyword/search term;
-- spend;
-- impressions;
-- taps;
-- installs;
-- TTR;
-- CR;
-- Avg CPT;
-- Avg CPA;
-- revenue/trial/purchase quando existir;
-- product page / CPP usada;
-- mudanca feita e resultado depois.
-
-## Official Metrics To Track
-
-Apple Ads expõe no dashboard metricas como:
-
-| Metric | Use |
-|---|---|
-| Spend | gasto real |
-| Impressions | escala/distribuicao |
-| Taps | interesse antes da pagina |
-| TTR | qualidade de keyword/ad placement |
-| Installs Total / Tap-Through / View-Through | conversao de install |
-| New Downloads / Redownloads | aquisicao vs reengajamento |
-| CR Total / Tap-Through | eficiencia da pagina/app fit |
-| Avg CPT | custo por tap |
-| Avg CPA | custo por install/conversao |
-| Avg Daily Spend | ritmo de gasto |
-| Daily Budget / Target CPA / bid strategy | controle operacional |
-
-## Placement Mapping
-
-Apple Ads aparece em AdAttributionKit como `com.apple.ads`.
-
-| Placement | Campaign ID |
-|---|---|
-| Search results | `10` |
-| Search tab | `20` |
-| Today tab | `30` |
-| Product pages | `40` |
-
-## Daily Tuning Rules
-
-| Signal | Interpretation | Proposed action |
-|---|---|---|
-| Spend > 0 and installs = 0 | dinheiro sem conversao | revisar keyword, product page, country, bid, screenshot promise |
-| High impressions, low TTR | keyword/ad mismatch | reduzir bid, negativar termo, melhorar metadata/creative |
-| High taps, low installs | product page/payoff fraco | testar screenshots, CPP, title/subtitle, reviews, price |
-| Low impressions, good CR | falta escala | testar bid maior ou keyword variants |
-| High CPA, no revenue signal | risco de gastar no escuro | exigir trial/purchase/retention tracking antes de escalar |
-| Generic keyword expensive | pouca intencao | mover para exact/high-intent ou discovery controlado |
-| Search Match trazendo lixo | discovery sem limpeza | extrair termos bons e negativar ruins |
-| Good keyword, bad paywall | monetizacao bloqueia | ajustar offer, pricing, trial, onboarding |
-
-## Keyword Recommendation Guardrail
-
-Apple Ads keyword recommendations must not be bulk-accepted. Treat the list as a candidate pool, not as approval.
-
-Recommended handling:
-
-- accept only terms with clear user intent, competitor/context fit, or strong ASO adjacency;
-- place generic/social/platform terms only in an exact-match discovery ad group with low bid and short review window;
-- reject or leave unselected broad utilities, dating, messaging, VPN, search engine and unrelated entertainment terms unless there is explicit product-page rationale;
-- record accepted keywords, rejected keywords, campaign, ad group, max CPT and review date;
-- do not change campaign status, budget, target CPA or bid scale while accepting recommendations;
-- verify the Apple Ads UI shows the target ad group saved before clicking Apply.
-
-For fashion/visual-content apps like Muse Edit, social-intent exact terms can be tested only as controlled discovery. Example: `[instagram]`, `[tiktok]`, `[tik tok]` may be plausible because the app helps create outfit/style content, but they should not be mixed with unrelated broad terms.
-
-## Data Collection Paths
-
-Preferred:
-
-1. Apple Ads Campaign Management API reports.
-2. Manual CSV export from Apple Ads dashboard into `98_Attachments/marketing-data`.
-3. App Store Connect / RevenueCat / backend analytics to connect install -> trial -> purchase -> retention.
-
-Allowed in vault:
-
-- aggregated metrics;
-- campaign names;
-- keyword/search term names;
-- spend/CPA/CPT/CR;
-- decisions and tuning proposals.
-
-Blocked in vault:
-
-- OAuth client secret;
-- private key;
-- access/refresh token;
-- user-level attribution payloads;
-- raw PII;
-- screenshots with credentials.
-
-## Minimum CSV Export Columns
-
-When exporting manually, include as many of these as possible:
-
-```text
-App, Campaign Name, Ad Group Name, Keyword, Search Term, Country or Region,
-Ad Placement, Spend, Impressions, Taps, TTR, Installs (Total),
-Installs (Tap-Through), Installs (View-Through), CR (Total),
-Avg CPT, Avg CPA (Total), Date
-```
-
-## Decision Template
-
-```md
-### YYYY-MM-DD — app / campaign
-
-- Finding:
-- Evidence:
-- Hypothesis:
-- Proposed action:
-- Guardrail:
-- Check again:
-```
-
-## Sources
-
-- Apple Ads Campaign Management API: https://ads.apple.com/app-store/help/campaigns/0022-use-the-campaign-management-api
-- Apple Ads dashboard metrics: https://ads.apple.com/app-store/help/reporting/0024-view-campaigns-dashboard-metrics
-- Apple Ads attribution / AdServices: https://ads.apple.com/app-store/help/attribution/0028-measuring-ad-performance
-- Campaign-level reports endpoint: https://developer.apple.com/documentation/a
-...[truncated]
-
-## 04_Areas/Marketing/App Marketing Metrics Inventory.md
-
----
-type: inventory
-area: marketing
-status: active
-tags:
-  - marketing
-  - metrics
-  - apple-ads
-  - app-store
----
-# App Marketing Metrics Inventory
-
-Este inventario diz quais apps devem entrar no loop diario de marketing/ASA.
-
-## Data Sources
-
-| Source | Location | Status | Notes |
-|---|---|---|---|
-| Apple Ads / ASA API | Apple Ads API user + OAuth client | not connected | Guardar apenas nomes de env vars no vault. |
-| Apple Ads CSV exports | `98_Attachments/marketing-data` | ready | Colocar exports de dashboard aqui quando houver. |
-| App Store Connect | App/project notes + ASC exports | partial | Usado para status de build, review, screenshots, product page. |
-| RevenueCat / IAP | provider exports or backend metrics | pending | Necessario para CPA -> revenue. |
-| Backend analytics | Railway/API endpoints por app | partial | Usar somente agregados. |
-| Social marketing | pierrondi.dev Marketing OS | active for ServiceNow content | LinkedIn e ServiceNow-only ate nova ordem. |
-| Meta Ads | Meta Business Manager / Ads Manager exports | account recovery needed | Prioridade para apps iOS consumer no mercado US depois de Account Quality, billing, verificacao e tracking iOS estarem limpos. |
-| TikTok Ads | TikTok Ads Manager / Events Manager exports | candidate | Canal forte para validar criativos de apps iOS consumer no mercado US; exige App Events/MMP, SKAN e leitura cautelosa de atribuicao em baixo volume. |
-
-## Apps To Track
-
-| App / Project | Repo note | ASA status | Other marketing channels | Revenue signal | Current next tuning question |
-|---|---|---|---|---|---|
-| Adivinha! | [[02_Projects/adivinha-app]] | needs Apple Ads source confirmation | App Store product page, WhatsApp/iMessage/Stories sharing | IAP pending | Depois da aprovacao, testar Search Results para keywords high-intent de musica/quiz BR e medir install -> Pro. |
-| Aura Daily Affirmations | [[02_Projects/aura-affirmations]] | ASC build valid; App Privacy pending | TikTok/Reels wellness/audio demos, then Meta/TikTok paid | IAPs ready to submit | Fechar App Privacy na UI ASC, submeter, preparar criativos por ritual diario/audio. |
-| MyTone | [[02_Projects/mytone-app]] | App Store version `1.0` now `WAITING_FOR_REVIEW`; build valid in daily ASC snapshot | TikTok/Shorts demo loops, App Store | IAP planned / StoreKit native in repo | Preparar criativos e smoke test pos-aprovacao; nao iniciar paid antes de approval + StoreKit/export evidence. |
-| Parabens IA BR | [[02_Projects/parabens-ai-br]] | `WAITING_FOR_REVIEW` v1.1.0 build 4; Railway public URL validated; App Store public URL still 404 | App Store, TikTok/Reels, birthday/event SEO; 4 HyperFrames + 4 UGC PT-BR videos ready | IAP/server payments planned; backend `/health` DB ready | Aguardar `READY_FOR_SALE`; depois validar App Store URL + events/tracking e rodar teste BR controlado `R$30/dia x 3 dias` com 4 creatives. |
-| FIFA 2026 Bolao | [[02_Projects/fifa2026bolao]] | candidate near tournament timing | App Store, social/SEO, football communities | ads/IAP/subscription TBD | Nao gastar antes de fixtures/retention loop; preparar keyword research Copa 2026. |
-| Bandle BR / Music Quiz | [[02_Projects/bandle-br]] | submitted for review | App Store, TikTok, music communities | subscription/IAP TBD | Aguardar review; validar retencao/share organic antes de paid. |
-| pierrondi.dev Marketing OS | [[02_Projects/pierrondi-ia]] | not ASA; social/content engine | LinkedIn ServiceNow-only, X, video, site | leads/services | Medir pipeline ServiceNow content -> approvals -> posts -> replies/leads. |
-| InvestCoach.AI | [[02_Projects/investcoach_ai]] | live Apple Ads BR/US campaigns seen in screenshot | Apple Ads + TikTok BR draft; SDK code implemented, build/env pending | unknown | Configure TikTok Events env, ship native build, verify Test Events, then App Promotion can replace Traffic draft. |
-| FaithSchool | [[02_Projects/faithschool-web]] | live Apple Ads BR/US campaigns seen in screenshot | TikTok BR rodando dentro do advertiser `InvestCoach AI BR` com objetivo errado (Video Views, 0 destination clicks); Apple Ads BR/US ativo; SDK iOS integrado mas `TIKTOK_EVENTS_ENABLED=0` | subscription TBD | App Store v1.0.3 em review; pausar ad group Video Views; criar advertiser FaithSchool proprio; ativar TikTok Events SDK e Test Events antes de migrar para App Promotion. |
-| Muse Edit | [[02_Projects/fashioncore]] | live Apple Ads BR/US campaigns seen in screenshot | Strong TikTok/Meta visual candidate + Apple Ads | subscription/affiliate TBD | US campaign has budget but no spend; diagnose delivery/keywords before scaling. |
-| CantuStudio | [[02_Projects/exploratorio]] | live Apple Ads BR/US campaigns seen in screenshot | Apple Ads niche + musician/teacher short-form demos | subscription/TBD | No delivery in screenshot; needs keyword/ASO/product-page audit. |
-
-## Meta Ads Setup Gaps
-
-- [ ] Auditar Meta Business Support Home / Account Quality para identificar se o bloqueio esta no perfil pessoal, Business Por
-...[truncated]
-
-## 04_Areas/Marketing/App Marketing Daily Tuning Report.md
-
----
-type: daily-report
-area: marketing
-status: active
-tags:
-  - marketing
-  - tuning
-  - apple-ads
----
-# App Marketing Daily Tuning Report
-
-Generated: `2026-05-18 07:21:25`
-
-This report stores aggregate marketing intelligence only. It does not store secrets, tokens, OAuth credentials, cookies or user-level PII.
-
-## Executive Summary
-
-- Tracked apps/projects: `11`
-- ASC apps visible to watcher: `12`
-- Marketing data files found: `0` actionable CSV/TSV exports
-- Data folder: `98_Attachments/marketing-data`
-- Current automation stance: propose tuning; do not mutate paid campaigns automatically.
-- Do not change Apple Ads bids/budgets yet unless export-level metrics support the decision.
-- Best next learning candidate: FaithSchool US.
-- Biggest current risk: spend without install -> trial/purchase linkage.
-
-## App Readiness Snapshot
-
-| App | Project note | Marketing/store state |
-| --- | --- | --- |
-| InvestCoach.AI | [[02_Projects/investcoach_ai\|InvestCoach.AI]] | tracked |
-| FaithSchool | [[02_Projects/faithschool-web\|FaithSchool]] | tracked |
-| Muse Edit | [[02_Projects/fashioncore\|Muse Edit]] | tracked |
-| CantuStudio | [[02_Projects/exploratorio\|CantuStudio]] | tracked |
-| Adivinha! | [[02_Projects/adivinha-app\|Adivinha!]] | tracked |
-| Aura Daily Affirmations | [[02_Projects/aura-affirmations\|Aura]] | tracked |
-| MyTone | [[02_Projects/mytone-app\|MyTone]] | tracked |
-| Parabens IA BR | [[02_Projects/parabens-ai-br\|Parabens]] | tracked |
-| FIFA 2026 Bolao | [[02_Projects/fifa2026bolao\|FIFA]] | tracked |
-| Bandle BR / Music Quiz | [[02_Projects/bandle-br\|Bandle]] | tracked |
-| pierrondi.dev Marketing OS | [[02_Projects/pierrondi-ia\|pierrondi.dev]] | content engine |
-
-## App Store Connect Live State
-
-|  | App | Version | appStoreState | Latest review | Build (processing) |
-| --- | --- | --- | --- | --- | --- |
-| WATCH | Adivinha! | 1.0 | WAITING_FOR_REVIEW | WAITING_FOR_REVIEW | 2 (VALID) |
-| WATCH | Aura - Afirmacoes Diarias | 1.0 | REJECTED | UNRESOLVED_ISSUES | 1779041512 (VALID) |
-| WATCH | Bandle BR | 1.0 | REJECTED | UNRESOLVED_ISSUES | 3 (VALID) |
-| WATCH | CantuStudio | 1.0.4 | WAITING_FOR_REVIEW | WAITING_FOR_REVIEW | 19 (VALID) |
-| WATCH | Casa Clara | 1.0 | REJECTED | UNRESOLVED_ISSUES | 18 (VALID) |
-| WATCH | FaithSchool | 1.0.3 | WAITING_FOR_REVIEW | WAITING_FOR_REVIEW | 28 (VALID) |
-| WATCH | Guia 2026 | 1.0 | WAITING_FOR_REVIEW | WAITING_FOR_REVIEW | 7 (VALID) |
-| WATCH | Muse Edit - Style Closet | 1.0.3 | WAITING_FOR_REVIEW | WAITING_FOR_REVIEW | 7 (VALID) |
-| WATCH | MyTone - AI Ringtone Studio | 1.0 | WAITING_FOR_REVIEW | WAITING_FOR_REVIEW | 202605160926 (VALID) |
-| WATCH | Parabéns IA | 1.1.0 | REJECTED | UNRESOLVED_ISSUES | 7 (VALID) |
-| OK | InvestCoach.AI | 1.0.2 | READY_FOR_SALE | COMPLETE | 11 (VALID) |
-| OK | SuperApp ServiceNow | 1.0 | READY_FOR_SALE | COMPLETE | 2 (VALID) |
-
-## Active Apple Ads Readiness Queue
-
-| Rank | App | Current signal | Recommendation | Human decision needed |
-| --- | --- | --- | --- | --- |
-| 1 | FaithSchool US | Visible Apple Ads US spend in prior dashboard screenshot; no export-level install/CR/CPA data yet. | Export Search Results campaign/ad group/keyword metrics; audit US App Store page and onboarding. | Approve data export and product/page audit. |
-| 2 | Muse Edit BR/US | BR had minimal delivery; US had budget but no spend in prior screenshot. | Diagnose keyword eligibility, bids, storefront, product-page fit and Search Match before spend changes. | Review generated creative assets before upload/spend. |
-| 3 | InvestCoach.AI BR | Highest visible active-app spend among prior Apple Ads screenshot; finance category has trust/compliance risk. | Hold spend; verify TikTok approval/Test Events and Apple Ads install/CR/CPA before scaling. | Approve only after downstream telemetry exists. |
-| 4 | CantuStudio BR/US | No delivery in prior dashboard screenshot. | Run keyword/ASO/product-page audit before broad paid social. | Decide target ICP: choir teacher, arranger, church musician or music student. |
-
-## Data Sources Seen
-
-_No recent Apple Ads / marketing CSV exports found in `98_Attachments/marketing-data`._
-
-Minimum next export needed: `App, Campaign Name, Ad Group Name, Keyword, Search Term, Country or Region, Ad Placement, Spend, Impressions, Taps, TTR, Installs (Total), CR (Total), Avg CPT, Avg CPA (Total), Date`.
-
-## 2026-05-18 07:23 BRT Interpretation
-
-- `brain-app-marketing-pulse` generated this report at `2026-05-18 07:21:25`; manual cross-check with `~/.local/var/state/asc-states.json` corrected Adivinha from `REJECTED` back to `WAITING_FOR_REVIEW`.
-- ASC watcher state now shows 4 unresolved review issues: `Aura`, `Bandle BR`, `Parabéns IA` and `Casa Clara`. These apps should stay out of paid acquisition until rejection reasons, fix evidence and resubmission gates are captured.
-- Still no actionable Apple Ads / ASA, TikTok, Meta, RevenueCat or App Store metrics export exists in `98_Attachments/marketing-data`; only `README.md` is present.
--
-...[truncated]
-
-## 04_Areas/Marketing/App Marketing Tuning Backlog.md
-
----
-type: backlog
-area: marketing
-status: active
-tags:
-  - marketing
-  - tuning
-  - apple-ads
-  - app-store
----
-# App Marketing Tuning Backlog
-
-Backlog para ajustes de ASA, App Store, ASO, criativos, product page, funil e canais sociais.
-
-| Date | App | Channel | Finding | Proposed tuning | Evidence | Human approval needed | Status |
-|---|---|---|---|---|---|---|---|
-| 2026-05-18 07:23 | Aura / Bandle BR / Parabéns IA / Casa Clara | App Store review / paid growth gate | ASC watcher state shows these 4 apps as `REJECTED` / `UNRESOLVED_ISSUES` while builds remain `VALID`. Paid acquisition would send traffic into unresolved store/review risk. | Keep all paid launch, campaign activation and creative upload blocked for these apps. Capture each rejection reason, fix evidence, resubmission checklist and post-approval tracking plan before any ASA/TikTok/Meta spend. | `~/.local/var/state/asc-states.json`; `~/.local/var/log/brain-asc-watcher.log`; [[04_Areas/Marketing/App Marketing Daily Tuning Report]] | yes for any platform mutation or spend | open |
-| 2026-05-18 07:23 | active Apple Ads portfolio | Apple Ads / ASA export gate | `98_Attachments/marketing-data` still contains no actionable CSV/TSV export. Official Apple Ads reporting supports campaign/ad group/ad/keyword/search-term metrics, but the vault cannot yet evaluate spend -> install -> activation. | Pull one Apple Ads CSV/API report for FaithSchool US, Muse Edit BR/US, InvestCoach.AI BR and CantuStudio BR/US with spend, impressions, taps, installs, TTR, CR, Avg CPT and Avg CPA. Until then, no bid/budget/target CPA/keyword decision. | `98_Attachments/marketing-data/README.md`; Apple Ads reporting docs; [[04_Areas/Marketing/App Marketing Daily Tuning Report]] | yes | open |
-| 2026-05-18 07:23 | daily app marketing automation | Automation reliability | `brain-app-marketing-pulse.log` contains `PermissionError` reading `02_Projects/investcoach_ai.md` even though the file mode/owner look normal. The report was generated, but this can create partial or inconsistent output. | Patch `brain-app-marketing-pulse` to catch project-note read errors per app, record a warning row, continue the run, and emit a clear non-secret failure summary. | `~/.local/var/log/brain-app-marketing-pulse.log`; `ls -lOe 02_Projects/investcoach_ai.md` | no paid approval; engineering fix only | open |
-| 2026-05-17 23:59 | all ASC-watched iOS apps | App Store Connect watcher | Final watcher poll succeeded with `12` apps checked and `0` closing deltas. Current queue: `10` apps `WAITING_FOR_REVIEW`; `InvestCoach.AI` and `SuperApp ServiceNow` `READY_FOR_SALE`. Intraday review churn included Bandle BR, Aura and Parabéns IA rejection/resubmission cycles, plus CantuStudio, Casa Clara, FaithSchool and Muse Edit waiting on newer builds. | Keep paid acquisition gated while apps are waiting for Apple. Work allowed: Apple Ads CSV export, event validation, creative QA, and post-approval launch prep. | `~/.local/var/log/brain-asc-watcher.log`; `~/.local/var/state/asc-states.json`; [[04_Areas/Product/App Review Queue]]; [[04_Areas/Marketing/App Marketing Daily Tuning Report]] | yes for any spend/platform mutation | monitoring |
-| 2026-05-15 | all app portfolio | Apple Ads / ASA | Data source not connected yet | Confirm live campaigns and drop/export first Apple Ads report into `98_Attachments/marketing-data` | no recent ASA CSV/API data found | yes | open |
-| 2026-05-15 | Adivinha! | App Store / ASA | App submitted, IAP still pending | Do not scale paid acquisition before subscriptions/shared secret/RevenueCat are ready | [[02_Projects/adivinha-app]] | yes | open |
-| 2026-05-15 | Aura | App Store Connect | Build `VALID` / `APP_STORE_ELIGIBLE`; IAPs `READY_TO_SUBMIT`; App Privacy labels still need final UI confirmation | Close App Privacy labels, submit for review, then prepare wellness/audio creative tests | [[02_Projects/aura-affirmations]]; [[04_Areas/Marketing/Apple Connect Ready Apps Campaign Matrix]] | yes | open |
-| 2026-05-15 | pierrondi.dev | LinkedIn/X | K26 ServiceNow content has approvals workflow | Track 24h/72h/7d metrics per post before generating next sequence | [[02_Projects/pierrondi-ia]] | approval already required in Studio | open |
-| 2026-05-15 | all iOS app portfolio | Meta Ads / US | Paulo wants to focus more on Meta than ASA, but current Meta Ads account quality is weak | Run Meta account recovery first, then test one US-ready app with small App Promotion budget and iOS event tracking before scaling | user decision; [[04_Areas/Marketing/App Marketing Metrics Inventory]] | yes | open |
-| 2026-05-15 | all iOS app portfolio | TikTok Ads / US | TikTok is also viable for consumer iOS apps, especially as creative validation channel | Prepare TikTok Business/Events setup and run small US creative tests in parallel with or before Meta once one app is US-ready | user decision; [[04_Areas/Marketing/App Marketing Metrics Inventory]] | yes | open |
-| 2026-05-15 | Guia 2026 | App Store / Apple Ad
-...[truncated]
-
-## 99_System/Automation Email Policy.md
-
----
-type: policy
-status: active
-tags:
-  - automation
-  - email
-  - notification
----
-# Automation Email Policy
-
-Regra fixa: toda automacao, independente de rodar em Codex, Claude, Kimi/OpenClaw, Gemini, LaunchAgent local, cloud runner ou script agendado, deve enviar um email de encerramento para `pierrondi@gmail.com`.
-
-## Obrigatorio
-
-- Enviar email ao final de cada run, tanto em sucesso quanto em falha.
-- Destinatario padrao unico: `pierrondi@gmail.com`.
-- Assunto deve identificar automacao e status.
-- Corpo deve incluir:
-  - nome/id da automacao;
-  - status final;
-  - horario;
-  - principais mudancas/achados;
-  - arquivos/relatorios atualizados;
-  - decisoes humanas pendentes;
-  - falhas ou bloqueios.
-- Redigir segredos antes do envio.
-
-## Transporte Local Padrao
-
-Em automacoes locais no Mac, usar:
-
-```bash
-/Users/paulopierrondi/.local/bin/brain-send-automation-email --automation "<id>" --status "<success|failed>" --log "<path>"
-```
-
-Para LaunchAgents ou `run.sh`, usar o wrapper/trap:
-
-```bash
-/Users/paulopierrondi/.local/bin/brain-run-with-email --automation "<id>" --log "<path>" -- <command>
-```
-
-ou:
-
-```bash
-source /Users/paulopierrondi/.local/bin/brain-automation-email-trap
-brain_automation_email_setup "<id>"
-```
-
-## Cloud / Connector Rule
-
-Se a automacao rodar fora do Mac local:
-
-- usar o conector/ferramenta de email disponivel para enviar a `pierrondi@gmail.com`;
-- se nao houver transporte de email disponivel, criar um draft em Markdown e registrar `EMAIL_FAILED` em [[99_System/Automation Email Log]];
-- a falha de transporte deve aparecer no relatorio final e no vault.
-
-## Guardrails
-
-- Esta regra e a unica excecao padrao a "nao enviar mensagens externas".
-- Nao enviar email para terceiros automaticamente.
-- Nao anexar `.env`, tokens, API keys, cookies, private keys, credenciais, dumps de banco, PII bruta ou logs sem redacao.
-- Nao usar `/usr/bin/mail` direto para Gmail; usar Mail.app/iCloud local quando no Mac.
-- Se o email falhar, salvar draft seguro em [[99_System/Automation Email Drafts]].
-
-
 ## 99_System/Security And Secrets Policy.md
 
 ---
@@ -3046,7 +2280,19 @@ tags:
 
 ## Regra principal
 
-O vault e o lugar para memoria, inventario e decisoes. O vault nao e cofre de segredo.
+O vault e o lugar para memoria, inventario, decisoes e referencias de credenciais. O vault nao guarda segredo real em Markdown.
+
+Modelo canonico: [[99_System/Credential Vault Operating Model]].
+
+## Fonte unica local: `/Users/paulopierrondi/Projects/.keys.env`
+
+Para todos os files e automacoes locais, a fonte canonica de variaveis de ambiente e `/Users/paulopierrondi/Projects/.keys.env`, carregada via `/Users/paulopierrondi/.local/bin/brain-env-run`. Detalhes em [[99_System/Central Env File Operating Model]].
+
+- `chmod 600` obrigatorio.
+- Nunca commitar; nunca colar em chat, Markdown, Linear, screenshot, log ou email.
+- Producao continua em provider env vars (Railway/Vercel/GitHub Actions), nunca neste `.env`.
+- Override por projeto: `.env` local do projeto vence sobre o central.
+- Scripts novos: `brain-env-run -- <comando>` em vez de `source .env` ou `python-dotenv` cru.
 
 ## Permitido no vault
 
@@ -3074,11 +2320,20 @@ O vault e o lugar para memoria, inventario e decisoes. O vault nao e cofre de se
 
 ## Padrao para projetos
 
-- `.env.local` para desenvolvimento local e fora do Git.
-- `.env.example` com nomes e valores falsos.
+- `/Users/paulopierrondi/Projects/.keys.env` (chmod 600) como fonte unica de variaveis compartilhadas; carregar via `brain-env-run`.
+- `./.env` no diretorio do projeto apenas para overrides especificos (precedence wins).
+- `.env.example` com nomes e valores falsos no repo.
 - Secret manager/provider env vars para producao.
 - GitHub Actions Secrets para CI.
 - Nunca passar segredo para LLM quando nao for estritamente necessario.
+
+## Regra para coders
+
+- Default para automacoes locais: `brain-env-run -- <comando>` (carrega o `.env` central + override de projeto).
+- Nao pedir Paulo para colar API key/token em chat quando houver alternativa.
+- Consultar [[04_Areas/Coding/Checklists/Secrets And API Keys Register]] e usar a referencia/local de armazenamento.
+- Preferir `op://...` + `op run` quando 1Password CLI estiver disponivel.
+- Se o secret manager nao estiver configurado, registrar acao humana e bloquear a parte que depende do segredo.
 
 ## Quando uma key vaza
 
@@ -3089,25 +2344,44 @@ O vault e o lugar para memoria, inventario e decisoes. O vault nao e cofre de se
 5. Registrar incidente na nota do projeto sem repetir a key.
 6. Procurar e remover vazamento em logs/commits se aplicavel.
 
+Incidente aberto: [[99_System/Secret Exposure Incident - 2026-05-19]].
+
+## Intake local seguro
+
+Quando 1Password CLI ainda nao estiver disponivel, usar `/Users/paulopierrondi/.local/bin/brain-secret-intake` para gravar valores novos/rotacionados no Apple Keychain. O script nao recebe segredo por argumento; ele deixa o proprio Keychain pedir o valor.
+
+Runbook manual no vault: [[99_System/Manual Credential Intake]].
+
+Para importacao em lote, usar arquivo temporario fora do vault:
+
+```bash
+/Users/paulopierrondi/.local/bin/brain-secret-intake import /Users/paulopierrondi/.second-brain-secrets.env --delete
+```
+
+O arquivo temporario nao deve entrar em Obsidian, Git, Linear, email ou screenshot.
+
 ## Links
 
+- [[99_System/Central Env File Operating Model]]
+- [[99_System/Credential Vault Operating Model]]
+- [[99_System/Manual Credential Intake]]
+- [[99_System/Secret Exposure Incident - 2026-05-19]]
 - [[04_Areas/Coding/Checklists/Secrets And API Keys Register]]
 - [[04_Areas/Coding/Checklists/Railway Secrets Inventory]]
 - [[04_Areas/Coding/Checklists/Security Checklist]]
 - [[04_Areas/Coding/Checklists/Project Checklist Hub]]
-
 
 ## Project Note Snapshot
 
 ---
 type: project
 repo_name: "voudeque"
-repo_path: "/Users/paulopierrondi/Downloads/voudeque"
+repo_path: "/Users/paulopierrondi/Projects/voudeque"
 repo_kind: "repo"
 branch: "main"
-dirty_files: 7
+dirty_files: 66
 remote: "https://github.com/paulopierrondi/voudeque.git"
-generated_at: "2026-05-18 09:06:29"
+generated_at: "2026-06-02 23:37:30"
 tags:
   - project
   - git
@@ -3116,12 +2390,12 @@ tags:
 
 ## Estado rapido
 
-- Path: `/Users/paulopierrondi/Downloads/voudeque`
+- Path: `/Users/paulopierrondi/Projects/voudeque`
 - Tipo: `repo`
 - Repo kind: `repo`
 - Branch: `main`
-- Arquivos alterados agora: `7`
-- Ultimo commit: `0c8aba7 2026-05-18 fix(railway): add root Dockerfile for Railway build`
+- Arquivos alterados agora: `66`
+- Ultimo commit: `be09177 2026-05-18 marketing: ASO keywords, social campaign, App Store checklist, video scripts`
 - Remote: `https://github.com/paulopierrondi/voudeque.git`
 - Marcadores encontrados: `README.md, CLAUDE.md, AGENTS.md, GEMINI.md`
 
@@ -3176,11 +2450,21 @@ voudeque/
 
 ## AI History Snapshot
 
+---
+type: project-ai-history
+project: "voudeque"
+status: generated
+generated_at: "2026-06-02 23:37:30"
+tags:
+  - ai-history
+  - project-history
+  - generated
+---
 # voudeque - AI History
 
 Projeto: [[02_Projects/voudeque|voudeque]]
 
-- Path: `/Users/paulopierrondi/Downloads/voudeque`
+- Path: `/Users/paulopierrondi/Projects/voudeque`
 - Codex relacionado: `0`
 - Claude Code relacionado: `0`
 - Kimi relacionado: `0`

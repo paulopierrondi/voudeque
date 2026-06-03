@@ -16,70 +16,64 @@ struct LookCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 10) {
-                Image(systemName: "person.circle.fill")
+                Image(systemName: "person.circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 36, height: 36)
-                    .foregroundStyle(Color.fashionGold)
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.vdqAsh)
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(look.userName ?? "Usuário")
-                        .font(.runwayBody(size: 15, weight: .semibold))
-                        .foregroundColor(.fashionChampagne)
+                    Text(look.userName ?? "Usuario")
+                        .font(.vdqSans(14, weight: .medium))
+                        .foregroundColor(.vdqInk)
                     Text(look.occasion)
-                        .font(.runwayCaption())
-                        .foregroundColor(.fashionChampagne.opacity(0.5))
+                        .font(.vdqMono(10))
+                        .foregroundColor(.vdqAsh)
                 }
 
                 Spacer()
 
                 Text(look.createdAt, style: .relative)
-                    .font(.runwayCaption())
-                    .foregroundColor(.fashionChampagne.opacity(0.4))
+                    .font(.vdqMono(10))
+                    .foregroundColor(.vdqAsh2)
             }
             .padding(.horizontal, 16)
             .padding(.top, 16)
 
             // Look Image Placeholder / AsyncImage
             ZStack {
-                Color.darkGradient
+                Rectangle()
+                    .fill(Color.vdqLinen)
                     .frame(height: 260)
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
 
                 if let imageURL = look.imageURL, let url = URL(string: imageURL) {
                     AsyncImageView(url: url)
                         .frame(height: 260)
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
                 } else {
-                    Image(systemName: "sparkles")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 48, height: 48)
-                        .foregroundStyle(Color.fashionGold.opacity(0.3))
+                    Text("LOOK")
+                        .font(.vdqMono(10))
+                        .foregroundColor(.vdqAsh2)
                 }
             }
             .padding(.horizontal, 16)
 
             Text(look.description)
-                .font(.runwayBody(size: 14))
-                .foregroundColor(.fashionChampagne.opacity(0.85))
+                .font(.vdqSans(14))
+                .foregroundColor(.vdqInk2)
                 .lineLimit(3)
                 .padding(.horizontal, 16)
 
             HStack(spacing: 6) {
                 ForEach(look.items.prefix(3)) { item in
-                    HStack(spacing: 4) {
-                        Circle()
-                            .fill(colorForName(item.color))
-                            .frame(width: 8, height: 8)
-                        Text(item.name)
-                            .font(.runwayCaption())
-                            .foregroundColor(.fashionChampagne.opacity(0.8))
-                    }
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 6)
-                    .background(Color.fashionGold.opacity(0.08))
-                    .cornerRadius(8)
+                    Text(item.name)
+                        .font(.vdqMono(10))
+                        .foregroundColor(.vdqAsh)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
+                        .overlay(
+                            Rectangle()
+                                .stroke(Color.vdqRule, lineWidth: 1)
+                        )
                 }
             }
             .padding(.horizontal, 16)
@@ -100,11 +94,11 @@ struct LookCardView: View {
                 }) {
                     HStack(spacing: 6) {
                         Image(systemName: hasVoted ? "heart.fill" : "heart")
-                            .font(.system(size: 18, weight: .semibold))
+                            .font(.system(size: 16, weight: .semibold))
                         Text("\(voteCount)")
-                            .font(.runwayCaption())
+                            .font(.vdqMono(11))
                     }
-                    .foregroundStyle(hasVoted ? Color.fashionRose : Color.fashionChampagne.opacity(0.5))
+                    .foregroundColor(hasVoted ? .vdqAccent : .vdqAsh)
                 }
 
                 Spacer()
@@ -113,20 +107,23 @@ struct LookCardView: View {
                     HapticFeedback.light()
                 }) {
                     Image(systemName: "square.and.arrow.up")
-                        .font(.system(size: 18))
-                        .foregroundColor(.fashionChampagne.opacity(0.5))
+                        .font(.system(size: 16))
+                        .foregroundColor(.vdqAsh)
                 }
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 16)
         }
-        .runwayCard()
+        .overlay(
+            Rectangle()
+                .stroke(Color.vdqRule, lineWidth: 1)
+        )
     }
 }
 
 #Preview {
     ZStack {
-        Color.runwayBlack.ignoresSafeArea()
+        Color.vdqBone.ignoresSafeArea()
         ScrollView {
             LookCardView(look: .sample)
                 .padding(.horizontal, 16)

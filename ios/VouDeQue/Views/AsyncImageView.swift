@@ -32,26 +32,24 @@ struct AsyncImageView: View {
             placeholder
         } else {
             ZStack {
-                Color.darkGradient
-                Image(systemName: "sparkles")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 48, height: 48)
-                    .foregroundStyle(Color.fashionGold.opacity(0.3))
+                Color.vdqLinen
+                Text("LOOK")
+                    .font(.vdqMono(10))
+                    .foregroundColor(.vdqAsh2)
             }
         }
     }
 
     private var errorView: some View {
         ZStack {
-            Color.runwayCharcoal
+            Color.vdqLinen
             VStack(spacing: 8) {
                 Image(systemName: "exclamationmark.triangle")
-                    .font(.system(size: 28))
-                    .foregroundColor(.fashionRose.opacity(0.7))
+                    .font(.system(size: 24))
+                    .foregroundColor(.vdqAccent.opacity(0.7))
                 Text("Erro ao carregar")
-                    .font(.runwayCaption())
-                    .foregroundColor(.fashionChampagne.opacity(0.5))
+                    .font(.vdqMono(10))
+                    .foregroundColor(.vdqAsh)
             }
         }
     }
@@ -60,6 +58,6 @@ struct AsyncImageView: View {
 #Preview {
     AsyncImageView(url: URL(string: "https://example.com/image.jpg"))
         .frame(height: 200)
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .clipShape(Rectangle())
         .padding()
 }
